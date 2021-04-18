@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	322307323	helicoptere			\Default Work Unit\helicoptere	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	254896843	Hélicoptère - Déplacement	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Mac\SFX\Hélicoptère - Déplacement_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Hélicoptère\Hélicoptère - Déplacement		412480
+	838448789	Hélicoptère - Décollage	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Mac\SFX\Hélicoptère - Décollage_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Hélicoptère\Hélicoptère - Décollage		306496
+
