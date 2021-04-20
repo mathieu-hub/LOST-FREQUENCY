@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18369544547d02a44ba7f75e01e6c61b, type: 3}
-  m_Name: SerializationSettings
+  m_Script: {fileID: 11500000, guid: 4e1a0eb5a287e464b82b7252f74241b0, type: 3}
+  m_Name: CrossPlatformScheme
   m_EditorClassIdentifier: 
-  EncryptData: 0
-  SerializePath: 1
-  EncryptionKey: 8320510226e1bdbe1b1e2bef443235f5
-  runtimeSaveablePaths: []
+  schemeType: 1
+  keyboardScheme: []
+  gamepadScheme: []
+  activeGamepadScheme: 0
