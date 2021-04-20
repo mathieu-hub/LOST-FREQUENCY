@@ -91,6 +91,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!111 &111637347987212280
@@ -167,6 +168,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -191,6 +193,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &64995471994987074
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -222,6 +225,8 @@ MonoBehaviour:
   lightObj: {fileID: 108476037563014736}
   emissionObj: {fileID: 23153146421820034}
   electricity: {fileID: 0}
+  emissionKeyword: _EMISSION
+  emissionString: _EmissionColor
   animationObj: {fileID: 0}
   animationName: 
   switchOnAnim: 
@@ -229,4 +234,4 @@ MonoBehaviour:
   SwitchOn: {fileID: 8300000, guid: 34132e817d3b66741ae6ed01c151c9ee, type: 3}
   SwitchOff: {fileID: 8300000, guid: a09f9b6b9b8d164468fc12199a553cd4, type: 3}
   volume: 1
-  isPoweredOn: 0
+  isPoweredOn: 1
