@@ -13,7 +13,7 @@ public class TipsManager : MonoBehaviour {
     public string TipPrefix;
     public float TipTime;
 
-    private List<int> tipsCache = new List<int>();
+    public List<int> tipsCache = new List<int>();
 
     void OnEnable()
     {
