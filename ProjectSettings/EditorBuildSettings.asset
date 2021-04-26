@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/MVC_Folders/MVC_Scene/Developpement/Scene Loader/SceneLoader.unity
     guid: e92d1d4c15fc07a42b93b5e226dab4fd
   - enabled: 1
-    path: Assets/MVC_Folders/MVC_Scene/Prototypage/LOST FREQUENCY.unity
+    path: Assets/MVC_Folders/MVC_Scene/Developpement/LOST FREQUENCY.unity
     guid: 6db1a70545ddadf4ebe923b759f4b1c8
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f4687e337c6012f40a487fd66e19f2da,
