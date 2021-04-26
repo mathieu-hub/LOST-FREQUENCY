@@ -70,7 +70,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadLevelAsync(string scene)
     {
-        sceneName.text = scene;
+        sceneName.text = scene + " - Chapitre 1 : Vous me recevez ?";
 
         if (sceneInfos.Count > 0)
         {
@@ -118,7 +118,7 @@ public class SceneLoader : MonoBehaviour
             RemoveDontDestroyOnLoad();
 
             yield return new WaitUntil(() => input.AnyControlPressed());
-
+            
             if (!fadeController)
             {
                 if (MainCamera != null)

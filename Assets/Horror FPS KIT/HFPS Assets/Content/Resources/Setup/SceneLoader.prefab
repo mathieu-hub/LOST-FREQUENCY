@@ -563,7 +563,7 @@ MonoBehaviour:
   manuallySwitchText: {fileID: 1022178475010312}
   SwitchManually: 1
   threadPriority: 4
-  timeBeforeLoad: 3
+  timeBeforeLoad: 10
 --- !u!114 &114643961109773812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,16 +577,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tips:
-  - Press "TAB" to open Inventory Menu.
-  - You can examine items by pressing "Q"
-  - Flashlight consumes the battery. Search for the new ones, in order to not lose
-    the light.
-  - Scroll Backward Mouse Wheel to quickly deselect current holding item.
-  - Scroll Forward Mouse Wheel to select your last selected weapon.
-  - You can save your game in pause menu.
+  - "Dans cet environnement des plus \xE9tranges, votre modificateur de fr\xE9quence
+    est votre seul alli\xE9."
+  - "L'affichage LED de votre modificateur indique la pr\xE9sence d'une anomalie
+    fr\xE9quencielle."
+  - Si vous ne faites rien, elle vous controlera, comme tous les autres...
+  - "N'ayez craintes, m\xEAme dans l'obscurit\xE9 la plus totale il y a toujours
+    une once de lumi\xE8re pour vous guider.."
   TipsText: {fileID: 114744501052737320}
   TipPrefix: 
-  TipTime: 3
+  TipTime: 5
+  tipsCache: 
 --- !u!1 &1654518883732722
 GameObject:
   m_ObjectHideFlags: 0
