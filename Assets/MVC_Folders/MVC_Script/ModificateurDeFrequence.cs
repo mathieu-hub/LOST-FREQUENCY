@@ -20,6 +20,7 @@ public class ModificateurDeFrequence : MonoBehaviour
     public GameObject ledVoyageTf;
     
     [Header("ANOMALIE DETECTEUR")]
+    public int anomalieSignal;
     public List<GameObject> anomalieLeds = new List<GameObject>();
 
     [Header("MATERIALS REFERENCES")]
@@ -34,9 +35,17 @@ public class ModificateurDeFrequence : MonoBehaviour
     {
         ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
         ledVoyageTf.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+
+        anomalieSignal = 0;        
     }
 
     private void Update()
+    {
+        Interruptor();
+        AnomalieLeds();
+    }
+
+    void Interruptor()
     {
         // Activation et Désactivation des interrupteurs
         if (deviceIsOn) // Allumage du boîtier
@@ -48,6 +57,7 @@ public class ModificateurDeFrequence : MonoBehaviour
         {
             animatorOnOff.SetBool("switchOn", false);
             ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieSignal = 0;
 
             if (activeVoyageTf)
             {
@@ -64,6 +74,58 @@ public class ModificateurDeFrequence : MonoBehaviour
         {
             animatorVoyageTf.SetBool("tfSwitchOn", false);
             ledVoyageTf.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        }
+    }
+
+    void AnomalieLeds()
+    {
+        if (anomalieSignal == 0)
+        {
+            anomalieLeds[0].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[1].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        }
+        else if (anomalieSignal == 1)
+        {
+            anomalieLeds[0].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[1].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        }
+        else if (anomalieSignal == 2)
+        {
+            anomalieLeds[0].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[1].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        }
+        else if (anomalieSignal == 3)
+        {
+            anomalieLeds[0].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[1].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        }
+        else if (anomalieSignal == 4)
+        {
+            anomalieLeds[0].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[1].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[2];
+            anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        }
+        else if (anomalieSignal == 5)
+        {
+            anomalieLeds[0].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[1].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[2];
+            anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[3];
         }
     }
 }

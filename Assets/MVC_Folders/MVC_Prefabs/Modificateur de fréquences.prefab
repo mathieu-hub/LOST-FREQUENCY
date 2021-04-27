@@ -1180,6 +1180,7 @@ GameObject:
   - component: {fileID: 6645111521605321927}
   - component: {fileID: 7948928915283847052}
   - component: {fileID: 2962112170365788811}
+  - component: {fileID: 1985832227}
   m_Layer: 0
   m_Name: LED 04 (orange)
   m_TagString: Untagged
@@ -1263,6 +1264,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1985832227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2216017713552148656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1 &2501686888227612651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,6 +1555,7 @@ GameObject:
   - component: {fileID: 5187126243826819082}
   - component: {fileID: 4269151708287026463}
   - component: {fileID: 4401330961017007016}
+  - component: {fileID: 1034344898}
   m_Layer: 0
   m_Name: LED 03 (green)
   m_TagString: Untagged
@@ -1624,6 +1639,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1034344898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2803909831320288216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1 &2937449374364747099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,7 +1969,7 @@ GameObject:
   - component: {fileID: 1136348714906592201}
   m_Layer: 0
   m_Name: "Modificateur de fr\xE9quences"
-  m_TagString: Untagged
+  m_TagString: Modificateur
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1994,6 +2022,7 @@ MonoBehaviour:
   - {fileID: 2803909831320288216}
   - {fileID: 2216017713552148656}
   - {fileID: 7540638143749663138}
+  anomalieSignal: 0
   materials:
   - {fileID: 2100000, guid: 4f9b8250755f8eb488b0b7ab2945c596, type: 2}
   - {fileID: 2100000, guid: 570476907ed26844bac1357c444a8b69, type: 2}
@@ -2503,6 +2532,7 @@ GameObject:
   - component: {fileID: 4943310129604970599}
   - component: {fileID: 1023988994775679685}
   - component: {fileID: 3053035619541555300}
+  - component: {fileID: 311515984}
   m_Layer: 0
   m_Name: LED 02 (green)
   m_TagString: Untagged
@@ -2586,6 +2616,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &311515984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919055001338621183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1 &5967109035460775456
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,6 +3294,7 @@ GameObject:
   - component: {fileID: 6294835277783348389}
   - component: {fileID: 2735091001961183563}
   - component: {fileID: 8820512082064849013}
+  - component: {fileID: 1631029912}
   m_Layer: 0
   m_Name: LED 05 (red)
   m_TagString: Untagged
@@ -3334,6 +3378,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1631029912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7540638143749663138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1 &7550950935282693287
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,6 +3499,7 @@ GameObject:
   - component: {fileID: 4513280073484549039}
   - component: {fileID: 5777262842409461612}
   - component: {fileID: 742046260099431809}
+  - component: {fileID: 394252944}
   m_Layer: 0
   m_Name: LED 01 (green)
   m_TagString: Untagged
@@ -3525,6 +3583,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &394252944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7915417549900478069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1 &8143958869238053334
 GameObject:
   m_ObjectHideFlags: 0
