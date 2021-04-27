@@ -2967,6 +2967,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Modificateur de fr\xE9quences"
       objectReference: {fileID: 0}
+    - target: {fileID: 4319354624791832344, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
+        type: 3}
+      propertyPath: m_Range
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319354624791832344, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.09251513
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319354624791832344, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.09251513
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319354624791832344, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319354624791832344, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319354624791832344, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4558218030304210842, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
         type: 3}
       propertyPath: m_RootOrder
