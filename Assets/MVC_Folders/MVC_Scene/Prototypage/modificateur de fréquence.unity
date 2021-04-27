@@ -2962,6 +2962,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1136348714906592201, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
+        type: 3}
+      propertyPath: ledVoyageTf
+      value: 
+      objectReference: {fileID: 1553260081}
     - target: {fileID: 4027410622942407422, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
         type: 3}
       propertyPath: m_Name
@@ -4268,6 +4273,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1547156618}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1553260081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1596206157391872926, guid: 5b7f2ba7a382e3c4cb1445cc0f5532e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1121793849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1553260082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553260081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1001 &1581864723
 PrefabInstance:
   m_ObjectHideFlags: 0

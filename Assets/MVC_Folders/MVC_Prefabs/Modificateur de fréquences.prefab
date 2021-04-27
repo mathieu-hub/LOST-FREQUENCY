@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 3674121851107777842}
   - component: {fileID: 3292725351771267482}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Support
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -784,6 +784,7 @@ GameObject:
   - component: {fileID: 5543909835458013231}
   - component: {fileID: 4557680448397136483}
   - component: {fileID: 7911916512224960032}
+  - component: {fileID: 1553260082}
   m_Layer: 0
   m_Name: "LED voyage transfr\xE9quence"
   m_TagString: Untagged
@@ -867,6 +868,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1553260082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596206157391872926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1 &1733450613492732653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,9 +1983,11 @@ MonoBehaviour:
   deviceIsOn: 0
   interruptorOnOff: {fileID: 3692839311308666810}
   animatorOnOff: {fileID: 4593859829661605916}
+  ledOnOff: {fileID: 5907306595474784008}
   activeVoyageTf: 0
   interruptorVoyageTf: {fileID: 8715986372307222201}
   animatorVoyageTf: {fileID: 1713779210}
+  ledVoyageTf: {fileID: 1596206157391872926}
   anomalieLeds:
   - {fileID: 7915417549900478069}
   - {fileID: 5919055001338621183}
@@ -2378,6 +2394,7 @@ GameObject:
   - component: {fileID: 2030327652810403916}
   - component: {fileID: 7372616827835835550}
   - component: {fileID: 360704115669942855}
+  - component: {fileID: 4557102098557047878}
   m_Layer: 0
   m_Name: LED On/Off
   m_TagString: Untagged
@@ -2461,6 +2478,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4557102098557047878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5907306595474784008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1 &5919055001338621183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3317,7 +3347,7 @@ GameObject:
   - component: {fileID: 2486471010441933809}
   - component: {fileID: 7847420346689535419}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Support
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
