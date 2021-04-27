@@ -15,7 +15,7 @@ public class ModificateurDeFrequence : MonoBehaviour
     [Header("VOYAGE TRANSFREQUENTIEL")]
     public bool activeVoyageTf = false;
     public GameObject interruptorVoyageTf;
-    //public Animator animatorVoyageTf;
+    public Animator animatorVoyageTf;
     
 
     [Header("ANOMALIE DETECTEUR")]
@@ -36,6 +36,7 @@ public class ModificateurDeFrequence : MonoBehaviour
 
     private void Update()
     {
+        // Activation et Désactivation des interrupteurs
         if (deviceIsOn)
         {
             animatorOnOff.SetBool("switchOn", true);
@@ -45,5 +46,13 @@ public class ModificateurDeFrequence : MonoBehaviour
             animatorOnOff.SetBool("switchOn", false);
         }
 
+        if (activeVoyageTf)
+        {
+            animatorVoyageTf.SetBool("tfSwitchOn", true);
+        }
+        else if (!activeVoyageTf)
+        {
+            animatorVoyageTf.SetBool("tfSwitchOn", false);
+        }
     }
 }

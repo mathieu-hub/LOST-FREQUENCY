@@ -1814,7 +1814,7 @@ GameObject:
   - component: {fileID: 2187309258551430635}
   - component: {fileID: 4593859829661605916}
   m_Layer: 0
-  m_Name: Interruptor on/off
+  m_Name: interruptor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1827,13 +1827,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3692839311308666810}
-  m_LocalRotation: {x: -0.28401542, y: -0, z: -0, w: 0.95881975}
-  m_LocalPosition: {x: 0.043300033, y: -0.0136, z: 0.0304}
+  m_LocalRotation: {x: 0.2840153, y: 0, z: 0, w: 0.95881975}
+  m_LocalPosition: {x: 0.043300033, y: -0.02032, z: 0.0304}
   m_LocalScale: {x: 0.0042885686, y: 0.00499035, z: 0.015}
   m_Children: []
   m_Father: {fileID: 794483836665012634}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -33, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 33, y: 0, z: 0}
 --- !u!33 &3515000252684443870
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1971,7 +1971,7 @@ MonoBehaviour:
   animatorOnOff: {fileID: 4593859829661605916}
   activeVoyageTf: 0
   interruptorVoyageTf: {fileID: 8715986372307222201}
-  animatorVoyageTf: {fileID: 0}
+  animatorVoyageTf: {fileID: 1713779210}
   anomalieLeds:
   - {fileID: 7915417549900478069}
   - {fileID: 5919055001338621183}
@@ -3602,6 +3602,7 @@ GameObject:
   - component: {fileID: 2326026205803931525}
   - component: {fileID: 976037522862584045}
   - component: {fileID: 3518264027697522350}
+  - component: {fileID: 1713779210}
   m_Layer: 0
   m_Name: Interruptor tf
   m_TagString: Untagged
@@ -3685,6 +3686,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1713779210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8715986372307222201}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3fb3e52e161e6124ebdb9a73fb4a6eeb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8736073683394085401
 GameObject:
   m_ObjectHideFlags: 0
