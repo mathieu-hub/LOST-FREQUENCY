@@ -559,6 +559,7 @@ GameObject:
   - component: {fileID: 7199723001718144636}
   - component: {fileID: 1786898097827655738}
   - component: {fileID: 8495143914723097919}
+  - component: {fileID: 1407588849}
   m_Layer: 0
   m_Name: Disable TF Light
   m_TagString: Untagged
@@ -642,6 +643,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1407588849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242811595373526539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1 &1313204337748900140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,13 +2030,16 @@ MonoBehaviour:
   interruptorVoyageTf: {fileID: 8715986372307222201}
   animatorVoyageTf: {fileID: 1713779210}
   ledVoyageTf: {fileID: 1596206157391872926}
+  voyageTfAvailable: 0
+  availableLed: {fileID: 7392561830078322535}
+  disavailableLed: {fileID: 1242811595373526539}
+  anomalieSignal: 0
   anomalieLeds:
   - {fileID: 7915417549900478069}
   - {fileID: 5919055001338621183}
   - {fileID: 2803909831320288216}
   - {fileID: 2216017713552148656}
   - {fileID: 7540638143749663138}
-  anomalieSignal: 0
   materials:
   - {fileID: 2100000, guid: 4f9b8250755f8eb488b0b7ab2945c596, type: 2}
   - {fileID: 2100000, guid: 570476907ed26844bac1357c444a8b69, type: 2}
@@ -3104,6 +3121,7 @@ GameObject:
   - component: {fileID: 7979071013071306064}
   - component: {fileID: 1599995619488974557}
   - component: {fileID: 6452273477225866070}
+  - component: {fileID: 1975822671}
   m_Layer: 0
   m_Name: Enable TF Light
   m_TagString: Untagged
@@ -3187,6 +3205,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1975822671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7392561830078322535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bffc13aede6d24b9a4366ee240d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMaterial: {fileID: 0}
 --- !u!1 &7399915496772640800
 GameObject:
   m_ObjectHideFlags: 0

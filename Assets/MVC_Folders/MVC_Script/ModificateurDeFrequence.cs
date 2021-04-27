@@ -13,12 +13,17 @@ public class ModificateurDeFrequence : MonoBehaviour
     public Animator animatorOnOff;
     public GameObject ledOnOff;
 
-    [Header("VOYAGE TRANSFREQUENTIEL")]
+    [Header("VOYAGE TRANSFREQUENTIEL ACTIVATION")]
     public bool activeVoyageTf = false;
     public GameObject interruptorVoyageTf;
     public Animator animatorVoyageTf;
     public GameObject ledVoyageTf;
-    
+
+    [Header("VOYAGE TRANSFREQUENTIEL DETECTION")]
+    public bool voyageTfAvailable = false;
+    public GameObject availableLed;
+    public GameObject disavailableLed;
+
     [Header("ANOMALIE DETECTEUR")]
     public int anomalieSignal;
     public List<GameObject> anomalieLeds = new List<GameObject>();
@@ -35,6 +40,9 @@ public class ModificateurDeFrequence : MonoBehaviour
     {
         ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
         ledVoyageTf.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        availableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        disavailableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+
 
         anomalieSignal = 0;        
     }
@@ -43,6 +51,7 @@ public class ModificateurDeFrequence : MonoBehaviour
     {
         Interruptor();
         AnomalieLeds();
+        VoyageTf();
     }
 
     void Interruptor()
@@ -126,6 +135,27 @@ public class ModificateurDeFrequence : MonoBehaviour
             anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
             anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[2];
             anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[3];
+        }
+    }
+
+    void VoyageTf()
+    {
+        if (deviceIsOn && voyageTfAvailable)
+        {
+            availableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+        }
+        else
+        {
+            availableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        }
+
+        if (deviceIsOn && !voyageTfAvailable)
+        {
+            disavailableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[3];
+        }
+        else
+        {
+            disavailableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
         }
     }
 }
