@@ -4079,6 +4079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798fed05a814b39418c996791be55cd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textMesh: {fileID: 7498129968492488462}
   frequence: 0
 --- !u!1 &8715986372307222201
 GameObject:

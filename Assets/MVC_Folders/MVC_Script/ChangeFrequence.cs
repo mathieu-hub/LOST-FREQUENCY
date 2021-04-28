@@ -5,17 +5,17 @@ using TMPro;
 
 public class ChangeFrequence : MonoBehaviour
 {
-    private TextMeshProUGUI textMesh;
+    public TextMeshPro textMesh;
     public int frequence;
 
     void Start()
-    {
-        textMesh = GetComponent<TextMeshProUGUI>();
+    {       
         frequence = ModificateurDeFrequence.Instance.detectedFrequence;
     }
 
     void Update()
     {
+        frequence = ModificateurDeFrequence.Instance.detectedFrequence;
         textMesh.text = frequence.ToString();
     }
 }
