@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class ModificateurDeFrequence : MonoBehaviour
 {
@@ -20,13 +20,18 @@ public class ModificateurDeFrequence : MonoBehaviour
     public GameObject ledVoyageTf;
 
     [Header("VOYAGE TRANSFREQUENTIEL DETECTION")]
-    public bool voyageTfAvailable = false;
+    public bool voyageTfAvailable = false; // Variable à changer 
     public GameObject availableLed;
     public GameObject disavailableLed;
 
     [Header("ANOMALIE DETECTEUR")]
-    public int anomalieSignal;
+    public int anomalieSignal; // Variable à changer
     public List<GameObject> anomalieLeds = new List<GameObject>();
+
+    [Header("ECRAN")]
+    public GameObject indicateurFrequence;
+    private TextMeshProUGUI textMesh;
+    public int detectedFrequence;
 
     [Header("MATERIALS REFERENCES")]
     public List<Material> materials = new List<Material>();
@@ -41,7 +46,9 @@ public class ModificateurDeFrequence : MonoBehaviour
         ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
         ledVoyageTf.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
         availableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
-        disavailableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[0];       
+        disavailableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+
+        detectedFrequence = 0;
     }
 
     private void Update()
