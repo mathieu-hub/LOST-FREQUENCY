@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4879865730670588}
   - component: {fileID: 33018537406278846}
   - component: {fileID: 23052486480164208}
-  - component: {fileID: 65084925691511612}
+  - component: {fileID: 2556844179449417053}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056542198432620}
-  m_LocalRotation: {x: 0.000000081460335, y: -1.1102229e-16, z: 1.1102233e-16, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -55,10 +55,12 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bdc7b16635b5d1a42a6f10c7f952489c, type: 2}
+  - {fileID: 2100000, guid: 4de4c0aa2ecbdc04681c4da0fdbd1867, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,8 +81,9 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &65084925691511612
-BoxCollider:
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2556844179449417053
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,6 +92,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 6.617445e-23}
-  m_Center: {x: -2.5, y: 2.5, z: 3.3087225e-23}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300006, guid: 1f658fb45ca5708439f3725a5e583d00, type: 3}
