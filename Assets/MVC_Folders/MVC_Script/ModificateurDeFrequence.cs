@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using ThunderWire.CrossPlatform.Input;
 
 public class ModificateurDeFrequence : MonoBehaviour
 {
     public static ModificateurDeFrequence Instance;
+    private CrossPlatformInput crossPlatformInput;
 
     [Header("ON / OFF")]
     public bool deviceIsOn = false;
@@ -36,9 +38,15 @@ public class ModificateurDeFrequence : MonoBehaviour
     [Header("MATERIALS REFERENCES")]
     public List<Material> materials = new List<Material>();
 
+    [Header("INPUTS")]
+    private bool useOnOff;
+    private bool useVoyageTf;
+    private bool useRebindFreq;
+
     private void Awake()
     {
         Instance = this;
+        crossPlatformInput = CrossPlatformInput.Instance;
     }
 
     private void Start()
@@ -53,30 +61,44 @@ public class ModificateurDeFrequence : MonoBehaviour
 
     private void Update()
     {
-        Interruptor();
+        if (crossPlatformInput.inputsLoaded)
+        {
+            useOnOff = crossPlatformInput.GetInput<bool>("MFOnOff");
+        }
+
+        InterruptorOnOff();
+        InterruptorVoyageTf();
         AnomalieLeds();
         VoyageTf();
     }
 
-    void Interruptor()
+    
+
+    void InterruptorOnOff()
     {
-        // Activation et Désactivation des interrupteurs
-        if (deviceIsOn) // Allumage du boîtier
+        if (useOnOff)
         {
-            animatorOnOff.SetBool("switchOn", true);
-            ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[1];
-        }
-        else if (!deviceIsOn) // Extinction du boîtier
-        {
-            animatorOnOff.SetBool("switchOn", false);
-            ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
-
-            if (activeVoyageTf)
+            // Activation et Désactivation des interrupteurs
+            if (deviceIsOn) // Allumage du boîtier
             {
-                activeVoyageTf = false;
+                animatorOnOff.SetBool("switchOn", true);
+                ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[1];
             }
-        }
+            else if (!deviceIsOn) // Extinction du boîtier
+            {
+                animatorOnOff.SetBool("switchOn", false);
+                ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
 
+                if (activeVoyageTf)
+                {
+                    activeVoyageTf = false;
+                }
+            }
+        }               
+    }
+
+    void InterruptorVoyageTf()
+    {
         if (activeVoyageTf)
         {
             animatorVoyageTf.SetBool("tfSwitchOn", true);

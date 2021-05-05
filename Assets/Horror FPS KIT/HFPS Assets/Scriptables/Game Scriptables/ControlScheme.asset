@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e1a0eb5a287e464b82b7252f74241b0, type: 3}
   m_Name: ControlScheme
   m_EditorClassIdentifier: 
-  schemeType: 1
+  schemeType: 0
   keyboardScheme:
   - ActionName: Movement
     Output: 1
@@ -171,6 +171,33 @@ MonoBehaviour:
     Output: 0
     ButtonBinding:
       KeyMouseKey: 3
+    VectorBinding:
+      UpKey: 0
+      DownKey: 0
+      LeftKey: 0
+      RightKey: 0
+  - ActionName: MFOnOff
+    Output: 0
+    ButtonBinding:
+      KeyMouseKey: 32
+    VectorBinding:
+      UpKey: 0
+      DownKey: 0
+      LeftKey: 0
+      RightKey: 0
+  - ActionName: MF_VoyageTf
+    Output: 0
+    ButtonBinding:
+      KeyMouseKey: 34
+    VectorBinding:
+      UpKey: 0
+      DownKey: 0
+      LeftKey: 0
+      RightKey: 0
+  - ActionName: MF_RebindFreq
+    Output: 0
+    ButtonBinding:
+      KeyMouseKey: 20
     VectorBinding:
       UpKey: 0
       DownKey: 0
