@@ -137,6 +137,9 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
     private bool PauseKey;
     private bool InventoryKey;
 
+    [Header("My Inputs")]
+    public bool OnOffKey;
+
     private bool greyscale;
     private bool greyscaleIn = false;
     private bool greyscaleOut = false;
@@ -267,6 +270,25 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
             ThrowKey = crossPlatformInput.ControlOf("Zoom");
             RotateKey = crossPlatformInput.ControlOf("Fire");
             CursorKey = crossPlatformInput.ControlOf("Zoom");
+
+            //LES INPUTS DU MODIFICATEUR DE FRÉQUENCES
+            OnOffKey = crossPlatformInput.GetActionPressedOnce(this, "MfOnOff");
+
+            if (OnOffKey)
+            {
+                Debug.Log("JE S'APPEL GROOT");
+
+                if (ModificateurDeFrequence.Instance.deviceIsOn == true)
+                {
+                    ModificateurDeFrequence.Instance.deviceIsOn = false;
+                }
+                else if (ModificateurDeFrequence.Instance.deviceIsOn == false)
+                {
+                    ModificateurDeFrequence.Instance.deviceIsOn = true;
+                }
+            }
+
+            //END OF MY SCRIPT
 
             if (!uiInteractive)
             {

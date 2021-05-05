@@ -63,7 +63,7 @@ namespace ThunderWire.CrossPlatform.Input {
         private string folder_path;
         private string full_filepath;
 
-        private List<CPCS.KeyboardControl> keyboardScheme = new List<CPCS.KeyboardControl>();
+        public List<CPCS.KeyboardControl> keyboardScheme = new List<CPCS.KeyboardControl>();
         private CPCS.NestedGamepadControls gamepadScheme = new CPCS.NestedGamepadControls();
 
         private List<ControlInstance> pressedActions = new List<ControlInstance>();

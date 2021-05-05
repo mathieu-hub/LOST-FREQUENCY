@@ -176,33 +176,6 @@ MonoBehaviour:
       DownKey: 0
       LeftKey: 0
       RightKey: 0
-  - ActionName: MFOnOff
-    Output: 0
-    ButtonBinding:
-      KeyMouseKey: 32
-    VectorBinding:
-      UpKey: 0
-      DownKey: 0
-      LeftKey: 0
-      RightKey: 0
-  - ActionName: MF_VoyageTf
-    Output: 0
-    ButtonBinding:
-      KeyMouseKey: 34
-    VectorBinding:
-      UpKey: 0
-      DownKey: 0
-      LeftKey: 0
-      RightKey: 0
-  - ActionName: MF_RebindFreq
-    Output: 0
-    ButtonBinding:
-      KeyMouseKey: 20
-    VectorBinding:
-      UpKey: 0
-      DownKey: 0
-      LeftKey: 0
-      RightKey: 0
   gamepadScheme:
   - schemeName: Scheme1
     gamepadControls:
