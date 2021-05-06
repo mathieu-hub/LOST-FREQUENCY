@@ -138,7 +138,9 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
     private bool InventoryKey;
 
     [Header("My Inputs")]
-    public bool OnOffKey;
+    public bool useOnOffKey;
+    private bool useVoyageTf;
+    private bool useRebindFreq;
 
     private bool greyscale;
     private bool greyscaleIn = false;
@@ -272,12 +274,12 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
             CursorKey = crossPlatformInput.ControlOf("Zoom");
 
             //LES INPUTS DU MODIFICATEUR DE FRÉQUENCES
-            OnOffKey = crossPlatformInput.GetActionPressedOnce(this, "MfOnOff");
+            useOnOffKey = crossPlatformInput.GetActionPressedOnce(this, "MfOnOff");
+            useVoyageTf = crossPlatformInput.GetActionPressedOnce(this, "MfVoyageTf");
+            useRebindFreq = crossPlatformInput.GetActionPressedOnce(this, "MfRebindFreq");
 
-            if (OnOffKey)
-            {
-                Debug.Log("JE S'APPEL GROOT");
-
+            if (useOnOffKey)
+            {             
                 if (ModificateurDeFrequence.Instance.deviceIsOn == true)
                 {
                     ModificateurDeFrequence.Instance.deviceIsOn = false;
@@ -285,6 +287,18 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
                 else if (ModificateurDeFrequence.Instance.deviceIsOn == false)
                 {
                     ModificateurDeFrequence.Instance.deviceIsOn = true;
+                }
+            }
+
+            if (useVoyageTf)
+            {
+                if (ModificateurDeFrequence.Instance.activeVoyageTf == true)
+                {
+                    ModificateurDeFrequence.Instance.activeVoyageTf = false;
+                }
+                else if (ModificateurDeFrequence.Instance.activeVoyageTf == false)
+                {
+                    ModificateurDeFrequence.Instance.activeVoyageTf = true;
                 }
             }
 

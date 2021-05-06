@@ -7,7 +7,6 @@ using ThunderWire.CrossPlatform.Input;
 public class ModificateurDeFrequence : MonoBehaviour
 {
     public static ModificateurDeFrequence Instance;
-    public CrossPlatformInput crossPlatformInput;
 
     [Header("ON / OFF")]
     public bool deviceIsOn = false;
@@ -29,24 +28,32 @@ public class ModificateurDeFrequence : MonoBehaviour
     [Header("ANOMALIE DETECTEUR")]
     public int anomalieSignal; // Variable à changer
     public List<GameObject> anomalieLeds = new List<GameObject>();
+    
+    [Space (10)]
+    public GameObject recepteur;
+    public GameObject emetteur;
 
+    public float distance;
+    
+    [Space(10)]
+    public float distanceZone01;
+    public float distanceZone02;
+    public float distanceZone03;
+    public float distanceZone04;
+    public float distanceZone05;
+       
     [Header("ECRAN")]
     public GameObject indicateurFrequence;
     private TextMeshProUGUI textMesh;
     public int detectedFrequence;
 
     [Header("MATERIALS REFERENCES")]
-    public List<Material> materials = new List<Material>();
-
-    [Header("INPUTS")]
+    public List<Material> materials = new List<Material>();   
     
-    private bool useVoyageTf;
-    private bool useRebindFreq;
 
     private void Awake()
     {
-        Instance = this;
-        crossPlatformInput = CrossPlatformInput.Instance;
+        Instance = this;        
     }
 
     private void Start()
@@ -60,10 +67,10 @@ public class ModificateurDeFrequence : MonoBehaviour
     }
 
     private void Update()
-    {
-        
+    {        
         InterruptorOnOff();
         InterruptorVoyageTf();
+        DetectEmetteurAnomalie();
         AnomalieLeds();
         VoyageTf();
     }
@@ -101,6 +108,37 @@ public class ModificateurDeFrequence : MonoBehaviour
         {
             animatorVoyageTf.SetBool("tfSwitchOn", false);
             ledVoyageTf.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+        }
+    }
+
+    void DetectEmetteurAnomalie()
+    {
+        distance = Vector3.Distance(recepteur.transform.position, emetteur.transform.position);
+
+
+        if (distance >= distanceZone01)
+        {
+            anomalieSignal = 0;
+        }
+        else if (distance <= distanceZone01 && distance >= distanceZone02)
+        {
+            anomalieSignal = 1;
+        }
+        else if (distance <= distanceZone02 && distance >= distanceZone03)
+        {
+            anomalieSignal = 2;
+        }
+        else if (distance <= distanceZone03 && distance >= distanceZone04)
+        {
+            anomalieSignal = 3;
+        }
+        else if (distance <= distanceZone04 && distance >= distanceZone05)
+        {
+            anomalieSignal = 4;
+        }
+        else if (distance <= distanceZone05)
+        {
+            anomalieSignal = 5;
         }
     }
 
@@ -163,6 +201,12 @@ public class ModificateurDeFrequence : MonoBehaviour
             anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
         }
     }
+
+    void RebindFrequence()
+    {
+        
+    }
+
 
     void VoyageTf()
     {

@@ -49,7 +49,7 @@ public class Radio : MonoBehaviour, ISaveable
 
     public void UseObject()
     {
-        AudioSource.PlayClipAtPoint(pushButton, transform.position, 0.3f);
+        /*AudioSource.PlayClipAtPoint(pushButton, transform.position, 0.3f);
 
         if (!isOn)
         {
@@ -84,7 +84,7 @@ public class Radio : MonoBehaviour, ISaveable
             }
 
             isOn = false;
-        }
+        }*/
     }
 
     public Dictionary<string, object> OnSave()
