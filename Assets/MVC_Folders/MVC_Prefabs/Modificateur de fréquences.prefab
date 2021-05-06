@@ -2195,6 +2195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 594e32687e600384b838c0f604701e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeFrequence: {fileID: 6861161105905010627}
   deviceIsOn: 0
   interruptorOnOff: {fileID: 3692839311308666810}
   animatorOnOff: {fileID: 4593859829661605916}

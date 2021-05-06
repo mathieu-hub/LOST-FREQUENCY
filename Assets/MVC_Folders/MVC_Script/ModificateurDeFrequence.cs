@@ -7,6 +7,7 @@ using ThunderWire.CrossPlatform.Input;
 public class ModificateurDeFrequence : MonoBehaviour
 {
     public static ModificateurDeFrequence Instance;
+    public ChangeFrequence changeFrequence;
 
     [Header("ON / OFF")]
     public bool deviceIsOn = false;
@@ -70,7 +71,7 @@ public class ModificateurDeFrequence : MonoBehaviour
     {        
         InterruptorOnOff();
         InterruptorVoyageTf();
-        DetectEmetteurAnomalie();
+        DetectEmetteur();
         AnomalieLeds();
         VoyageTf();
     }
@@ -111,33 +112,39 @@ public class ModificateurDeFrequence : MonoBehaviour
         }
     }
 
-    void DetectEmetteurAnomalie()
+    void DetectEmetteur()
     {
         distance = Vector3.Distance(recepteur.transform.position, emetteur.transform.position);
 
 
         if (distance >= distanceZone01)
         {
+            detectedFrequence = 93;
             anomalieSignal = 0;
         }
         else if (distance <= distanceZone01 && distance >= distanceZone02)
         {
+            detectedFrequence = 170;
             anomalieSignal = 1;
         }
         else if (distance <= distanceZone02 && distance >= distanceZone03)
         {
+            detectedFrequence = 197;
             anomalieSignal = 2;
         }
         else if (distance <= distanceZone03 && distance >= distanceZone04)
         {
+            detectedFrequence = 224;
             anomalieSignal = 3;
         }
         else if (distance <= distanceZone04 && distance >= distanceZone05)
         {
+            detectedFrequence = 267;
             anomalieSignal = 4;
         }
         else if (distance <= distanceZone05)
         {
+            detectedFrequence = 300;
             anomalieSignal = 5;
         }
     }
