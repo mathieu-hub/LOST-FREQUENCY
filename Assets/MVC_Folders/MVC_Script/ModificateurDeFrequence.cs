@@ -56,6 +56,8 @@ public class ModificateurDeFrequence : MonoBehaviour
     public GameObject indicateurFrequence;    
     public int detectedFrequence;
     public string detectedAnomalie;
+    public GameObject screenDisplayGroup;
+    public GameObject canvasRebindBar;
 
     [Header("MATERIALS REFERENCES")]
     public List<Material> materials = new List<Material>();   
@@ -98,11 +100,15 @@ public class ModificateurDeFrequence : MonoBehaviour
         {
             animatorOnOff.SetBool("switchOn", true);
             ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            screenDisplayGroup.SetActive(true);
+            canvasRebindBar.SetActive(true);
         }
         else if (!deviceIsOn) // Extinction du boîtier
         {
             animatorOnOff.SetBool("switchOn", false);
             ledOnOff.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            screenDisplayGroup.SetActive(false);
+            canvasRebindBar.SetActive(false);
 
             if (activeVoyageTf)
             {
@@ -293,7 +299,15 @@ public class ModificateurDeFrequence : MonoBehaviour
 
             if (rebindingFrequence) //Appuie sur input
             {
-                rebindBar.valeur += 5 * Time.deltaTime;
+                if (deviceIsOn)
+                {
+                    rebindBar.valeur += 5 * Time.deltaTime;
+                }
+                else if (true)
+                {
+                    rebindBar.valeur += 5 * Time.deltaTime * 0f;
+                }
+
                 textToRepair.SetActive(false);
             }
         }

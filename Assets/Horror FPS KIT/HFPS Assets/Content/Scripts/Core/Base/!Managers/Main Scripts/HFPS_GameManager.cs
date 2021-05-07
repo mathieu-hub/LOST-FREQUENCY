@@ -304,14 +304,22 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
 
             if (useRebindFreq)
             {
-                if (ModificateurDeFrequence.Instance.rebindingFrequence == true)
+                if (ModificateurDeFrequence.Instance.deviceIsOn)
+                {
+                    if (ModificateurDeFrequence.Instance.rebindingFrequence == true)
+                    {
+                        ModificateurDeFrequence.Instance.rebindingFrequence = false;
+                    }
+                    else if (ModificateurDeFrequence.Instance.rebindingFrequence == false)
+                    {
+                        ModificateurDeFrequence.Instance.rebindingFrequence = true;
+                    }
+                }
+                else if (ModificateurDeFrequence.Instance.deviceIsOn == false)
                 {
                     ModificateurDeFrequence.Instance.rebindingFrequence = false;
                 }
-                else if (ModificateurDeFrequence.Instance.rebindingFrequence == false)
-                {
-                    ModificateurDeFrequence.Instance.rebindingFrequence = true;
-                }
+                
             }
 
             //END OF MY SCRIPT
