@@ -34,7 +34,8 @@ public class ModificateurDeFrequence : MonoBehaviour
     [Header("RÉPARER FRÉQUENCES")]
     public bool rebindingFrequence = false;
     public GameObject rebindBarObject;
-    public string frequenceState;
+    public GameObject textIsRepair;
+    public GameObject textToRepair;
 
     [Space (10)]
     public GameObject recepteur;
@@ -280,13 +281,25 @@ public class ModificateurDeFrequence : MonoBehaviour
         //Conditions pour remplir la barre
         if(anomalieSignal == 5 && emetteur.GetComponent<EmetteurType>().asAnAnomalie && emetteur.GetComponent<EmetteurType>().emettorRadio)
         {
-            frequenceState = "Appuyer sur F pour réparer";
+            if (rebindBar.valeur == 0)
+            {
+                textToRepair.SetActive(true);
+            }
+            else
+            {
+                textToRepair.SetActive(false);
+            }
+
 
             if (rebindingFrequence) //Appuie sur input
             {
                 rebindBar.valeur += 5 * Time.deltaTime;
-                frequenceState = " ";
+                textToRepair.SetActive(false);
             }
+        }
+        else
+        {
+            textToRepair.SetActive(false);
         }
 
         //La Barre est pleine
@@ -296,7 +309,7 @@ public class ModificateurDeFrequence : MonoBehaviour
             emetteur.GetComponent<EmetteurType>().asAnAnomalie = false;
             rebindBarObject.SetActive(false);
             rebindBar.valeur = 0;
-            frequenceState = "Rétablie";
+            textIsRepair.SetActive(true);
             StartCoroutine(ChangeFreqState());
         }
     }
@@ -304,7 +317,7 @@ public class ModificateurDeFrequence : MonoBehaviour
     IEnumerator ChangeFreqState()
     {
         yield return new WaitForSeconds(3f);
-        frequenceState = " ";
+        textIsRepair.SetActive(false);
         rebindBarObject.SetActive(true);
     }
 
