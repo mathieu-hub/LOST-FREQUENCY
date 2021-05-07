@@ -302,6 +302,18 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
                 }
             }
 
+            if (useRebindFreq)
+            {
+                if (ModificateurDeFrequence.Instance.rebindingFrequence == true)
+                {
+                    ModificateurDeFrequence.Instance.rebindingFrequence = false;
+                }
+                else if (ModificateurDeFrequence.Instance.rebindingFrequence == false)
+                {
+                    ModificateurDeFrequence.Instance.rebindingFrequence = true;
+                }
+            }
+
             //END OF MY SCRIPT
 
             if (!uiInteractive)

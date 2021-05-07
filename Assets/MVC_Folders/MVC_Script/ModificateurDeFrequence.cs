@@ -8,6 +8,7 @@ public class ModificateurDeFrequence : MonoBehaviour
 {
     public static ModificateurDeFrequence Instance;
     public ChangeFrequence changeFrequence;
+    public RebindBar rebindBar;
 
     [Header("ON / OFF")]
     public bool deviceIsOn = false;
@@ -29,12 +30,17 @@ public class ModificateurDeFrequence : MonoBehaviour
     [Header("ANOMALIE DETECTEUR")]
     public int anomalieSignal; // Variable à changer
     public List<GameObject> anomalieLeds = new List<GameObject>();
-    
+
+    [Header("RÉPARER FRÉQUENCES")]
+    public bool rebindingFrequence = false;
+
     [Space (10)]
     public GameObject recepteur;
     public GameObject emetteur;
+    public List<GameObject> emmetors = new List<GameObject>();
 
     public float distance;
+    public float captedDistance;
     
     [Space(10)]
     public float distanceZone01;
@@ -44,9 +50,9 @@ public class ModificateurDeFrequence : MonoBehaviour
     public float distanceZone05;
        
     [Header("ECRAN")]
-    public GameObject indicateurFrequence;
-    private TextMeshProUGUI textMesh;
+    public GameObject indicateurFrequence;    
     public int detectedFrequence;
+    public string detectedAnomalie;
 
     [Header("MATERIALS REFERENCES")]
     public List<Material> materials = new List<Material>();   
@@ -64,7 +70,10 @@ public class ModificateurDeFrequence : MonoBehaviour
         availableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
         disavailableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[0];
 
-        detectedFrequence = 0;        
+        detectedFrequence = 0;
+
+        rebindBar.max = 100;
+        rebindBar.valeur = 0;
     }
 
     private void Update()
@@ -73,6 +82,7 @@ public class ModificateurDeFrequence : MonoBehaviour
         InterruptorVoyageTf();
         DetectEmetteur();
         AnomalieLeds();
+        RebindFrequence();
         VoyageTf();
     }
 
@@ -114,38 +124,92 @@ public class ModificateurDeFrequence : MonoBehaviour
 
     void DetectEmetteur()
     {
-        distance = Vector3.Distance(recepteur.transform.position, emetteur.transform.position);
+        detectedAnomalie = "Anomalie : Niveau " + anomalieSignal;
 
+        //Capter l'emetteur le plus proche du recepteur
+        captedDistance = Mathf.Infinity;        
+        
+        foreach(GameObject emmetor in emmetors)
+        {
+            distance = Vector3.Distance(emmetor.transform.position, recepteur.transform.position);
 
-        if (distance >= distanceZone01)
+            if(distance < captedDistance)
+            {
+                captedDistance = distance;
+                emetteur = emmetor;
+            }
+        }
+
+        //Detection Feedbacks On Modificateur
+        if (captedDistance >= distanceZone01)
         {
             detectedFrequence = 93;
             anomalieSignal = 0;
         }
-        else if (distance <= distanceZone01 && distance >= distanceZone02)
+        else if (captedDistance <= distanceZone01 && captedDistance >= distanceZone02)
         {
             detectedFrequence = 170;
-            anomalieSignal = 1;
+            
+            if (emetteur.GetComponent<EmetteurType>().asAnAnomalie == true)
+            {
+                anomalieSignal = 1;
+            }
+            else
+            {
+                anomalieSignal = 0;
+            }
         }
-        else if (distance <= distanceZone02 && distance >= distanceZone03)
+        else if (captedDistance <= distanceZone02 && captedDistance >= distanceZone03)
         {
             detectedFrequence = 197;
-            anomalieSignal = 2;
+
+            if (emetteur.GetComponent<EmetteurType>().asAnAnomalie == true)
+            {
+                anomalieSignal = 2;
+            }
+            else
+            {
+                anomalieSignal = 0;
+            }
         }
-        else if (distance <= distanceZone03 && distance >= distanceZone04)
+        else if (captedDistance <= distanceZone03 && captedDistance >= distanceZone04)
         {
             detectedFrequence = 224;
-            anomalieSignal = 3;
+
+            if (emetteur.GetComponent<EmetteurType>().asAnAnomalie == true)
+            {
+                anomalieSignal = 3;
+            }
+            else
+            {
+                anomalieSignal = 0;
+            }
         }
-        else if (distance <= distanceZone04 && distance >= distanceZone05)
+        else if (captedDistance <= distanceZone04 && captedDistance >= distanceZone05)
         {
             detectedFrequence = 267;
-            anomalieSignal = 4;
+
+            if (emetteur.GetComponent<EmetteurType>().asAnAnomalie == true)
+            {
+                anomalieSignal = 4;
+            }
+            else
+            {
+                anomalieSignal = 0;
+            }
         }
-        else if (distance <= distanceZone05)
+        else if (captedDistance <= distanceZone05)
         {
             detectedFrequence = 300;
-            anomalieSignal = 5;
+
+            if (emetteur.GetComponent<EmetteurType>().asAnAnomalie == true)
+            {
+                anomalieSignal = 5;
+            }
+            else
+            {
+                anomalieSignal = 0;
+            }
         }
     }
 
@@ -211,7 +275,21 @@ public class ModificateurDeFrequence : MonoBehaviour
 
     void RebindFrequence()
     {
-        
+        //Conditions pour remplir la barre
+        if(anomalieSignal == 5 && emetteur.GetComponent<EmetteurType>().asAnAnomalie && emetteur.GetComponent<EmetteurType>().emettorRadio)
+        {
+            if (rebindingFrequence) //Appuie sur input
+            {
+                rebindBar.valeur += 5 * Time.deltaTime;
+            }
+        }
+
+        //La Barre est pleine
+        if (rebindBar.valeur == rebindBar.max)
+        {
+            rebindingFrequence = false;
+            emetteur.GetComponent<EmetteurType>().asAnAnomalie = false;
+        }
     }
 
 
@@ -219,7 +297,10 @@ public class ModificateurDeFrequence : MonoBehaviour
     {
         if (deviceIsOn && voyageTfAvailable)
         {
-            availableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            if (anomalieSignal == 5 && emetteur.GetComponent<EmetteurType>().asAnAnomalie && emetteur.GetComponent<EmetteurType>().emmettorTV)
+            {
+                availableLed.GetComponent<ChangeMaterial>().actualMaterial = materials[1];
+            }
         }
         else
         {
