@@ -120,9 +120,9 @@ public class ExamineManager : Singleton<ExamineManager>
     private GameObject objectRaycast;
     private GameObject objectHeld;
 
-    private InteractiveItem firstExamine;
-    private InteractiveItem secondExamine;
-    private InteractiveItem priorityObject;
+    public InteractiveItem firstExamine;
+    public InteractiveItem secondExamine;
+    public InteractiveItem priorityObject;
 
     private Transform oldSecondObjT;
     private Vector3 oldSecondObjPos;
