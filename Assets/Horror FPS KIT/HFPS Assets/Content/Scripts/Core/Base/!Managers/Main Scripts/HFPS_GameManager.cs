@@ -141,6 +141,7 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
     public bool useOnOffKey;
     private bool useVoyageTf;
     private bool useRebindFreq;
+    private bool takingMf;
     private bool takingObject;
 
     private bool greyscale;
@@ -278,7 +279,8 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
             useOnOffKey = crossPlatformInput.GetActionPressedOnce(this, "MfOnOff");
             useVoyageTf = crossPlatformInput.GetActionPressedOnce(this, "MfVoyageTf");
             useRebindFreq = crossPlatformInput.GetActionPressedOnce(this, "MfRebindFreq");
-
+            
+            takingMf = crossPlatformInput.GetActionPressedOnce(this, "MfTaking");
             takingObject = crossPlatformInput.GetActionPressedOnce(this, "TakingObject");
 
             if (useOnOffKey)
@@ -327,7 +329,19 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
 
             if (takingObject)
             {
+                GameManager.Instance.takingObject = true;
+            }
 
+            if (takingMf)
+            {
+                if (GameManager.Instance.takingModificateur == false)
+                {
+                    GameManager.Instance.takingModificateur = true;
+                }
+                else if (GameManager.Instance.takingModificateur == true)
+                {
+                    GameManager.Instance.takingModificateur = false;
+                }                
             }
 
             //END OF MY SCRIPT
@@ -451,7 +465,7 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
         else if (isPressedInv)
         {
             Crosshair.enabled = true;
-            LockPlayerControls(true, true, false, 3, false);
+            LockPlayerControls(true, true, false, 3, false); 
             GetComponent<FloatingIconManager>().SetAllIconsVisible(true);
         }
 
@@ -1025,7 +1039,7 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
     /// <param name="btn2">Use</param>
     /// <param name="btn3">Rotate</param>
     /// <param name="btn4">Show Cursor</param>
-    public void ShowExamineSprites(bool btn1 = true, bool btn2 = true, bool btn3 = true, bool btn4 = true, string PutAwayText = "Reposer", string UseText = "Take")
+    public void ShowExamineSprites(bool btn1 = true, bool btn2 = true, bool btn3 = true, bool btn4 = true, string PutAwayText = "Reposer", string UseText = "Prendre")
     {
         if (btn1) { SetKey(HelpButton1.transform, GrabKey, PutAwayText); } else { HelpButton1.SetActive(false); }
         if (btn2) { SetKey(HelpButton2.transform, UseKey, UseText); } else { HelpButton2.SetActive(false); }
@@ -1056,7 +1070,7 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
     {
         SetKey(HelpButton1.transform, GrabKey, "Reposer");
         SetKey(HelpButton2.transform, RotateKey, "Pivoter");
-        SetKey(HelpButton3.transform, ThrowKey, "Throw");
+        SetKey(HelpButton3.transform, ThrowKey, "Lâcher");
         HelpButton4.SetActive(false);
         DownHelpUI.SetActive(true);
     }

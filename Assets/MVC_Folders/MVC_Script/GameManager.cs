@@ -9,15 +9,18 @@ public class GameManager : MonoBehaviour
     public GameObject takableModificateur;
     public GameObject takingInterface;
     public bool canTake = true;
-    public bool takingModificateur = false;
+    public bool takingObject = false;
 
     public GameObject modificateurDeFréquence;
+    public Animator animTakingMf;
+    public bool takingModificateur = false;
     public bool haveModificateur = false;
     
 
     private void Awake()
     {
         Instance = this;
+        animTakingMf.SetBool("TakeMf", false);
     }
 
     void Start()
@@ -27,7 +30,23 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        OpenCloseMf();
         FirstAct();
+    }
+
+    void OpenCloseMf()
+    {
+        if (haveModificateur)
+        {
+            if (takingModificateur)
+            {
+                animTakingMf.SetBool("TakeMf", true);
+            }
+            else if (!takingModificateur)
+            {
+                animTakingMf.SetBool("TakeMf", false);
+            }
+        }
     }
 
     void FirstAct()
@@ -36,10 +55,13 @@ public class GameManager : MonoBehaviour
         {
             if (takingInterface.activeSelf)
             {
-                if (takingModificateur)
+                if (takingObject)
                 {
+                    takingObject = false;
                     canTake = false;
                     haveModificateur = true;
+                    takingModificateur = true;
+                    Destroy(takableModificateur);
                 }
             }
         }

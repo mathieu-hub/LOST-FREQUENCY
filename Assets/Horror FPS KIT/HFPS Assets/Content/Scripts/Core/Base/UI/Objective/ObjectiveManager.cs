@@ -101,10 +101,10 @@ public class ObjectiveManager : Singleton<ObjectiveManager>
                     }
                 }
             }
-            else
+           /* else
             {
                 ObjectivesUI.SetActive(false);
-            }
+            }*/
         }
         else
         {
