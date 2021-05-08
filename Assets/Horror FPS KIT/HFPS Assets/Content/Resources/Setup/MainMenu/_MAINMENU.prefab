@@ -3391,7 +3391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b7795f1d637a2dc4f8465a36b3130253, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 821291bfe3bef0a4ca1607ab8b84b72f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18594,6 +18594,7 @@ MonoBehaviour:
   debugMode: 1
   inputsLoaded: 0
   inputSuspended: 0
+  keyboardScheme: []
 --- !u!114 &6567529605440481855
 MonoBehaviour:
   m_ObjectHideFlags: 0
