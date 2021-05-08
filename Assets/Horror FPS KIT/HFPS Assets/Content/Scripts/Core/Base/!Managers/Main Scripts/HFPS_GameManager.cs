@@ -141,6 +141,7 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
     public bool useOnOffKey;
     private bool useVoyageTf;
     private bool useRebindFreq;
+    private bool takingObject;
 
     private bool greyscale;
     private bool greyscaleIn = false;
@@ -278,6 +279,8 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
             useVoyageTf = crossPlatformInput.GetActionPressedOnce(this, "MfVoyageTf");
             useRebindFreq = crossPlatformInput.GetActionPressedOnce(this, "MfRebindFreq");
 
+            takingObject = crossPlatformInput.GetActionPressedOnce(this, "TakingObject");
+
             if (useOnOffKey)
             {             
                 if (ModificateurDeFrequence.Instance.deviceIsOn == true)
@@ -320,6 +323,11 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
                     ModificateurDeFrequence.Instance.rebindingFrequence = false;
                 }
                 
+            }
+
+            if (takingObject)
+            {
+
             }
 
             //END OF MY SCRIPT
@@ -1017,23 +1025,23 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
     /// <param name="btn2">Use</param>
     /// <param name="btn3">Rotate</param>
     /// <param name="btn4">Show Cursor</param>
-    public void ShowExamineSprites(bool btn1 = true, bool btn2 = true, bool btn3 = true, bool btn4 = true, string PutAwayText = "Put Away", string UseText = "Take")
+    public void ShowExamineSprites(bool btn1 = true, bool btn2 = true, bool btn3 = true, bool btn4 = true, string PutAwayText = "Reposer", string UseText = "Take")
     {
         if (btn1) { SetKey(HelpButton1.transform, GrabKey, PutAwayText); } else { HelpButton1.SetActive(false); }
         if (btn2) { SetKey(HelpButton2.transform, UseKey, UseText); } else { HelpButton2.SetActive(false); }
         if (btn3) { SetKey(HelpButton3.transform, RotateKey, "Rotate"); } else { HelpButton3.SetActive(false); }
-        if (btn4) { SetKey(HelpButton4.transform, CursorKey, "Show Cursor"); } else { HelpButton4.SetActive(false); }
+        if (btn4) { SetKey(HelpButton4.transform, CursorKey, "Activer Curseur"); } else { HelpButton4.SetActive(false); }
         DownHelpUI.SetActive(true);
     }
 
-    public void ShowPaperExamineSprites(CrossPlatformControl ExamineKey, bool rotate, string ExamineText = "Examine")
+    public void ShowPaperExamineSprites(CrossPlatformControl ExamineKey, bool rotate, string ExamineText = "Examiner")
     {
-        SetKey(HelpButton1.transform, GrabKey, "Put Away");
+        SetKey(HelpButton1.transform, GrabKey, "Reposer");
         SetKey(HelpButton2.transform, ExamineKey, ExamineText);
 
         if (rotate)
         {
-            SetKey(HelpButton3.transform, RotateKey, "Rotate");
+            SetKey(HelpButton3.transform, RotateKey, "Rotation");
         }
         else
         {
@@ -1046,8 +1054,8 @@ public class HFPS_GameManager : Singleton<HFPS_GameManager> {
 
     public void ShowGrabSprites()
     {
-        SetKey(HelpButton1.transform, GrabKey, "Put Away");
-        SetKey(HelpButton2.transform, RotateKey, "Rotate");
+        SetKey(HelpButton1.transform, GrabKey, "Reposer");
+        SetKey(HelpButton2.transform, RotateKey, "Pivoter");
         SetKey(HelpButton3.transform, ThrowKey, "Throw");
         HelpButton4.SetActive(false);
         DownHelpUI.SetActive(true);
