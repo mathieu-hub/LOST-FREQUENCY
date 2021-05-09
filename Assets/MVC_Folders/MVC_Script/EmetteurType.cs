@@ -9,6 +9,9 @@ public class EmetteurType : MonoBehaviour
 
     public bool asAnAnomalie;
 
+    public AK.Wwise.Event soundEvent;
+    public bool launchSound = true;
+
     void Start()
     {
         
@@ -16,6 +19,20 @@ public class EmetteurType : MonoBehaviour
 
     void Update()
     {
-        
+        if (emettorRadio)
+        {
+            if (asAnAnomalie)
+            {
+                if (launchSound)
+                {
+                    launchSound = false;
+                    soundEvent.Post(gameObject);
+                }
+            }
+            else if (!asAnAnomalie)
+            {
+                soundEvent.Stop(gameObject);
+            }
+        }
     }
 }

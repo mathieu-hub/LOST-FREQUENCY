@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{52BC3A88-82A1-4589-AC59-8B6DDD3D1325}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="SFX" ID="{52BC3A88-82A1-4589-AC59-8B6DDD3D1325}" PersistMode="Standalone"/>
+		<WorkUnit Name="SFX" ID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Ambience Light Rain" ID="{5B0562FE-D383-459F-8955-FBA7587C77F8}" ShortID="38871272">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{84D9E778-53E3-4A58-AF46-0CFE0BBE7D8C}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3D6CBD8C-CA32-4C4E-895A-F1C43C79DDA4}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ambience Light Rain" ID="{0853CE0E-7DDA-449A-AB67-8F898B739629}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Ambience Light Rain.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="181449093"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Ambience Light Rain" ID="{0853CE0E-7DDA-449A-AB67-8F898B739629}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

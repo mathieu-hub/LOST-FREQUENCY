@@ -16,5 +16,28 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3474709761">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3636975302" Name="Ambiance_Lightning" ObjectPath="\Events\Ambiance\Ambiance_Lightning" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="181449093" Language="SFX">
+							<ShortName>Ambience Light Rain.wav</ShortName>
+							<Path>SFX\Ambience Light Rain_81238AE1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2025278018" Name="Radio_Record" ObjectPath="\Events\Ambiance\Radio_Record" MaxAttenuation="25.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="989582963" Language="SFX">
+							<ShortName>Radio Recording.wav</ShortName>
+							<Path>SFX\Radio Recording_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

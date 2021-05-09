@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     IEnumerator LaunchCinematic()
     {
         yield return new WaitForSeconds(2f);
+        SoundManager.Instance.ambianceLightning.Post(gameObject);
         darkPannelFade.SetBool("FadeOut", true);
         isAct01 = true;
         RestorePlayerMovement();

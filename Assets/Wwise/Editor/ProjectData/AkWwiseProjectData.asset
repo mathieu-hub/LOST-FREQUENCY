@@ -69,6 +69,36 @@ MonoBehaviour:
     m_lastTime: -8585827012208306615
     List: []
   EventWwu:
+  - PhysicalPath: Events\Ambiance.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Ambiance
+      ObjectType: 12
+      guid: 118352dcc78fa34583173784fac79dcd
+    ParentPath: Events\Ambiance
+    guid: 118352dcc78fa34583173784fac79dcd
+    GuidInternal: 
+    m_lastTime: -8585810377236362945
+    List:
+    - name: Ambiance_Lightning
+      guid: b4f709c65cb7f241ae4661e1ee9ff61a
+      id: 3636975302
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: Ambiance_Lightning
+        ObjectType: 3
+        guid: b4f709c65cb7f241ae4661e1ee9ff61a
+      Path: Events\Ambiance\Ambiance_Lightning
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -139,7 +169,7 @@ MonoBehaviour:
     m_lastTime: -8585827012208286639
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

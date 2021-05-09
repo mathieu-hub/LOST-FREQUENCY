@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5339c6821abc244a3bafb47f50048a, type: 3}
+  m_Name: BB0BACF7-5D37-479A-9DEF-53B7C9E1CD43
+  m_EditorClassIdentifier: 
+  objectName: Radio_Record
+  id: 2025278018
+  guid: BB0BACF7-5D37-479A-9DEF-53B7C9E1CD43

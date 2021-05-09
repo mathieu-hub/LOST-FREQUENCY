@@ -13,7 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID HELICOPTERE = 322307323U;
+        static const AkUniqueID AMBIANCE_LIGHTNING = 3636975302U;
+        static const AkUniqueID RADIO_RECORD = 2025278018U;
     } // namespace EVENTS
 
     namespace BANKS

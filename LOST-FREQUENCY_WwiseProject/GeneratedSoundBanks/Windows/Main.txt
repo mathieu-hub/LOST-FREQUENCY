@@ -1,7 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
-	322307323	helicoptere			\Default Work Unit\helicoptere	
+	2025278018	Radio_Record			\Ambiance\Radio_Record	
+	3636975302	Ambiance_Lightning			\Ambiance\Ambiance_Lightning	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	254896843	Hélicoptère - Déplacement	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Hélicoptère - Déplacement_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Hélicoptère\Hélicoptère - Déplacement		412480
-	838448789	Hélicoptère - Décollage	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Hélicoptère - Décollage_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Hélicoptère\Hélicoptère - Décollage		306496
+	181449093	Ambience Light Rain	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Ambience Light Rain_81238AE1.wem		\Actor-Mixer Hierarchy\SFX\Ambience Light Rain		17017408
+	989582963	Radio Recording	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Radio Recording_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Radio Recording		9507568
 

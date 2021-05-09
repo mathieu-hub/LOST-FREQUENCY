@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Ambiance" ID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Ambiance_Lightning" ID="{C609F7B4-B75C-41F2-AE46-61E1EE9FF61A}">
+					<ChildrenList>
+						<Action Name="" ID="{85150C65-5A4D-412B-9706-443215F262A0}" ShortID="531409752">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience Light Rain" ID="{5B0562FE-D383-459F-8955-FBA7587C77F8}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
