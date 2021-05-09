@@ -10,7 +10,10 @@ public class GameManager : MonoBehaviour
     public Animator animTakingMf;
     public bool takingModificateur = false;
     public bool haveModificateur = false;
-    
+
+    [Header("LAUNCH CINEMATIC")]
+    public Animator darkPannelFade;
+
     [Header ("ACT 01")]     
     public GameObject takableModificateur;
     public GameObject takingInterface;
@@ -18,7 +21,7 @@ public class GameManager : MonoBehaviour
     public bool takingObject = false;
           
     [Header("ACT BOOLEAN")]
-    public bool isAct01;
+    public bool isAct01 = false;
     
 
     private void Awake()
@@ -29,7 +32,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+        BlockPlayerMovement();
+        StartCoroutine(LaunchCinematic());
+    }
+
+    IEnumerator LaunchCinematic()
+    {
+        yield return new WaitForSeconds(2f);
+        darkPannelFade.SetBool("FadeOut", true);
+        isAct01 = true;
+        RestorePlayerMovement();
     }
 
     void Update()
