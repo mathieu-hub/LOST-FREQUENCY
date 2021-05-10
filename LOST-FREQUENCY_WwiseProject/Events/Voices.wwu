@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{845B4040-2DC4-47D2-BF21-387B28166B43}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Voices" ID="{845B4040-2DC4-47D2-BF21-387B28166B43}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Aron01" ID="{3ABA22FF-22E2-4476-AD53-7FCF3CA95E0F}">
+					<ChildrenList>
+						<Action Name="" ID="{75C48885-200C-462C-B121-7D121B1B9D62}" ShortID="829602499">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Aron 01" ID="{68BA05A7-7911-45FC-BAE8-46BD6E2DF1F7}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Aron02" ID="{8D3DAF84-8EE6-4376-8752-E6C0BA608C7B}">
+					<ChildrenList>
+						<Action Name="" ID="{0DB00D38-E5D5-496D-B854-069A41403F71}" ShortID="906939003">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Aron 02" ID="{7A16AA6C-2BF0-4FCB-8CFF-31A6D6276E22}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Aron04" ID="{0BF1B970-BF23-4FBA-94E9-7A8C20F45D01}">
+					<ChildrenList>
+						<Action Name="" ID="{E66DA999-AC7C-4157-94D2-8FA0B06EBECF}" ShortID="1067046437">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Aron 04" ID="{9FDE57D1-C319-4FD8-9E73-BDE6B70A64FC}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Aron05" ID="{549955D8-10B7-4B6C-B334-0341D631BC04}">
+					<ChildrenList>
+						<Action Name="" ID="{A95774F4-77A6-4FA9-AD83-4EFFC862CBF9}" ShortID="187084200">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Aron 05" ID="{AEB83432-5591-4168-9BB2-FC178C7763C6}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Aron06" ID="{01D723CB-30B1-4616-BFAD-F96A841A5F57}">
+					<ChildrenList>
+						<Action Name="" ID="{A5BB6152-4FCD-4B90-AC30-1C2E995971CF}" ShortID="602893607">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Aron 06" ID="{2EDD08E1-9579-4B94-9ACB-98BEFBF03337}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Aron07" ID="{3ADC2608-ADCC-4473-BEDD-D07EF77EB544}">
+					<ChildrenList>
+						<Action Name="" ID="{8B855C87-74EA-4012-9DBC-B5C70AD4A9C8}" ShortID="534847734">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Aron 07" ID="{9A21FFC4-03E1-4A90-BFFF-70755A06B566}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Terence01" ID="{1C79F107-8A10-4E0B-B195-E56035B5F53F}">
+					<ChildrenList>
+						<Action Name="" ID="{80490B51-C852-4D2F-972F-3842AD3181D9}" ShortID="655125921">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Terence 01" ID="{FABC4D27-5E1F-4CF5-8AF9-A9C2A43E3F96}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Terence02" ID="{DB10B960-E77B-4D5C-A0F1-66139939E599}">
+					<ChildrenList>
+						<Action Name="" ID="{376206B6-6F29-45E4-A392-D605C32BF84E}" ShortID="987350108">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Terence 02" ID="{2C10DE33-8ABA-4EB2-B82E-DF1CF701B51A}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Terence03" ID="{554E9A7F-BCB8-4EEF-BFC1-E4E0233B71C7}">
+					<ChildrenList>
+						<Action Name="" ID="{B58A4FB8-486C-4DB7-B478-4283A04D2D53}" ShortID="1050197791">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Terence 03" ID="{447CEE78-4C1E-45E9-A194-3462573202D9}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Terence04" ID="{3D00AE4F-EDB7-4A7A-B957-EA7578533515}">
+					<ChildrenList>
+						<Action Name="" ID="{D42D62D7-17FD-46B8-A30F-CA031EBECFB4}" ShortID="1009045096">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Terence 04" ID="{72459A6D-9668-4FA3-B7DE-D8F691E6AFBD}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Terence05" ID="{0FDA1279-548D-4AB2-94C4-A2A93AE59EFD}">
+					<ChildrenList>
+						<Action Name="" ID="{EE25E26F-313B-4544-BDA1-D5EFF893C6B5}" ShortID="104359816">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Terence 05" ID="{3608D730-68C0-4802-9864-75BE0C9790E3}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Terence06" ID="{2E427958-5C75-4501-857A-41DD712677D2}">
+					<ChildrenList>
+						<Action Name="" ID="{01E2FB2D-8C9F-45D2-8801-6E525173C609}" ShortID="648352682">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Terence 06" ID="{D6622BA6-D379-46D8-801A-2FD08B732FD1}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Terence07" ID="{4D114385-29D5-4310-9D81-23CBC5A2BF3F}">
+					<ChildrenList>
+						<Action Name="" ID="{138BFB29-0AAF-4158-84A1-13EDEE1CF2AE}" ShortID="475455470">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Terence 07" ID="{863A5F7F-61AC-401C-A8D9-E45FC909169A}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Aron03" ID="{910E6CB8-8BCA-45D9-A833-9CD95D117DCF}">
+					<ChildrenList>
+						<Action Name="" ID="{1D955907-1409-4514-9EB1-2CCC4B70A0EC}" ShortID="943309039">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Aron 03" ID="{C5A0DA37-57E1-4D7F-B336-E07D49C77586}" WorkUnitID="{612C0C47-8954-4C85-9A38-80BA106F122E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

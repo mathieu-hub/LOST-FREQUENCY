@@ -47,6 +47,174 @@
 						<ActiveSource Name="Ambience Light Rain" ID="{0853CE0E-7DDA-449A-AB67-8F898B739629}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Radio Recording" ID="{6393EB26-BB4C-43C2-868B-9B5C43766088}" ShortID="283049895">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B3530240-D12B-45FC-AE86-013CE2522A6F}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="177"/>
+											<Property Name="Min" Type="Real64" Value="-76"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Radio" ID="{8CE1EC8B-6EC3-4E3A-904C-EB2273849DFC}" WorkUnitID="{927C66F2-873F-47AE-B537-A9806DC7840E}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Radio Recording" ID="{AC0A3B57-7050-4E5B-A4F7-BE4756A512BF}">
+							<Language>SFX</Language>
+							<AudioFile>Radio Recording.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="989582963"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Radio Recording" ID="{AC0A3B57-7050-4E5B-A4F7-BE4756A512BF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Anomalie frequence radio" ID="{39099F4F-F107-44D6-9B34-7742D5F12E3E}" ShortID="390369578">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Anomalie frequence radio" ID="{9388114F-0DCD-4790-BE80-434798C5EB36}">
+							<Language>SFX</Language>
+							<AudioFile>Anomalie frequence radio.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="839784501"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Anomalie frequence radio" ID="{9388114F-0DCD-4790-BE80-434798C5EB36}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CloseThunder" ID="{6F148E18-6D0F-462F-B95D-401C17BFA5FF}" ShortID="48635226">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CloseThunder" ID="{982D3D93-A15B-45B7-8033-C7FCD7D4C0A6}">
+							<Language>SFX</Language>
+							<AudioFile>CloseThunder01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="526778638"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="CloseThunder" ID="{982D3D93-A15B-45B7-8033-C7FCD7D4C0A6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Horror Loop Salvation" ID="{EF9472D9-3655-4D66-9370-031A40E84ACF}" ShortID="777816985">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Horror Loop Salvation" ID="{F21642EA-66EC-427C-A6C8-3EFA772EA013}">
+							<Language>SFX</Language>
+							<AudioFile>Horror Loop Salvation.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="24720530"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Horror Loop Salvation" ID="{F21642EA-66EC-427C-A6C8-3EFA772EA013}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="VhsTapeGlitch" ID="{917ABDC5-1DC1-4F02-BC22-A9722E40F3CE}" ShortID="537900036">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="VhsTapeGlitch" ID="{2CFE516A-2226-4867-8236-30B8CB251CF3}">
+							<Language>SFX</Language>
+							<AudioFile>VhsTapeGlitch.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="405580536"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="VhsTapeGlitch" ID="{2CFE516A-2226-4867-8236-30B8CB251CF3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="scifi_stinger_01" ID="{1212B84D-D2DB-479C-BF5D-74A3E779058C}" ShortID="77533332">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="scifi_stinger_01" ID="{2BFDD8A2-6C6B-4CC0-A1FA-712DBA132FBD}">
+							<Language>SFX</Language>
+							<AudioFile>scifi_stinger_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="63878565"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="scifi_stinger_01" ID="{2BFDD8A2-6C6B-4CC0-A1FA-712DBA132FBD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

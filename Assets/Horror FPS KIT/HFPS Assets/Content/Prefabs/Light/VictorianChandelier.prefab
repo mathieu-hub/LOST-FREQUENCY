@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4403636448682200}
   - component: {fileID: 108389075919634802}
+  - component: {fileID: 8600870895147088213}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -90,8 +91,25 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!111 &8600870895147088213
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503096068186176}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 058c4cd2d1c5cb547827f6fc67887855, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 058c4cd2d1c5cb547827f6fc67887855, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1813732461419620
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +167,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -174,6 +193,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1019700614
 MonoBehaviour:
   m_ObjectHideFlags: 0

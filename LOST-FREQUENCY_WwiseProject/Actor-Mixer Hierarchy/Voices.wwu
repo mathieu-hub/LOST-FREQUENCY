@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{612C0C47-8954-4C85-9A38-80BA106F122E}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Voices" ID="{612C0C47-8954-4C85-9A38-80BA106F122E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Aron 01" ID="{68BA05A7-7911-45FC-BAE8-46BD6E2DF1F7}" ShortID="713416086">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Aron 01" ID="{CF3A68FE-D6C4-4CF5-8149-87721561533F}">
+							<Language>SFX</Language>
+							<AudioFile>Aron 01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="335107918"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Aron 01" ID="{CF3A68FE-D6C4-4CF5-8149-87721561533F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Aron 02" ID="{7A16AA6C-2BF0-4FCB-8CFF-31A6D6276E22}" ShortID="1032122872">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Aron 02" ID="{D59DB612-1EC1-4449-AC8D-859864460007}">
+							<Language>SFX</Language>
+							<AudioFile>Aron 02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="291777432"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Aron 02" ID="{D59DB612-1EC1-4449-AC8D-859864460007}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Aron 04" ID="{9FDE57D1-C319-4FD8-9E73-BDE6B70A64FC}" ShortID="570503057">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Aron 04" ID="{35C8A43F-EC89-4E12-B647-20957E30F973}">
+							<Language>SFX</Language>
+							<AudioFile>Aron 04.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="884776928"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Aron 04" ID="{35C8A43F-EC89-4E12-B647-20957E30F973}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Aron 05" ID="{AEB83432-5591-4168-9BB2-FC178C7763C6}" ShortID="825859855">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Aron 05" ID="{C660E8D3-C324-4AA6-B110-50DEC48EB567}">
+							<Language>SFX</Language>
+							<AudioFile>Aron 05.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="344873484"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Aron 05" ID="{C660E8D3-C324-4AA6-B110-50DEC48EB567}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Aron 06" ID="{2EDD08E1-9579-4B94-9ACB-98BEFBF03337}" ShortID="993405787">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Aron 06" ID="{B0FA3669-D610-456B-8D59-193E266BA4A3}">
+							<Language>SFX</Language>
+							<AudioFile>Aron 06.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="12566807"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Aron 06" ID="{B0FA3669-D610-456B-8D59-193E266BA4A3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Aron 07" ID="{9A21FFC4-03E1-4A90-BFFF-70755A06B566}" ShortID="304107594">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Aron 07" ID="{34D7210F-68E3-47EB-A85F-69DAA4B1462A}">
+							<Language>SFX</Language>
+							<AudioFile>Aron 07.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="559831516"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Aron 07" ID="{34D7210F-68E3-47EB-A85F-69DAA4B1462A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Terence 01" ID="{FABC4D27-5E1F-4CF5-8AF9-A9C2A43E3F96}" ShortID="262666355">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>50</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Terence 01" ID="{31D91809-DFD3-4BFE-97EE-056CD599C4F2}">
+							<Language>SFX</Language>
+							<AudioFile>Terence 01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="726262044"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Terence 01" ID="{31D91809-DFD3-4BFE-97EE-056CD599C4F2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Terence 02" ID="{2C10DE33-8ABA-4EB2-B82E-DF1CF701B51A}" ShortID="278403425">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Terence 02" ID="{680672B3-7A70-40EF-81C0-BCF9E90E92CD}">
+							<Language>SFX</Language>
+							<AudioFile>Terence 02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="260438736"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Terence 02" ID="{680672B3-7A70-40EF-81C0-BCF9E90E92CD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Terence 03" ID="{447CEE78-4C1E-45E9-A194-3462573202D9}" ShortID="881822106">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Terence 03" ID="{D7DAD547-8894-4F84-A205-576659B1BF4C}">
+							<Language>SFX</Language>
+							<AudioFile>Terence 03.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="648699640"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Terence 03" ID="{D7DAD547-8894-4F84-A205-576659B1BF4C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Terence 04" ID="{72459A6D-9668-4FA3-B7DE-D8F691E6AFBD}" ShortID="637316958">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Terence 04" ID="{BD4FC0CA-5E1D-4C15-B6E5-164AD6D2183A}">
+							<Language>SFX</Language>
+							<AudioFile>Terence 04.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1069327020"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Terence 04" ID="{BD4FC0CA-5E1D-4C15-B6E5-164AD6D2183A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Terence 05" ID="{3608D730-68C0-4802-9864-75BE0C9790E3}" ShortID="1022024737">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Terence 05" ID="{9C2F1F2F-75EA-4F6E-8F02-0AF32AD0D0A7}">
+							<Language>SFX</Language>
+							<AudioFile>Terence 05.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="553240173"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Terence 05" ID="{9C2F1F2F-75EA-4F6E-8F02-0AF32AD0D0A7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Terence 06" ID="{D6622BA6-D379-46D8-801A-2FD08B732FD1}" ShortID="1057366041">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Terence 06" ID="{AC4CAD58-EC53-4981-8AB9-8D7812F3827E}">
+							<Language>SFX</Language>
+							<AudioFile>Terence 06.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="559536053"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Terence 06" ID="{AC4CAD58-EC53-4981-8AB9-8D7812F3827E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Terence 07" ID="{863A5F7F-61AC-401C-A8D9-E45FC909169A}" ShortID="535161168">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Terence 07" ID="{87D84FB9-61E2-4E12-BE71-3C479F70AA4A}">
+							<Language>SFX</Language>
+							<AudioFile>Terence 07.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="806439413"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Terence 07" ID="{87D84FB9-61E2-4E12-BE71-3C479F70AA4A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Aron 03" ID="{C5A0DA37-57E1-4D7F-B336-E07D49C77586}" ShortID="480169174">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Aron 03" ID="{30D107FD-E113-42E1-8BE5-B79D9600F3F3}">
+							<Language>SFX</Language>
+							<AudioFile>Aron 03.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="904669337"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Aron 03" ID="{30D107FD-E113-42E1-8BE5-B79D9600F3F3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

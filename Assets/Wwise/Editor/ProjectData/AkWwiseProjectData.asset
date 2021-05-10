@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 436d35b47988b0419118b1f3f85778dc
     GuidInternal: 
-    m_lastTime: -8585827012208306615
-    List: []
+    m_lastTime: -8585809410947212524
+    List:
+    - name: Main
+      guid: 18e12f42c725e24493b9f4d81388d21d
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 436d35b47988b0419118b1f3f85778dc
+      - ElementName: Main
+        ObjectType: 7
+        guid: 18e12f42c725e24493b9f4d81388d21d
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Ambiance.wwu
     PathAndIcons:
@@ -80,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Ambiance
     guid: 118352dcc78fa34583173784fac79dcd
     GuidInternal: 
-    m_lastTime: -8585810377236362945
+    m_lastTime: -8585809410947262601
     List:
     - name: Ambiance_Lightning
       guid: b4f709c65cb7f241ae4661e1ee9ff61a
@@ -99,6 +113,74 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: CloseThunder
+      guid: 390afe0ff0618943bf7d56e62b8f33d2
+      id: 2176736267
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: CloseThunder
+        ObjectType: 3
+        guid: 390afe0ff0618943bf7d56e62b8f33d2
+      Path: Events\Ambiance\CloseThunder
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: HorrorLoopSalvation
+      guid: 53f457ab559afc4eb2fe9f663350f2d8
+      id: 2657428528
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: HorrorLoopSalvation
+        ObjectType: 3
+        guid: 53f457ab559afc4eb2fe9f663350f2d8
+      Path: Events\Ambiance\HorrorLoopSalvation
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Radio_Record
+      guid: f7ac0bbb375d9a479def53b7c9e1cd43
+      id: 2025278018
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: Radio_Record
+        ObjectType: 3
+        guid: f7ac0bbb375d9a479def53b7c9e1cd43
+      Path: Events\Ambiance\Radio_Record
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VhsTape
+      guid: fd57b20409c93240a7c36288d061d198
+      id: 3673448642
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: VhsTape
+        ObjectType: 3
+        guid: fd57b20409c93240a7c36288d061d198
+      Path: Events\Ambiance\VhsTape
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -112,6 +194,304 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585827012209082444
     List: []
+  - PhysicalPath: Events\SFX.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: SFX
+      ObjectType: 12
+      guid: 2ca7705882c0b64abe75fa4996fb1873
+    ParentPath: Events\SFX
+    guid: 2ca7705882c0b64abe75fa4996fb1873
+    GuidInternal: 
+    m_lastTime: -8585809410947162857
+    List:
+    - name: AnomalieRadio
+      guid: 2d42a46a0111d34787e5a6eab4b54730
+      id: 3215794742
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 2ca7705882c0b64abe75fa4996fb1873
+      - ElementName: AnomalieRadio
+        ObjectType: 3
+        guid: 2d42a46a0111d34787e5a6eab4b54730
+      Path: Events\SFX\AnomalieRadio
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SciFiStinger
+      guid: 2b68f20e647a33438835ec16094fbc18
+      id: 1130757099
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 2ca7705882c0b64abe75fa4996fb1873
+      - ElementName: SciFiStinger
+        ObjectType: 3
+        guid: 2b68f20e647a33438835ec16094fbc18
+      Path: Events\SFX\SciFiStinger
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Voices.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Voices
+      ObjectType: 12
+      guid: 40405b84c42dd247bf21387b28166b43
+    ParentPath: Events\Voices
+    guid: 40405b84c42dd247bf21387b28166b43
+    GuidInternal: 
+    m_lastTime: -8585809426659348589
+    List:
+    - name: Aron01
+      guid: ff22ba3ae2227644ad537fcf3ca95e0f
+      id: 232480594
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Aron01
+        ObjectType: 3
+        guid: ff22ba3ae2227644ad537fcf3ca95e0f
+      Path: Events\Voices\Aron01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Aron02
+      guid: 84af3d8de68e76438752e6c0ba608c7b
+      id: 232480593
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Aron02
+        ObjectType: 3
+        guid: 84af3d8de68e76438752e6c0ba608c7b
+      Path: Events\Voices\Aron02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Aron03
+      guid: b86c0e91ca8bd945a8339cd95d117dcf
+      id: 232480592
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Aron03
+        ObjectType: 3
+        guid: b86c0e91ca8bd945a8339cd95d117dcf
+      Path: Events\Voices\Aron03
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Aron04
+      guid: 70b9f10b23bfba4f94e97a8c20f45d01
+      id: 232480599
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Aron04
+        ObjectType: 3
+        guid: 70b9f10b23bfba4f94e97a8c20f45d01
+      Path: Events\Voices\Aron04
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Aron05
+      guid: d8559954b7106c4bb3340341d631bc04
+      id: 232480598
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Aron05
+        ObjectType: 3
+        guid: d8559954b7106c4bb3340341d631bc04
+      Path: Events\Voices\Aron05
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Aron06
+      guid: cb23d701b1301646bfadf96a841a5f57
+      id: 232480597
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Aron06
+        ObjectType: 3
+        guid: cb23d701b1301646bfadf96a841a5f57
+      Path: Events\Voices\Aron06
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Aron07
+      guid: 0826dc3accad7344beddd07ef77eb544
+      id: 232480596
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Aron07
+        ObjectType: 3
+        guid: 0826dc3accad7344beddd07ef77eb544
+      Path: Events\Voices\Aron07
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence01
+      guid: 07f1791c108a0b4eb195e56035b5f53f
+      id: 1852782738
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence01
+        ObjectType: 3
+        guid: 07f1791c108a0b4eb195e56035b5f53f
+      Path: Events\Voices\Terence01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence02
+      guid: 60b910db7be75c4da0f166139939e599
+      id: 1852782737
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence02
+        ObjectType: 3
+        guid: 60b910db7be75c4da0f166139939e599
+      Path: Events\Voices\Terence02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence03
+      guid: 7f9a4e55b8bcef4ebfc1e4e0233b71c7
+      id: 1852782736
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence03
+        ObjectType: 3
+        guid: 7f9a4e55b8bcef4ebfc1e4e0233b71c7
+      Path: Events\Voices\Terence03
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence04
+      guid: 4fae003db7ed7a4ab957ea7578533515
+      id: 1852782743
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence04
+        ObjectType: 3
+        guid: 4fae003db7ed7a4ab957ea7578533515
+      Path: Events\Voices\Terence04
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence05
+      guid: 7912da0f8d54b24a94c4a2a93ae59efd
+      id: 1852782742
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence05
+        ObjectType: 3
+        guid: 7912da0f8d54b24a94c4a2a93ae59efd
+      Path: Events\Voices\Terence05
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence06
+      guid: 5879422e755c0145857a41dd712677d2
+      id: 1852782741
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence06
+        ObjectType: 3
+        guid: 5879422e755c0145857a41dd712677d2
+      Path: Events\Voices\Terence06
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence07
+      guid: 8543114dd52910439d8123cbc5a2bf3f
+      id: 1852782740
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence07
+        ObjectType: 3
+        guid: 8543114dd52910439d8123cbc5a2bf3f
+      Path: Events\Voices\Terence07
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -169,7 +549,7 @@ MonoBehaviour:
     m_lastTime: -8585827012208286639
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000b000000
+  ExpandedWaapiItemIds: 0100000005000000060000000a0000000b0000000c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

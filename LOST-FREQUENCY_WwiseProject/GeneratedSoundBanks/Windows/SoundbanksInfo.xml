@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3474709761">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4208246868">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -29,6 +29,79 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3215794742" Name="AnomalieRadio" ObjectPath="\Events\SFX\AnomalieRadio" DurationType="OneShot" DurationMin="11.292653" DurationMax="11.292653">
+					<IncludedMemoryFiles>
+						<File Id="839784501" Language="SFX">
+							<ShortName>Anomalie frequence radio.wav</ShortName>
+							<Path>SFX\Anomalie frequence radio_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="232480594" Name="Aron01" ObjectPath="\Events\Voices\Aron01" DurationType="OneShot" DurationMin="3.701678" DurationMax="3.701678">
+					<IncludedMemoryFiles>
+						<File Id="335107918" Language="SFX">
+							<ShortName>Aron 01.wav</ShortName>
+							<Path>SFX\Aron 01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="232480593" Name="Aron02" ObjectPath="\Events\Voices\Aron02" DurationType="OneShot" DurationMin="0.584467" DurationMax="0.584467">
+					<IncludedMemoryFiles>
+						<File Id="291777432" Language="SFX">
+							<ShortName>Aron 02.wav</ShortName>
+							<Path>SFX\Aron 02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="232480592" Name="Aron03" ObjectPath="\Events\Voices\Aron03" DurationType="OneShot" DurationMin="10.142948" DurationMax="10.142948">
+					<IncludedMemoryFiles>
+						<File Id="904669337" Language="SFX">
+							<ShortName>Aron 03.wav</ShortName>
+							<Path>SFX\Aron 03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="232480599" Name="Aron04" ObjectPath="\Events\Voices\Aron04" DurationType="OneShot" DurationMin="1.022834" DurationMax="1.022834">
+					<IncludedMemoryFiles>
+						<File Id="884776928" Language="SFX">
+							<ShortName>Aron 04.wav</ShortName>
+							<Path>SFX\Aron 04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="232480598" Name="Aron05" ObjectPath="\Events\Voices\Aron05" DurationType="OneShot" DurationMin="7.286463" DurationMax="7.286463">
+					<IncludedMemoryFiles>
+						<File Id="344873484" Language="SFX">
+							<ShortName>Aron 05.wav</ShortName>
+							<Path>SFX\Aron 05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="232480597" Name="Aron06" ObjectPath="\Events\Voices\Aron06" DurationType="OneShot" DurationMin="4.519932" DurationMax="4.519932">
+					<IncludedMemoryFiles>
+						<File Id="12566807" Language="SFX">
+							<ShortName>Aron 06.wav</ShortName>
+							<Path>SFX\Aron 06_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="232480596" Name="Aron07" ObjectPath="\Events\Voices\Aron07" DurationType="OneShot" DurationMin="1.919025" DurationMax="1.919025">
+					<IncludedMemoryFiles>
+						<File Id="559831516" Language="SFX">
+							<ShortName>Aron 07.wav</ShortName>
+							<Path>SFX\Aron 07_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2176736267" Name="CloseThunder" ObjectPath="\Events\Ambiance\CloseThunder" DurationType="OneShot" DurationMin="14.349932" DurationMax="14.349932">
+					<IncludedMemoryFiles>
+						<File Id="526778638" Language="SFX">
+							<ShortName>CloseThunder01.wav</ShortName>
+							<Path>SFX\CloseThunder01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2657428528" Name="HorrorLoopSalvation" ObjectPath="\Events\Ambiance\HorrorLoopSalvation" DurationType="Infinite"/>
 				<Event Id="2025278018" Name="Radio_Record" ObjectPath="\Events\Ambiance\Radio_Record" MaxAttenuation="25.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="989582963" Language="SFX">
@@ -37,7 +110,85 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1130757099" Name="SciFiStinger" ObjectPath="\Events\SFX\SciFiStinger" DurationType="OneShot" DurationMin="8.033719" DurationMax="8.033719">
+					<IncludedMemoryFiles>
+						<File Id="63878565" Language="SFX">
+							<ShortName>scifi_stinger_01.wav</ShortName>
+							<Path>SFX\scifi_stinger_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1852782738" Name="Terence01" ObjectPath="\Events\Voices\Terence01" DurationType="OneShot" DurationMin="10.656417" DurationMax="10.656417">
+					<IncludedMemoryFiles>
+						<File Id="726262044" Language="SFX">
+							<ShortName>Terence 01.wav</ShortName>
+							<Path>SFX\Terence 01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1852782737" Name="Terence02" ObjectPath="\Events\Voices\Terence02" DurationType="OneShot" DurationMin="10.833250" DurationMax="10.833250">
+					<IncludedMemoryFiles>
+						<File Id="260438736" Language="SFX">
+							<ShortName>Terence 02.wav</ShortName>
+							<Path>SFX\Terence 02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1852782736" Name="Terence03" ObjectPath="\Events\Voices\Terence03" DurationType="OneShot" DurationMin="3.367875" DurationMax="3.367875">
+					<IncludedMemoryFiles>
+						<File Id="648699640" Language="SFX">
+							<ShortName>Terence 03.wav</ShortName>
+							<Path>SFX\Terence 03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1852782743" Name="Terence04" ObjectPath="\Events\Voices\Terence04" DurationType="OneShot" DurationMin="4.409313" DurationMax="4.409313">
+					<IncludedMemoryFiles>
+						<File Id="1069327020" Language="SFX">
+							<ShortName>Terence 04.wav</ShortName>
+							<Path>SFX\Terence 04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1852782742" Name="Terence05" ObjectPath="\Events\Voices\Terence05" DurationType="OneShot" DurationMin="5.401146" DurationMax="5.401146">
+					<IncludedMemoryFiles>
+						<File Id="553240173" Language="SFX">
+							<ShortName>Terence 05.wav</ShortName>
+							<Path>SFX\Terence 05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1852782741" Name="Terence06" ObjectPath="\Events\Voices\Terence06" DurationType="OneShot" DurationMin="7.033854" DurationMax="7.033854">
+					<IncludedMemoryFiles>
+						<File Id="559536053" Language="SFX">
+							<ShortName>Terence 06.wav</ShortName>
+							<Path>SFX\Terence 06_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1852782740" Name="Terence07" ObjectPath="\Events\Voices\Terence07" DurationType="OneShot" DurationMin="10.033334" DurationMax="10.033334">
+					<IncludedMemoryFiles>
+						<File Id="806439413" Language="SFX">
+							<ShortName>Terence 07.wav</ShortName>
+							<Path>SFX\Terence 07_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3673448642" Name="VhsTape" ObjectPath="\Events\Ambiance\VhsTape" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="405580536" Language="SFX">
+							<ShortName>VhsTapeGlitch.wav</ShortName>
+							<Path>SFX\VhsTapeGlitch_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="24720530" Language="SFX">
+					<ShortName>Horror Loop Salvation.wav</ShortName>
+					<Path>SFX\Horror Loop Salvation_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

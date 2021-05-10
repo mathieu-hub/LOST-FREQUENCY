@@ -8,6 +8,11 @@ public class SoundManager : MonoBehaviour
 
     [Header("AMBIANCES")]
     public AK.Wwise.Event ambianceLightning;
+    public AK.Wwise.Event anomalieRadio;
+    public AK.Wwise.Event CloseThunder;
+    public AK.Wwise.Event horrorLoopSalvation;
+    public AK.Wwise.Event vhsTape;
+
 
     [Header("TERENCE DIALOGUES")]
     public AK.Wwise.Event Terence01;
@@ -26,6 +31,10 @@ public class SoundManager : MonoBehaviour
     public AK.Wwise.Event Aron05;
     public AK.Wwise.Event Aron06;
     public AK.Wwise.Event Aron07;
+
+    [Header("SFX")]
+    public AK.Wwise.Event sciFiStinger;
+
 
 
     void Awake()

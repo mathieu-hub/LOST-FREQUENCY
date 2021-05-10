@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="SFX" ID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="AnomalieRadio" ID="{6AA4422D-1101-47D3-87E5-A6EAB4B54730}">
+					<ChildrenList>
+						<Action Name="" ID="{B453EA95-035D-4412-8192-482CC6AE9054}" ShortID="452175696">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Anomalie frequence radio" ID="{39099F4F-F107-44D6-9B34-7742D5F12E3E}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SciFiStinger" ID="{0EF2682B-7A64-4333-8835-EC16094FBC18}">
+					<ChildrenList>
+						<Action Name="" ID="{508EE5C7-2EF3-4BF7-AA0C-04416AE3219A}" ShortID="448794330">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scifi_stinger_01" ID="{1212B84D-D2DB-479C-BF5D-74A3E779058C}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

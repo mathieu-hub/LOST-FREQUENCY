@@ -335,6 +335,17 @@ public class ModificateurDeFrequence : MonoBehaviour
         rebindBarObject.SetActive(true);
     }
 
+    public void Teleportation(Transform teleportpoint)
+    {
+        if (emetteur.GetComponent<EmetteurType>().emmettorTV && emetteur.GetComponent<EmetteurType>().canTeleport)
+        {
+            if (distance <= 1)
+            {
+                GameManager.Instance.playerEntity.transform.position = teleportpoint.position;
+                GameManager.Instance.isTeleport = true;
+            }
+        }
+    }
 
     void VoyageTf()
     {

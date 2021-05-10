@@ -1,8 +1,46 @@
 Event	ID	Name			Wwise Object Path	Notes
+	232480592	Aron03			\Voices\Aron03	
+	232480593	Aron02			\Voices\Aron02	
+	232480594	Aron01			\Voices\Aron01	
+	232480596	Aron07			\Voices\Aron07	
+	232480597	Aron06			\Voices\Aron06	
+	232480598	Aron05			\Voices\Aron05	
+	232480599	Aron04			\Voices\Aron04	
+	1130757099	SciFiStinger			\SFX\SciFiStinger	
+	1852782736	Terence03			\Voices\Terence03	
+	1852782737	Terence02			\Voices\Terence02	
+	1852782738	Terence01			\Voices\Terence01	
+	1852782740	Terence07			\Voices\Terence07	
+	1852782741	Terence06			\Voices\Terence06	
+	1852782742	Terence05			\Voices\Terence05	
+	1852782743	Terence04			\Voices\Terence04	
 	2025278018	Radio_Record			\Ambiance\Radio_Record	
+	2176736267	CloseThunder			\Ambiance\CloseThunder	
+	2657428528	HorrorLoopSalvation			\Ambiance\HorrorLoopSalvation	
+	3215794742	AnomalieRadio			\SFX\AnomalieRadio	
 	3636975302	Ambiance_Lightning			\Ambiance\Ambiance_Lightning	
+	3673448642	VhsTape			\Ambiance\VhsTape	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	12566807	Aron 06	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Aron 06_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Aron 06		797380
+	24720530	Horror Loop Salvation	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Horror Loop Salvation_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Horror Loop Salvation		8216128
+	63878565	scifi_stinger_01	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\scifi_stinger_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\scifi_stinger_01		1417212
 	181449093	Ambience Light Rain	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Ambience Light Rain_81238AE1.wem		\Actor-Mixer Hierarchy\SFX\Ambience Light Rain		17017408
+	260438736	Terence 02	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Terence 02_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Terence 02		2080048
+	291777432	Aron 02	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Aron 02_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Aron 02		103164
+	335107918	Aron 01	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Aron 01_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Aron 01		653040
+	344873484	Aron 05	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Aron 05_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Aron 05		1285396
+	405580536	VhsTapeGlitch	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\VhsTapeGlitch_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\VhsTapeGlitch		4323048
+	526778638	CloseThunder	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\CloseThunder01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\CloseThunder		1265728
+	553240173	Terence 05	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Terence 05_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Terence 05		1037084
+	559536053	Terence 06	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Terence 06_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Terence 06		1350564
+	559831516	Aron 07	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Aron 07_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Aron 07		338580
+	648699640	Terence 03	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Terence 03_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Terence 03		646696
+	726262044	Terence 01	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Terence 01_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Terence 01		2046096
+	806439413	Terence 07	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Terence 07_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Terence 07		1926464
+	839784501	Anomalie frequence radio	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Anomalie frequence radio_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Anomalie frequence radio		1992088
+	884776928	Aron 04	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Aron 04_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Aron 04		180492
+	904669337	Aron 03	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Aron 03_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Aron 03		1789280
 	989582963	Radio Recording	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Radio Recording_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Radio Recording		9507568
+	1069327020	Terence 04	D:\MATHIEU DATA\MVC_Projects\Lost Frequency\LOST-FREQUENCY\LOST-FREQUENCY_WwiseProject\.cache\Windows\SFX\Terence 04_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Terence 04		846652
 

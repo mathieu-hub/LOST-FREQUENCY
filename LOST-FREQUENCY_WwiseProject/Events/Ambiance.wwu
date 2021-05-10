@@ -14,6 +14,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Radio_Record" ID="{BB0BACF7-5D37-479A-9DEF-53B7C9E1CD43}">
+					<ChildrenList>
+						<Action Name="" ID="{ACC23F0C-E9CA-478D-8AE0-EA0ABDD13788}" ShortID="985437706">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio Recording" ID="{6393EB26-BB4C-43C2-868B-9B5C43766088}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CloseThunder" ID="{0FFE0A39-61F0-4389-BF7D-56E62B8F33D2}">
+					<ChildrenList>
+						<Action Name="" ID="{92637055-0CF6-425B-82FD-4C5622C847AB}" ShortID="292779350">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CloseThunder" ID="{6F148E18-6D0F-462F-B95D-401C17BFA5FF}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HorrorLoopSalvation" ID="{AB57F453-9A55-4EFC-B2FE-9F663350F2D8}">
+					<ChildrenList>
+						<Action Name="" ID="{D55B62A4-87E2-43C7-B7C2-06059454E468}" ShortID="999594589">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Horror Loop Salvation" ID="{EF9472D9-3655-4D66-9370-031A40E84ACF}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VhsTape" ID="{04B257FD-C909-4032-A7C3-6288D061D198}">
+					<ChildrenList>
+						<Action Name="" ID="{D1D73B82-B62F-4462-AD7C-F5DE7F4F0B66}" ShortID="600941830">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VhsTapeGlitch" ID="{917ABDC5-1DC1-4F02-BC22-A9722E40F3CE}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

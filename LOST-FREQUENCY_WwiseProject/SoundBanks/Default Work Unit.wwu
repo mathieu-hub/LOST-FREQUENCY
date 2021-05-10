@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B4356D43-8879-41B0-9118-B1F3F85778DC}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{B4356D43-8879-41B0-9118-B1F3F85778DC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B4356D43-8879-41B0-9118-B1F3F85778DC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{422FE118-25C7-44E2-93B9-F4D81388D21D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="VhsTape" ID="{04B257FD-C909-4032-A7C3-6288D061D198}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambiance_Lightning" ID="{C609F7B4-B75C-41F2-AE46-61E1EE9FF61A}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Terence07" ID="{4D114385-29D5-4310-9D81-23CBC5A2BF3F}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SciFiStinger" ID="{0EF2682B-7A64-4333-8835-EC16094FBC18}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Aron02" ID="{8D3DAF84-8EE6-4376-8752-E6C0BA608C7B}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="CloseThunder" ID="{0FFE0A39-61F0-4389-BF7D-56E62B8F33D2}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Aron07" ID="{3ADC2608-ADCC-4473-BEDD-D07EF77EB544}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Aron01" ID="{3ABA22FF-22E2-4476-AD53-7FCF3CA95E0F}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Terence06" ID="{2E427958-5C75-4501-857A-41DD712677D2}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Aron03" ID="{910E6CB8-8BCA-45D9-A833-9CD95D117DCF}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Aron06" ID="{01D723CB-30B1-4616-BFAD-F96A841A5F57}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Radio_Record" ID="{BB0BACF7-5D37-479A-9DEF-53B7C9E1CD43}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AnomalieRadio" ID="{6AA4422D-1101-47D3-87E5-A6EAB4B54730}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Terence04" ID="{3D00AE4F-EDB7-4A7A-B957-EA7578533515}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Terence05" ID="{0FDA1279-548D-4AB2-94C4-A2A93AE59EFD}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Aron05" ID="{549955D8-10B7-4B6C-B334-0341D631BC04}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Terence02" ID="{DB10B960-E77B-4D5C-A0F1-66139939E599}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Horror Loop Salvation" ID="{EF9472D9-3655-4D66-9370-031A40E84ACF}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Terence01" ID="{1C79F107-8A10-4E0B-B195-E56035B5F53F}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Terence03" ID="{554E9A7F-BCB8-4EEF-BFC1-E4E0233B71C7}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Aron04" ID="{0BF1B970-BF23-4FBA-94E9-7A8C20F45D01}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

@@ -8,6 +8,7 @@ public class EmetteurType : MonoBehaviour
     public bool emmettorTV;
 
     public bool asAnAnomalie;
+    public bool canTeleport;
 
     public AK.Wwise.Event soundEvent;
     public bool launchSound = true;
