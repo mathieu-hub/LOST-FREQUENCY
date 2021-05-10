@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     public bool takingObject = false;
     public bool canSpeak = true;
     [Space(10)]
+    public GameObject wallDoor;
+    public GameObject closeWall;
     public GameObject oldTVOff;
     public GameObject oldTVOn;
     public GameObject wallLightFlick;
@@ -79,6 +81,8 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.horrorLoopSalvation.Stop(gameObject);
                 SoundManager.Instance.vhsTape.Stop(gameObject);
                 SoundManager.Instance.sciFiStinger.Post(gameObject);
+                wallDoor.SetActive(true);
+                closeWall.SetActive(false);
                 isAct01 = false;
                 isAct02 = true;
             }
@@ -178,13 +182,14 @@ public class GameManager : MonoBehaviour
         wallLightOff.SetActive(true);
         victorianChandelierOn.SetActive(false);
         victorianChandelierFlick.SetActive(true);
-        yield return new WaitForSeconds(8.8f);
+        yield return new WaitForSeconds(8.1f);
         SoundManager.Instance.CloseThunder.Post(gameObject);
         yield return new WaitForSeconds(0.3f);
         SoundManager.Instance.horrorLoopSalvation.Post(gameObject);
-        SoundManager.Instance.vhsTape.Post(gameObject);
         victorianChandelierFlick.SetActive(false);
         victorianChandelierOff.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        SoundManager.Instance.vhsTape.Post(gameObject);        
         oldTVOff.SetActive(false);
         oldTVOn.SetActive(true);
         canTeleportToDarkRoom01 = true;
