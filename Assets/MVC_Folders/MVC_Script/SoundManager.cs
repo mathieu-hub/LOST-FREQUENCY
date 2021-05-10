@@ -6,7 +6,26 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
 
+    [Header("AMBIANCES")]
     public AK.Wwise.Event ambianceLightning;
+
+    [Header("TERENCE DIALOGUES")]
+    public AK.Wwise.Event Terence01;
+    public AK.Wwise.Event Terence02;
+    public AK.Wwise.Event Terence03;
+    public AK.Wwise.Event Terence04;
+    public AK.Wwise.Event Terence05;
+    public AK.Wwise.Event Terence06;
+    public AK.Wwise.Event Terence07;
+
+    [Header("ARON DIALOGUES")]
+    public AK.Wwise.Event Aron01;
+    public AK.Wwise.Event Aron02;
+    public AK.Wwise.Event Aron03;
+    public AK.Wwise.Event Aron04;
+    public AK.Wwise.Event Aron05;
+    public AK.Wwise.Event Aron06;
+    public AK.Wwise.Event Aron07;
 
 
     void Awake()
