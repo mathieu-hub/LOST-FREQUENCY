@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     public Transform tpBibliotheque;
 
     [Header("ACT 03")]
+    public GameObject emetteurHosp;
     public bool canActivateObjects = true;
     public bool canActivateLights = false;
     public int indexBordel;
@@ -122,6 +123,7 @@ public class GameManager : MonoBehaviour
                 canTeleportToBibliotheque = false;
                 isTeleport = false;
                 ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie = true;
+                ModificateurDeFrequence.Instance.emmetors.Add(emetteurHosp);
                 isAct02 = false;
                 isAct03 = true;
             }
@@ -289,6 +291,8 @@ public class GameManager : MonoBehaviour
     {
         if (ModificateurDeFrequence.Instance.emmetors[2].GetComponent<EmetteurType>().asAnAnomalie == false)
         {
+            ModificateurDeFrequence.Instance.emmetors.Remove(emetteurHosp);
+
             if (canActivateObjects)
             {
                 for (int i = 0; i < bordels.Count -1 ; i++)
