@@ -301,11 +301,11 @@ public class ModificateurDeFrequence : MonoBehaviour
             {
                 if (deviceIsOn)
                 {
-                    rebindBar.valeur += 5 * Time.deltaTime;
+                    rebindBar.valeur += 8 * Time.deltaTime;
                 }
                 else if (true)
                 {
-                    rebindBar.valeur += 5 * Time.deltaTime * 0f;
+                    rebindBar.valeur += 8 * Time.deltaTime * 0f;
                 }
 
                 textToRepair.SetActive(false);
@@ -339,7 +339,7 @@ public class ModificateurDeFrequence : MonoBehaviour
     {
         if (emetteur.GetComponent<EmetteurType>().emmettorTV && emetteur.GetComponent<EmetteurType>().canTeleport)
         {
-            if (distance <= 1)
+            if (captedDistance <= 1)
             {
                 GameManager.Instance.playerEntity.transform.position = teleportpoint.position;
                 GameManager.Instance.isTeleport = true;

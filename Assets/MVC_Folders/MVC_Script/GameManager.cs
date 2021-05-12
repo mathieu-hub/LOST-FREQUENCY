@@ -123,6 +123,7 @@ public class GameManager : MonoBehaviour
                 canTeleportToBibliotheque = false;
                 isTeleport = false;
                 ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie = true;
+                ModificateurDeFrequence.Instance.emmetors.Remove(groupLteEmettor[3]);
                 ModificateurDeFrequence.Instance.emmetors.Add(emetteurHosp);
                 isAct02 = false;
                 isAct03 = true;
@@ -262,7 +263,7 @@ public class GameManager : MonoBehaviour
             StartCoroutine(DelayLteRemove());
         }
 
-        if (indexLte == 4)
+        if (indexLte == 3)
         {
             canTeleportToBibliotheque = true;
         }
@@ -295,13 +296,13 @@ public class GameManager : MonoBehaviour
 
             if (canActivateObjects)
             {
-                for (int i = 0; i < bordels.Count -1 ; i++)
+                for (int i = 0; i < bordels.Count ; i++)
                 {
                     indexBordel = i;
                     bordels[i].SetActive(false);
                 }
 
-                if (indexBordel == bordels.Count)
+                if (indexBordel == bordels.Count -1)
                 {
                     canActivateLights = true;
                     canActivateObjects = false;
@@ -310,13 +311,13 @@ public class GameManager : MonoBehaviour
 
             if (canActivateLights)
             {
-                for (int x = 0; x < wallLights.Count -1 ; x++)
+                for (int x = 0; x < wallLights.Count ; x++)
                 {
                     indexWallLight = x;
                     wallLights[x].enabled = true;
                 }
 
-                if (indexWallLight == wallLights.Count)
+                if (indexWallLight == wallLights.Count - 1)
                 {
                     canActivateLights = false;
                 }
