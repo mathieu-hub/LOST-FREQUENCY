@@ -213,15 +213,33 @@ public class GameManager : MonoBehaviour
         {
             canLaunchCoroutine = false;
             canSpawnLte = false;
-            StartCoroutine(DelayLte());
+            StartCoroutine(DelayLteAppear());
+        }
+
+        if (canLaunchCoroutine && groupLteEmettor[indexLte].GetComponent<EmetteurType>().asAnAnomalie == false)
+        {
+            canLaunchCoroutine = false;
+            ModificateurDeFrequence.Instance.emmetors.Remove(groupLteEmettor[indexLte]);
+            StartCoroutine(DelayLteRemove());
         }
     }
 
-    IEnumerator DelayLte()
+    IEnumerator DelayLteAppear()
     {
         yield return new WaitForSeconds(5f);
         groupLte[indexLte].SetActive(true);
         ModificateurDeFrequence.Instance.emmetors.Add(groupLteEmettor[indexLte]);
-        Debug.Log("JE S'APPEL GROOT");
+        canLaunchCoroutine = true;
+    }
+
+    IEnumerator DelayLteRemove()
+    {
+        yield return new WaitForSeconds(2f);
+        groupLte[indexLte].SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        indexLte++;
+        yield return new WaitForSeconds(0.5f);
+        canLaunchCoroutine = true;
+        canSpawnLte = true;
     }
 }

@@ -13,7 +13,6 @@ public class SoundManager : MonoBehaviour
     public AK.Wwise.Event horrorLoopSalvation;
     public AK.Wwise.Event vhsTape;
 
-
     [Header("TERENCE DIALOGUES")]
     public AK.Wwise.Event Terence01;
     public AK.Wwise.Event Terence02;
@@ -32,6 +31,9 @@ public class SoundManager : MonoBehaviour
     public AK.Wwise.Event Aron06;
     public AK.Wwise.Event Aron07;
 
+    [Header("DARK ROOM VOICES")]
+    public AK.Wwise.Event[] voicesDarkRoom;
+    
     [Header("SFX")]
     public AK.Wwise.Event sciFiStinger;
 
