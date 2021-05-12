@@ -40,6 +40,13 @@ public class GameManager : MonoBehaviour
     public GameObject victorianChandelierOn;
     public GameObject victorianChandelierFlick;
     public GameObject victorianChandelierOff;
+
+    [Header("ACT 02")]
+    public List<GameObject> groupLte = new List<GameObject>();
+    public List<GameObject> groupLteEmettor = new List<GameObject>();
+    public int indexLte = 0;
+    public bool canSpawnLte = true;
+    public bool canLaunchCoroutine = true;
     
 
     private void Awake()
@@ -91,6 +98,11 @@ public class GameManager : MonoBehaviour
         if (isAct01)
         {
             FirstAct();
+        }
+
+        if (isAct02)
+        {
+            SecondAct();
         }
     }
 
@@ -193,5 +205,22 @@ public class GameManager : MonoBehaviour
         oldTVOff.SetActive(false);
         oldTVOn.SetActive(true);
         canTeleportToDarkRoom01 = true;
+    }
+
+    void SecondAct()
+    {
+        if (canLaunchCoroutine && canSpawnLte)
+        {
+            canLaunchCoroutine = false;
+            canSpawnLte = false;
+            StartCoroutine(DelayLte());
+        }
+    }
+
+    IEnumerator DelayLte()
+    {
+        yield return new WaitForSeconds(1f);
+        groupLte[indexLte].SetActive(true);
+        Debug.Log("JE S'APPEL GROOT");
     }
 }
