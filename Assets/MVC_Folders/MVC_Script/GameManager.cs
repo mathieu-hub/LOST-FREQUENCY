@@ -12,8 +12,7 @@ public class GameManager : MonoBehaviour
     public bool takingModificateur = false;
     public bool haveModificateur = false;
     [Space(5)]
-    public GameObject playerEntity;
-    public bool canTeleportToDarkRoom01 = false;
+    public GameObject playerEntity;    
     public bool isTeleport = false;
     public Transform tpDarkRoom;
 
@@ -23,6 +22,7 @@ public class GameManager : MonoBehaviour
     [Header("ACT BOOLEAN")]
     public bool isAct01 = false;
     public bool isAct02 = false;
+    public bool isAct03 = false;
 
     [Header ("ACT 01")]     
     public GameObject takableModificateur;
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public bool canTake = true;
     public bool takingObject = false;
     public bool canSpeak = true;
+    public bool canTeleportToDarkRoom01 = false;
     [Space(10)]
     public GameObject wallDoor;
     public GameObject closeWall;
@@ -40,6 +41,8 @@ public class GameManager : MonoBehaviour
     public GameObject victorianChandelierOn;
     public GameObject victorianChandelierFlick;
     public GameObject victorianChandelierOff;
+    public GameObject lampOn;
+    public GameObject lampOff;
 
     [Header("ACT 02")]
     public List<GameObject> groupLte = new List<GameObject>();
@@ -47,6 +50,17 @@ public class GameManager : MonoBehaviour
     public int indexLte = 0;
     public bool canSpawnLte = true;
     public bool canLaunchCoroutine = true;
+    public bool canTeleportToBibliotheque = false;
+    public Transform tpBibliotheque;
+
+    [Header("ACT 03")]
+    public bool canActivateObjects = true;
+    public bool canActivateLights = false;
+    public int indexBordel;
+    public List<GameObject> bordels = new List<GameObject>();
+    [Space(5)]
+    public int indexWallLight;
+    public List<Light> wallLights = new List<Light>();
     
 
     private void Awake()
@@ -90,8 +104,26 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.sciFiStinger.Post(gameObject);
                 wallDoor.SetActive(true);
                 closeWall.SetActive(false);
+                oldTVOn.SetActive(false);
+                oldTVOff.SetActive(true);
+                lampOff.SetActive(false);
+                lampOn.SetActive(true);
                 isAct01 = false;
                 isAct02 = true;
+            }
+        }
+
+        if (canTeleportToBibliotheque)
+        {
+            ModificateurDeFrequence.Instance.Teleportation(tpBibliotheque); // Teleportation dans Bibliothèque.
+
+            if (isTeleport)
+            {
+                canTeleportToBibliotheque = false;
+                isTeleport = false;
+                ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie = true;
+                isAct02 = false;
+                isAct03 = true;
             }
         }
 
@@ -103,6 +135,11 @@ public class GameManager : MonoBehaviour
         if (isAct02)
         {
             SecondAct();
+        }
+
+        if (isAct03)
+        {
+            ThirdAct();
         }
     }
 
@@ -222,11 +259,16 @@ public class GameManager : MonoBehaviour
             ModificateurDeFrequence.Instance.emmetors.Remove(groupLteEmettor[indexLte]);
             StartCoroutine(DelayLteRemove());
         }
+
+        if (indexLte == 4)
+        {
+            canTeleportToBibliotheque = true;
+        }
     }
 
     IEnumerator DelayLteAppear()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         groupLte[indexLte].SetActive(true);
         ModificateurDeFrequence.Instance.emmetors.Add(groupLteEmettor[indexLte]);
         canLaunchCoroutine = true;
@@ -234,12 +276,52 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DelayLteRemove()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.3f);
         groupLte[indexLte].SetActive(false);
         yield return new WaitForSeconds(0.5f);
         indexLte++;
         yield return new WaitForSeconds(0.5f);
         canLaunchCoroutine = true;
         canSpawnLte = true;
+    }
+
+    void ThirdAct()
+    {
+        if (ModificateurDeFrequence.Instance.emmetors[2].GetComponent<EmetteurType>().asAnAnomalie == false)
+        {
+            if (canActivateObjects)
+            {
+                for (int i = 0; i < bordels.Count -1 ; i++)
+                {
+                    indexBordel = i;
+                    bordels[i].SetActive(false);
+                }
+
+                if (indexBordel == bordels.Count)
+                {
+                    canActivateLights = true;
+                    canActivateObjects = false;
+                }
+            }
+
+            if (canActivateLights)
+            {
+                for (int x = 0; x < wallLights.Count -1 ; x++)
+                {
+                    indexWallLight = x;
+                    wallLights[x].enabled = true;
+                }
+
+                if (indexWallLight == wallLights.Count)
+                {
+                    canActivateLights = false;
+                }
+            }
+
+            if (!canActivateObjects && !canActivateLights)
+            {
+                Debug.Log("JE S'APPEL BIEN");
+            }
+        }
     }
 }
