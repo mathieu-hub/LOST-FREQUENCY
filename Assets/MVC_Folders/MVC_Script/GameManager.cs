@@ -219,8 +219,9 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DelayLte()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         groupLte[indexLte].SetActive(true);
+        ModificateurDeFrequence.Instance.emmetors.Add(groupLteEmettor[indexLte]);
         Debug.Log("JE S'APPEL GROOT");
     }
 }

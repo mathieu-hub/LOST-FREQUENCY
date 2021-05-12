@@ -2446,6 +2446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4558218030304210842}
   - component: {fileID: 1136348714906592201}
+  - component: {fileID: 1502885266}
   m_Layer: 0
   m_Name: "Modificateur de fr\xE9quences"
   m_TagString: Modificateur
@@ -2517,6 +2518,8 @@ MonoBehaviour:
   emetteur: {fileID: 0}
   emmetors:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   distance: 0
   captedDistance: 0
   distanceZone01: 25
@@ -2534,6 +2537,25 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 570476907ed26844bac1357c444a8b69, type: 2}
   - {fileID: 2100000, guid: 4e10215c812277e4986db956dfae02af, type: 2}
   - {fileID: 2100000, guid: 912d17f44c5b04349b24c838b469025d, type: 2}
+--- !u!95 &1502885266
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4027410622942407422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5bb0acf6fff7f0b45801a3f988deb9c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4457484511793875204
 GameObject:
   m_ObjectHideFlags: 0
