@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3576524135931426295}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Planks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 2283272724635987241}
   - component: {fileID: 6802234140372007433}
   - component: {fileID: 5435701377741071480}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Plank (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,6 +95,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -119,6 +120,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &2075685039122995293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -330,6 +332,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -354,6 +357,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &2316526095055361369
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -384,6 +388,7 @@ GameObject:
   - component: {fileID: 1550812005612652293}
   - component: {fileID: 5817655102353577856}
   - component: {fileID: 2584584550187564688}
+  - component: {fileID: 1624458557}
   m_Layer: 9
   m_Name: OldDoor
   m_TagString: Untagged
@@ -429,6 +434,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -453,6 +459,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &6703618159183847360
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -477,10 +484,11 @@ HingeJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4785837761108413259}
   m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000014901161, y: 0, z: 19.4755}
+  m_ConnectedAnchor: {x: 4.752919, y: -1.09, z: 32.430252}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -542,13 +550,13 @@ MonoBehaviour:
   DisabledEvent:
     m_PersistentCalls:
       m_Calls: []
-  customText: Door is Jammed!
+  customText: "la porte est barricad\xE9e !"
   keyID: 25
   useAnim: Door_Open_Y_P90
   backUseAnim: Door_Close_Y_P90
   mouseInput: 0
   mouseSmoothing: 0
-  useJammedPlanks: 1
+  useJammedPlanks: 0
   Planks:
   - {fileID: 4495745591712384143}
   - {fileID: 3926211554693821143}
@@ -573,6 +581,7 @@ MonoBehaviour:
   valveSoundAfter: 0
   valveTurnSpeed: 0
   valveTurnTime: 0
+  turnAxis: 0
   m_Volume: 1
   Open: {fileID: 8300000, guid: 91cefad89333f5e409bbe50cf2ffaac0, type: 3}
   Close: {fileID: 8300000, guid: 313201a3a9beb3644a8e3d2b087fc18c, type: 3}
@@ -601,6 +610,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactSprite: {fileID: 21300000, guid: c50947eb986193f44952acbdcf6f835d, type: 3}
   size: 45
+--- !u!64 &1624458557
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4785837761108413259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 75054dc672a2eb54c8ad8172ac49f251, type: 3}
 --- !u!1 &4785837761108413261
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +649,7 @@ Transform:
   m_GameObject: {fileID: 4785837761108413261}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.70710677}
   m_LocalPosition: {x: 0, y: 0, z: 19.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.03, y: 1, z: 1}
   m_Children:
   - {fileID: 3576524135931426295}
   - {fileID: 4785837761108318059}
@@ -689,6 +712,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -713,6 +737,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5670182781419576075
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +754,7 @@ GameObject:
   - component: {fileID: 8869600522027659900}
   - component: {fileID: 3243980504182996508}
   - component: {fileID: 951594310899447536}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Plank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,6 +798,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -797,6 +823,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &4495745591712384143
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -968,7 +995,7 @@ GameObject:
   - component: {fileID: 2047922591048462125}
   - component: {fileID: 2209955281462732403}
   - component: {fileID: 7314009503679979069}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Plank (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1012,6 +1039,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1036,6 +1064,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &7831657561455535160
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1207,7 +1236,7 @@ GameObject:
   - component: {fileID: 3317129058318012690}
   - component: {fileID: 6352719868284017236}
   - component: {fileID: 1113019911419025096}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Plank (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1251,6 +1280,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1275,6 +1305,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &3926211554693821143
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1446,7 +1477,7 @@ GameObject:
   - component: {fileID: 6557317342072185195}
   - component: {fileID: 3744263048667030186}
   - component: {fileID: 9066730075623633692}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Plank (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1490,6 +1521,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1514,6 +1546,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &8249819255472551655
 Rigidbody:
   m_ObjectHideFlags: 0

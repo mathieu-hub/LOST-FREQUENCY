@@ -55,13 +55,19 @@ public class GameManager : MonoBehaviour
 
     [Header("ACT 03")]
     public GameObject emetteurHosp;
+    public GameObject lightConduit;
     public bool canActivateObjects = true;
     public bool canActivateLights = false;
+    public bool canDeletePlanks = false;
     public int indexBordel;
     public List<GameObject> bordels = new List<GameObject>();
     [Space(5)]
     public int indexWallLight;
     public List<Light> wallLights = new List<Light>();
+    [Space(5)]
+    public GameObject jammedDoor;
+    public GameObject normalDoor;
+    
     
 
     private void Awake()
@@ -319,12 +325,17 @@ public class GameManager : MonoBehaviour
 
                 if (indexWallLight == wallLights.Count - 1)
                 {
+                    canDeletePlanks = true;
                     canActivateLights = false;
                 }
             }
 
+
             if (!canActivateObjects && !canActivateLights)
             {
+                lightConduit.SetActive(false);
+                jammedDoor.SetActive(false);
+                normalDoor.SetActive(true);
                 Debug.Log("JE S'APPEL BIEN");
             }
         }
