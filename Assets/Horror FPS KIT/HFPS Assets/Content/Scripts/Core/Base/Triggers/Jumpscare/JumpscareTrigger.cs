@@ -42,6 +42,10 @@ public class JumpscareTrigger : MonoBehaviour {
 	[SaveableField, HideInInspector]
 	public bool isPlayed;
 
+    [Header("MY ALIEN")]
+    public bool isMyAlien;
+    
+
 	void Start()
 	{
 		effects = ScriptManager.Instance.gameObject.GetComponent<JumpscareEffects> ();
@@ -57,6 +61,11 @@ public class JumpscareTrigger : MonoBehaviour {
 		if (other.tag == "Player" && !isPlayed)
 		{
 			AnimationObject.Play();
+
+            if (isMyAlien)
+            {
+                AlienBehaviour.Instance.isFirstJumpScared = true;
+            }
 
 			if (JumpscareSound)
 			{
