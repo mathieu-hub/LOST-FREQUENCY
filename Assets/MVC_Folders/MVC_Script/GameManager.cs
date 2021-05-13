@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
     public List<Light> wallLights02 = new List<Light>();
     public Light lightChandelier;
     public GameObject candlesGroup;
+    public GameObject vhsMonitor;
     public bool canTeleportToDarkRoom02 = false;
 
 
@@ -153,6 +154,10 @@ public class GameManager : MonoBehaviour
             {
                 canTeleportToDarkRoom02 = false;
                 isTeleport = false;
+                ModificateurDeFrequence.Instance.emmetors.Remove(vhsMonitor);
+                ModificateurDeFrequence.Instance.emmetors.Remove(ModificateurDeFrequence.Instance.emmetors[0]);
+                ModificateurDeFrequence.Instance.emmetors.Remove(oldTVOn);
+                ModificateurDeFrequence.Instance.emmetors.Remove(emetteurHosp);
                 isAct03 = false;
                 isAct04 = true;                
             }
@@ -324,8 +329,7 @@ public class GameManager : MonoBehaviour
     void ThirdAct()
     {
         if (ModificateurDeFrequence.Instance.emmetors[2].GetComponent<EmetteurType>().asAnAnomalie == false)
-        {
-            ModificateurDeFrequence.Instance.emmetors.Remove(emetteurHosp);
+        {            
 
             if (canActivateObjects)
             {
@@ -369,13 +373,14 @@ public class GameManager : MonoBehaviour
 
         if (canTriggerEvent)
         {
-            canTriggerEvent = false;
-            BlockPlayerMovement();
+            canTriggerEvent = false;            
             StartCoroutine(SwitchOutLight());            
         }
 
         if (ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie == false)
         {
+            ModificateurDeFrequence.Instance.emmetors.Add(vhsMonitor);
+            lightChandelier.enabled = false;
             candlesGroup.SetActive(true);
             canTeleportToDarkRoom02 = true;
         }
@@ -383,6 +388,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator SwitchOutLight()
     {
+        BlockPlayerMovement();
         wallLights02[0].enabled = false;
         wallLights02[1].enabled = false;
         yield return new WaitForSeconds(1f);
