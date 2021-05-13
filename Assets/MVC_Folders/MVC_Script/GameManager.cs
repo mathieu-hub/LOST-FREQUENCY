@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public bool isAct01 = false;
     public bool isAct02 = false;
     public bool isAct03 = false;
+    public bool isAct04 = false;
 
     [Header ("ACT 01")]     
     public GameObject takableModificateur;
@@ -69,10 +70,13 @@ public class GameManager : MonoBehaviour
     public GameObject normalDoor;
     [Space(5)]
     public GameObject trepanEater;
+    public bool canTriggerEvent = false;
+    public GameObject triggerEvent;
     public GameObject jumpScare;
     public List<Light> wallLights02 = new List<Light>();
     public Light lightChandelier;
     public GameObject candlesGroup;
+    public bool canTeleportToDarkRoom02 = false;
 
 
     private void Awake()
@@ -141,6 +145,19 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        if (canTeleportToDarkRoom02)
+        {
+            ModificateurDeFrequence.Instance.Teleportation(tpDarkRoom); // 2ème Teleportation dans Dark Room.
+
+            if (isTeleport)
+            {
+                canTeleportToDarkRoom02 = false;
+                isTeleport = false;
+                isAct03 = false;
+                isAct04 = true;                
+            }
+        }
+
         if (isAct01)
         {
             FirstAct();
@@ -154,6 +171,11 @@ public class GameManager : MonoBehaviour
         if (isAct03)
         {
             ThirdAct();
+        }
+
+        if (isAct04)
+        {
+            FourthAct();
         }
     }
 
@@ -341,9 +363,44 @@ public class GameManager : MonoBehaviour
                 jammedDoor.SetActive(false);
                 normalDoor.SetActive(true);
                 trepanEater.SetActive(true);
-                jumpScare.SetActive(true);
-                Debug.Log("JE S'APPEL BIEN");
-            }
+                triggerEvent.SetActive(true);
+            }            
         }
+
+        if (canTriggerEvent)
+        {
+            canTriggerEvent = false;
+            BlockPlayerMovement();
+            StartCoroutine(SwitchOutLight());            
+        }
+
+        if (ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie == false)
+        {
+            candlesGroup.SetActive(true);
+            canTeleportToDarkRoom02 = true;
+        }
+    }
+
+    IEnumerator SwitchOutLight()
+    {
+        wallLights02[0].enabled = false;
+        wallLights02[1].enabled = false;
+        yield return new WaitForSeconds(1f);
+        wallLights02[2].enabled = false;
+        wallLights02[3].enabled = false;
+        yield return new WaitForSeconds(1f);
+        wallLights02[4].enabled = false;
+        wallLights02[5].enabled = false;
+        yield return new WaitForSeconds(1f);
+        wallLights02[6].enabled = false;
+        wallLights02[7].enabled = false;
+        jumpScare.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        RestorePlayerMovement();
+    }
+
+    void FourthAct()
+    {
+        Debug.Log("JE S'APPEL GROOT");
     }
 }

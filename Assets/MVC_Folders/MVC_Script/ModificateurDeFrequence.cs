@@ -301,11 +301,11 @@ public class ModificateurDeFrequence : MonoBehaviour
             {
                 if (deviceIsOn)
                 {
-                    rebindBar.valeur += 20 * Time.deltaTime; // mettre à 8 
+                    rebindBar.valeur += 30 * Time.deltaTime; // mettre à 8 
                 }
                 else if (true)
                 {
-                    rebindBar.valeur += 20 * Time.deltaTime * 0f; //mettre à 8
+                    rebindBar.valeur += 30 * Time.deltaTime * 0f; //mettre à 8
                 }
 
                 textToRepair.SetActive(false);
