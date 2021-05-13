@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
     [Header("ACT 03")]
     public GameObject emetteurHosp;
     public GameObject lightConduit;
+    public Light lightDoorHosp;
     public bool canActivateObjects = true;
     public bool canActivateLights = false;
     public bool canDeletePlanks = false;
@@ -75,6 +76,7 @@ public class GameManager : MonoBehaviour
     public GameObject jumpScare;
     public List<Light> wallLights02 = new List<Light>();
     public Light lightChandelier;
+    public GameObject lightTable;
     public GameObject candlesGroup;
     public GameObject vhsMonitor;
     public bool canTeleportToDarkRoom02 = false;
@@ -141,6 +143,7 @@ public class GameManager : MonoBehaviour
                 ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie = true;
                 ModificateurDeFrequence.Instance.emmetors.Remove(groupLteEmettor[3]);
                 ModificateurDeFrequence.Instance.emmetors.Add(emetteurHosp);
+                groupLte[3].SetActive(false);
                 isAct02 = false;
                 isAct03 = true;
             }
@@ -363,6 +366,7 @@ public class GameManager : MonoBehaviour
 
             if (!canActivateObjects && !canActivateLights)
             {
+                lightDoorHosp.enabled = true;
                 lightConduit.SetActive(false);
                 jammedDoor.SetActive(false);
                 normalDoor.SetActive(true);
@@ -380,7 +384,8 @@ public class GameManager : MonoBehaviour
         if (ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie == false)
         {
             ModificateurDeFrequence.Instance.emmetors.Add(vhsMonitor);
-            lightChandelier.enabled = false;
+            lightTable.SetActive(false);
+            //lightChandelier.enabled = false;
             candlesGroup.SetActive(true);
             canTeleportToDarkRoom02 = true;
         }

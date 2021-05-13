@@ -33,6 +33,7 @@ public class AlienBehaviour : MonoBehaviour
             {
                 moveSpeed = 0f;
                 myAlien.SetActive(false);
+                GameManager.Instance.lightChandelier.enabled = false;
             }
         }
     }
