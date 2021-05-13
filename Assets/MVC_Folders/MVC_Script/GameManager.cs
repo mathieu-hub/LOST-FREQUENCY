@@ -67,8 +67,13 @@ public class GameManager : MonoBehaviour
     [Space(5)]
     public GameObject jammedDoor;
     public GameObject normalDoor;
-    
-    
+    [Space(5)]
+    public GameObject trepanEater;
+    public GameObject jumpScare;
+    public List<Light> wallLights02 = new List<Light>();
+    public Light lightChandelier;
+    public GameObject candlesGroup;
+
 
     private void Awake()
     {
@@ -329,7 +334,6 @@ public class GameManager : MonoBehaviour
                     canActivateLights = false;
                 }
             }
-
 
             if (!canActivateObjects && !canActivateLights)
             {
