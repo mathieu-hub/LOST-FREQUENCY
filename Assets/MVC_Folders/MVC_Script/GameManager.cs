@@ -340,6 +340,8 @@ public class GameManager : MonoBehaviour
                 lightConduit.SetActive(false);
                 jammedDoor.SetActive(false);
                 normalDoor.SetActive(true);
+                trepanEater.SetActive(true);
+                jumpScare.SetActive(true);
                 Debug.Log("JE S'APPEL BIEN");
             }
         }
