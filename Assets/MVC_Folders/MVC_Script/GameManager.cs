@@ -609,8 +609,6 @@ public class GameManager : MonoBehaviour
     IEnumerator LaunchFinal()
     {
         BlockPlayerMovement();
-        yield return new WaitForSeconds(0.3f);
-        playerEntity.transform.LookAt(tvFinalOff.transform);
         yield return new WaitForSeconds(0.5f);
         tvFinalOff.SetActive(false);
         tvFinalOn.SetActive(true);
