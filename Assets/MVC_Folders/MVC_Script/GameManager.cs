@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public bool isAct02 = false;
     public bool isAct03 = false;
     public bool isAct04 = false;
+    public bool isAct05 = false;
 
     [Header ("ACT 01")]     
     public GameObject takableModificateur;
@@ -81,6 +82,18 @@ public class GameManager : MonoBehaviour
     public GameObject vhsMonitor;
     public bool canTeleportToDarkRoom02 = false;
 
+    [Header("Act 04")]
+    public bool canStartingCoroutine = true;
+    public bool canSpawnLight = true;
+    public int indexCircleLights;
+    public List<GameObject> circleLights = new List<GameObject>();
+    public bool canLaunchAlien = true;
+
+    [Header("Act 05")]
+    public GameObject wallTransition;
+    public bool canLaunchPoursuit = true;
+    public GameObject radioTransit;
+    public bool repairRadio = false;
 
     private void Awake()
     {
@@ -184,6 +197,11 @@ public class GameManager : MonoBehaviour
         if (isAct04)
         {
             FourthAct();
+        }
+
+        if (isAct05)
+        {
+            FifthAct();
         }
     }
 
@@ -412,6 +430,90 @@ public class GameManager : MonoBehaviour
 
     void FourthAct()
     {
-        Debug.Log("JE S'APPEL GROOT");
+        if (canStartingCoroutine && canSpawnLight)
+        {
+            canStartingCoroutine = false;
+            canSpawnLight = false;
+            StartCoroutine(DisplayLight());
+        }
+
+        if (canStartingCoroutine && circleLights[indexCircleLights].GetComponent<LightPassing>().isPassing)
+        {
+            canStartingCoroutine = false;
+            StartCoroutine(DeleteLight());
+        }
+
+        if (indexCircleLights == 3)
+        {
+            if (canLaunchAlien)
+            {
+                canLaunchAlien = false;
+                StartCoroutine(LaunchAlien());
+            } 
+        }  
+    }
+
+    IEnumerator DisplayLight()
+    {
+        yield return new WaitForSeconds(3f);
+        circleLights[indexCircleLights].SetActive(true);
+        canStartingCoroutine = true;
+    }
+
+    IEnumerator DeleteLight()
+    {
+        yield return new WaitForSeconds(0.3f);
+        circleLights[indexCircleLights].SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        indexCircleLights++;
+        yield return new WaitForSeconds(0.5f);
+        canStartingCoroutine = true;
+        canSpawnLight = true;
+    }
+
+    IEnumerator LaunchAlien()
+    {
+        BlockPlayerMovement();
+        yield return new WaitForSeconds(1f);
+        circleLights[3].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        circleLights[4].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        circleLights[5].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        circleLights[6].SetActive(true);
+        isAct04 = false;
+        RestorePlayerMovement();
+        isAct05 = true;
+    }
+
+    void FifthAct()
+    {
+        if (canLaunchPoursuit)
+        {
+            canLaunchPoursuit = false;
+            wallTransition.SetActive(false);
+            AlienBehaviour.Instance.alienPoursuit = true;
+            ModificateurDeFrequence.Instance.emmetors.Add(radioTransit);
+        }
+
+        if (radioTransit.GetComponent<EmetteurType>().asAnAnomalie == false)
+        {
+            repairRadio = true;
+            ModificateurDeFrequence.Instance.emmetors.Remove(radioTransit);
+        }
+
+        if (repairRadio)
+        {
+            repairRadio = false;
+            StartCoroutine(DelaySecondPoursuit());
+        }        
+
+    }
+
+    IEnumerator DelaySecondPoursuit()
+    {
+        yield return new WaitForSeconds(5f);
+        AlienBehaviour.Instance.alienPoursuit02 = true;
     }
 }
