@@ -106,6 +106,10 @@ public class GameManager : MonoBehaviour
     public GameObject tvFinalOff;
     public GameObject tvFinalOn;
     public bool canLaunchFinal = true;
+    public bool finalIsLaunch = false;
+    public bool canTeleportToEnd = false;
+    public Transform tpEnd;
+    public GameObject endObjects;
 
     private void Awake()
     {
@@ -191,6 +195,19 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        if (canTeleportToEnd)
+        {
+            ModificateurDeFrequence.Instance.Teleportation(tpEnd);
+
+            if (isTeleport)
+            {
+                canTeleportToEnd = false;
+                isTeleport = false;
+                endObjects.SetActive(true);
+                isAct06 = false;
+            }
+        }
+
         if (isAct01)
         {
             FirstAct();
@@ -216,7 +233,7 @@ public class GameManager : MonoBehaviour
             FifthAct();
         }
 
-        if (isAct06) // a activer depuis un trigger.
+        if (isAct06) 
         {
             SixthAct();
         }
@@ -555,6 +572,21 @@ public class GameManager : MonoBehaviour
             canLaunchFinal = false;
             StartCoroutine(LaunchFinal());
         }
+
+        if (finalIsLaunch)
+        {
+            if (radiosFinal[0].GetComponent<EmetteurType>().asAnAnomalie == false &&
+                radiosFinal[1].GetComponent<EmetteurType>().asAnAnomalie == false &&
+                radiosFinal[2].GetComponent<EmetteurType>().asAnAnomalie == false &&
+                radiosFinal[3].GetComponent<EmetteurType>().asAnAnomalie == false)
+            {
+                tvFinalOff.SetActive(false);
+                tvFinalOn.SetActive(true);
+                tvFinalOn.GetComponent<EmetteurType>().canTeleport = true;
+                ModificateurDeFrequence.Instance.emmetors.Add(tvFinalOn);
+                canTeleportToEnd = true;
+            }
+        }
     }
 
     IEnumerator LaunchFinal()
@@ -562,8 +594,14 @@ public class GameManager : MonoBehaviour
         BlockPlayerMovement();
         yield return new WaitForSeconds(0.3f);
         playerEntity.transform.LookAt(tvFinalOff.transform);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         tvFinalOff.SetActive(false);
         tvFinalOn.SetActive(true);
+        finalIsLaunch = true;
+        yield return new WaitForSeconds(8f);
+        Debug.Log("APPARITION DE L'ALIEN"); //Apparition de l'alien
+        yield return (3f);
+        tvFinalOff.SetActive(true);
+        tvFinalOn.SetActive(false);
     }
 }
