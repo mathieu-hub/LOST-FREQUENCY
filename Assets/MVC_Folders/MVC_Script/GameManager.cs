@@ -82,6 +82,7 @@ public class GameManager : MonoBehaviour
     public GameObject lightTable;
     public GameObject candlesGroup;
     public GameObject vhsMonitor;
+    public bool canAddToList = true;
     public bool canTeleportToDarkRoom02 = false;
 
     [Header("Act 04")]
@@ -439,7 +440,12 @@ public class GameManager : MonoBehaviour
 
         if (ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie == false)
         {
-            ModificateurDeFrequence.Instance.emmetors.Add(vhsMonitor);
+            if (canAddToList)
+            {
+                canAddToList = false;
+                ModificateurDeFrequence.Instance.emmetors.Add(vhsMonitor);
+            }
+
             lightTable.SetActive(false);            
             candlesGroup.SetActive(true);
             canTeleportToDarkRoom02 = true;
@@ -474,11 +480,14 @@ public class GameManager : MonoBehaviour
             StartCoroutine(DisplayLight());
         }
 
-        if (canStartingCoroutine && circleLights[indexCircleLights].GetComponent<LightPassing>().isPassing)
+        if (indexCircleLights < 3)
         {
-            canStartingCoroutine = false;
-            StartCoroutine(DeleteLight());
-        }
+            if (canStartingCoroutine && circleLights[indexCircleLights].GetComponent<LightPassing>().isPassing)
+            {
+                canStartingCoroutine = false;
+                StartCoroutine(DeleteLight());
+            }
+        }        
 
         if (indexCircleLights == 3)
         {
