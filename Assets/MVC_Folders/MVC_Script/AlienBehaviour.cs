@@ -100,9 +100,12 @@ public class AlienBehaviour : MonoBehaviour
 
     void AlienPoursuit02()
     {
-        Vector3 dir = target02.position - alien03.transform.position;
-        alien03.transform.Translate(dir.normalized * moveSpeed02 * Time.deltaTime, Space.World);
-        alien03.transform.LookAt(target02);
+        if (AlienBehaviour.Instance.alien03 != null)
+        {
+            Vector3 dir = target02.position - alien03.transform.position;
+            alien03.transform.Translate(dir.normalized * moveSpeed02 * Time.deltaTime, Space.World);
+            alien03.transform.LookAt(target02);
+        }       
 
 
         if (Vector3.Distance(alien03.transform.position, target02.position) <= 0.2)

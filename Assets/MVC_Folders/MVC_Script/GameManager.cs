@@ -102,6 +102,7 @@ public class GameManager : MonoBehaviour
     public GameObject transitWallClose;
     public GameObject transitWallDoor;
     public Light whiteCageTransit;
+    public Light redCageTransit;
 
     [Header("Act 06")]
     public List<GameObject> radiosFinal = new List<GameObject>();
@@ -546,16 +547,19 @@ public class GameManager : MonoBehaviour
 
         if (radioTransit.GetComponent<EmetteurType>().asAnAnomalie == false)
         {
-            repairRadio = true;
+            if (!repairRadio)
+            {
+                repairRadio = true;
+                StartCoroutine(DelaySecondPoursuit());
+            }
+            
             ModificateurDeFrequence.Instance.emmetors.Remove(radioTransit);
-            AlienBehaviour.Instance.alien03.SetActive(true);
-        }
 
-        if (repairRadio)
-        {
-            repairRadio = false;
-            StartCoroutine(DelaySecondPoursuit());
-        }        
+            if (AlienBehaviour.Instance.alien03 != null)
+            {
+                AlienBehaviour.Instance.alien03.SetActive(true);
+            }
+        }      
 
     }
 
@@ -564,8 +568,9 @@ public class GameManager : MonoBehaviour
         BlockPlayerMovement();
         transitWallClose.SetActive(false);
         transitWallDoor.SetActive(true);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         whiteCageTransit.enabled = true;
+        redCageTransit.enabled = true;
         RestorePlayerMovement();
         tvTransitOff.SetActive(false);
         tvTransitOn.SetActive(true);
@@ -610,6 +615,8 @@ public class GameManager : MonoBehaviour
         tvFinalOff.SetActive(false);
         tvFinalOn.SetActive(true);
         finalIsLaunch = true;
+        yield return new WaitForSeconds(0.5f);
+        RestorePlayerMovement();
         yield return new WaitForSeconds(8f);
         Debug.Log("APPARITION DE L'ALIEN"); //Apparition de l'alien
         yield return (3f);
