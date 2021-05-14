@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public bool isAct03 = false;
     public bool isAct04 = false;
     public bool isAct05 = false;
+    public bool isAct06 = false;
 
     [Header ("ACT 01")]     
     public GameObject takableModificateur;
@@ -94,6 +95,17 @@ public class GameManager : MonoBehaviour
     public bool canLaunchPoursuit = true;
     public GameObject radioTransit;
     public bool repairRadio = false;
+    public GameObject tvTransitOff;
+    public GameObject tvTransitOn;
+    public GameObject transitWallClose;
+    public GameObject transitWallDoor;
+    public Light whiteCageTransit;
+
+    [Header("Act 06")]
+    public List<GameObject> radiosFinal = new List<GameObject>();
+    public GameObject tvFinalOff;
+    public GameObject tvFinalOn;
+    public bool canLaunchFinal = true;
 
     private void Awake()
     {
@@ -202,6 +214,11 @@ public class GameManager : MonoBehaviour
         if (isAct05)
         {
             FifthAct();
+        }
+
+        if (isAct06) // a activer depuis un trigger.
+        {
+            SixthAct();
         }
     }
 
@@ -474,6 +491,7 @@ public class GameManager : MonoBehaviour
     IEnumerator LaunchAlien()
     {
         BlockPlayerMovement();
+        AlienBehaviour.Instance.alien02.SetActive(true);
         yield return new WaitForSeconds(1f);
         circleLights[3].SetActive(true);
         yield return new WaitForSeconds(1f);
@@ -501,6 +519,7 @@ public class GameManager : MonoBehaviour
         {
             repairRadio = true;
             ModificateurDeFrequence.Instance.emmetors.Remove(radioTransit);
+            AlienBehaviour.Instance.alien03.SetActive(true);
         }
 
         if (repairRadio)
@@ -513,7 +532,38 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DelaySecondPoursuit()
     {
+        BlockPlayerMovement();
+        transitWallClose.SetActive(false);
+        transitWallDoor.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        whiteCageTransit.enabled = true;
+        RestorePlayerMovement();
+        tvTransitOff.SetActive(false);
+        tvTransitOn.SetActive(true);
         yield return new WaitForSeconds(5f);
         AlienBehaviour.Instance.alienPoursuit02 = true;
+    }
+
+    void SixthAct()
+    {
+        if (canLaunchFinal)
+        {
+            ModificateurDeFrequence.Instance.emmetors.Add(radiosFinal[0]);
+            ModificateurDeFrequence.Instance.emmetors.Add(radiosFinal[1]);
+            ModificateurDeFrequence.Instance.emmetors.Add(radiosFinal[2]);
+            ModificateurDeFrequence.Instance.emmetors.Add(radiosFinal[3]);
+            canLaunchFinal = false;
+            StartCoroutine(LaunchFinal());
+        }
+    }
+
+    IEnumerator LaunchFinal()
+    {
+        BlockPlayerMovement();
+        yield return new WaitForSeconds(0.3f);
+        playerEntity.transform.LookAt(tvFinalOff.transform);
+        yield return new WaitForSeconds(2f);
+        tvFinalOff.SetActive(false);
+        tvFinalOn.SetActive(true);
     }
 }
