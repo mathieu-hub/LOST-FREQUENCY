@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
     public GameObject jumpScare;
     public List<Light> wallLights02 = new List<Light>();
     public Light lightChandelier;
+    public Light globalLightChandelier;
     public GameObject lightTable;
     public GameObject candlesGroup;
     public GameObject vhsMonitor;
@@ -187,7 +188,6 @@ public class GameManager : MonoBehaviour
                 canTeleportToDarkRoom02 = false;
                 isTeleport = false;
                 ModificateurDeFrequence.Instance.emmetors.Remove(vhsMonitor);
-                ModificateurDeFrequence.Instance.emmetors.Remove(ModificateurDeFrequence.Instance.emmetors[0]);
                 ModificateurDeFrequence.Instance.emmetors.Remove(oldTVOn);
                 ModificateurDeFrequence.Instance.emmetors.Remove(emetteurHosp);
                 isAct03 = false;
@@ -422,8 +422,12 @@ public class GameManager : MonoBehaviour
                 lightConduit.SetActive(false);
                 jammedDoor.SetActive(false);
                 normalDoor.SetActive(true);
-                trepanEater.SetActive(true);
                 triggerEvent.SetActive(true);
+
+                if (trepanEater != null)
+                {
+                    trepanEater.SetActive(true);
+                }
             }            
         }
 
@@ -436,8 +440,7 @@ public class GameManager : MonoBehaviour
         if (ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie == false)
         {
             ModificateurDeFrequence.Instance.emmetors.Add(vhsMonitor);
-            lightTable.SetActive(false);
-            //lightChandelier.enabled = false;
+            lightTable.SetActive(false);            
             candlesGroup.SetActive(true);
             canTeleportToDarkRoom02 = true;
         }

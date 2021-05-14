@@ -63,11 +63,11 @@ public class AlienBehaviour : MonoBehaviour
         Vector3 dir = reachPoint.position - alien01.transform.position;
         alien01.transform.Translate(dir.normalized * moveSpeed01 * Time.deltaTime, Space.World);
 
-        if (Vector3.Distance(alien01.transform.position, reachPoint.position) <= 0.2)
+        if (Vector3.Distance(alien01.transform.position, reachPoint.position) <= 0.5)
         {
-            moveSpeed01 = 0f;
-            alien01.SetActive(false);
+            Destroy(alien01);
             GameManager.Instance.lightChandelier.enabled = false;
+            GameManager.Instance.globalLightChandelier.enabled = false;
             isFirstJumpScared = false;
         }
     }
