@@ -1,91 +1,108 @@
 using UnityEngine;
-using UnityEngine.AI;
 
 public class AlienAI : MonoBehaviour
 {
-    public NavMeshAgent agent;
-
-    public Transform player;
-
-    public LayerMask whatIsGround, whatIsPlayer;
+    public GameObject playerEntity;    
+    public Animator alienAnim;
+    public float distance;
 
     //Patroling
-    public Vector3 walkPoint;
-    bool walkPointSet;
-    public float walkPointRange;
+    public float moveSpeed;
+    [SerializeField] private Transform target;
+    [SerializeField] private int wayPointIndex; 
 
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
 
     //States 
-    public float sightRange, attackRange;
+    [Range(0,10)] public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    void Awake()
+    private void Start()
     {
-        player = GameObject.Find("HEROPLAYER").transform;
-        agent = GetComponent<NavMeshAgent>();
+        target = WayPath.points[0];
     }
 
     private void Update()
     {
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        distance = Vector3.Distance(playerEntity.transform.position, transform.position);
+
+        if (distance < sightRange)
+        {
+            playerInSightRange = true;
+        }
+        else
+        {
+            playerInSightRange = false;
+        }
+
+        if (distance < attackRange)
+        {
+            playerInAttackRange = true;
+        }
+        else
+        {
+            playerInAttackRange = false;
+        }
 
         if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+        if (playerInSightRange && !playerInAttackRange) ChasePlayer(); // À Remplacer Par ChasePlayer()
         if (playerInSightRange && playerInAttackRange) AttackPlayer();
     }
 
     void Patroling()
     {
-        if (!walkPointSet) SearchWalkPoint();
+        moveSpeed = 4;
 
-        if (walkPointSet)
+        Vector3 dir = target.position - transform.position;
+        transform.Translate(dir.normalized * moveSpeed * Time.deltaTime, Space.World);
+        transform.LookAt(target);
+
+        if (Vector3.Distance(transform.position, target.position) <= 0.4)
         {
-            agent.SetDestination(walkPoint);
-        }
-
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
-        //WalkPoint Reached
-        if (distanceToWalkPoint.magnitude < 1f)
-        {
-            walkPointSet = false; 
+            GetNextWaypoint();
         }
     }
 
-    void SearchWalkPoint()
+    private void GetNextWaypoint()
     {
-        //Calculate random point in range
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
-
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
+        if (wayPointIndex >= WayPath.points.Length - 1)
         {
-            walkPointSet = true;
+            wayPointIndex = 0;
         }
+        else 
+        {
+            wayPointIndex++;
+        }
+        
+        target = Waypoints.points[wayPointIndex];
     }
 
     void ChasePlayer()
     {
-        agent.SetDestination(player.position);
+        moveSpeed = 9;
+
+        Vector3 dir = target.position - transform.position;
+        transform.Translate(dir.normalized * moveSpeed * Time.deltaTime, Space.World);
+        transform.LookAt(target);
+
+        if (Vector3.Distance(transform.position, target.position) <= 0.4)
+        {
+            GetNextWaypoint();
+        }
     }
 
     void AttackPlayer()
     {
-        //Make sure Alien doesn't move
-        agent.SetDestination(transform.position);
-
-        transform.LookAt(player);
+        transform.LookAt(playerEntity.transform);
 
         if (!alreadyAttacked)
         {
             ///Attack Code Here
             Debug.Log("Alien Attack");
+            //Animation;
+            playerEntity.GetComponent<HealthManager>().Health -= 40f; 
             ///
 
             alreadyAttacked = true;
@@ -96,5 +113,13 @@ public class AlienAI : MonoBehaviour
     void ResetAttack()
     {
         alreadyAttacked = false;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, sightRange);
     }
 }
