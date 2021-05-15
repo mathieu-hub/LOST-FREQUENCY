@@ -113,6 +113,7 @@ public class GameManager : MonoBehaviour
     public bool canTeleportToEnd = false;
     public Transform tpEnd;
     public GameObject endObjects;
+    public GameObject lastAlien;
 
     private void Awake()
     {
@@ -616,7 +617,8 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         RestorePlayerMovement();
         yield return new WaitForSeconds(8f);
-        Debug.Log("APPARITION DE L'ALIEN"); //Apparition de l'alien
+        lastAlien.SetActive(true);
+        lastAlien.GetComponent<AlienAI>().alienIsComming = true;
         yield return (3f);
         tvFinalOff.SetActive(true);
         tvFinalOn.SetActive(false);

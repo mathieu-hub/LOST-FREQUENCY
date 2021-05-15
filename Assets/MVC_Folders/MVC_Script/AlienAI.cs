@@ -5,6 +5,7 @@ public class AlienAI : MonoBehaviour
     public GameObject playerEntity;    
     public Animator alienAnim;
     public float distance;
+    public bool alienIsComming = false;
 
     //Patroling
     public float moveSpeed;
@@ -46,9 +47,12 @@ public class AlienAI : MonoBehaviour
             playerInAttackRange = false;
         }
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer(); // À Remplacer Par ChasePlayer()
-        if (playerInSightRange && playerInAttackRange) AttackPlayer();
+        if (alienIsComming)
+        {
+            if (!playerInSightRange && !playerInAttackRange) Patroling();
+            if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+            if (playerInSightRange && playerInAttackRange) AttackPlayer();
+        }        
     }
 
     void Patroling()
