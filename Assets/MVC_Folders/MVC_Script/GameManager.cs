@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject playerEntity;    
     public bool isTeleport = false;
     public Transform tpDarkRoom;
+    public bool isDied = false;
 
     [Header("LAUNCH CINEMATIC")]
     public Animator darkPannelFade;
@@ -118,13 +119,20 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        animTakingMf.SetBool("TakeMf", false);
+
+        if (!isDied)
+        {
+            animTakingMf.SetBool("TakeMf", false);
+        }        
     }
 
     void Start()
     {
-        BlockPlayerMovement();
-        StartCoroutine(LaunchCinematic());
+        if (!isDied)
+        {
+            BlockPlayerMovement();
+            StartCoroutine(LaunchCinematic());
+        }        
     }
 
     IEnumerator LaunchCinematic()

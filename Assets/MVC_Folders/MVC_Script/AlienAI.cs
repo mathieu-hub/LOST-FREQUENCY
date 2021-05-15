@@ -110,7 +110,8 @@ public class AlienAI : MonoBehaviour
             ///Attack Code Here
             Debug.Log("Alien Attack");
             //Animation;
-            playerEntity.GetComponent<HealthManager>().Health -= 40f; 
+            playerEntity.GetComponent<HealthManager>().Health -= 40f;
+            GameManager.Instance.isDied = true;
             ///
 
             alreadyAttacked = true;
