@@ -453,7 +453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09dccbe27b8ad9e48ab51a0615dccdc6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fbf0b7ea08466d24abd166b82bdff892, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -534,6 +534,7 @@ MonoBehaviour:
   debugMode: 1
   inputsLoaded: 0
   inputSuspended: 0
+  keyboardScheme: []
 --- !u!114 &114506893542469358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,7 +554,7 @@ MonoBehaviour:
       avec son \xE9quipe. Bien qu'il n'est rien, l'environnement dans lequel il se
       trouvait s'est compl\xE9tement m\xE9tamorphos\xE9 et ses co\xE9quipiers ont
       disparu."
-    Background: {fileID: 21300000, guid: 09dccbe27b8ad9e48ab51a0615dccdc6, type: 3}
+    Background: {fileID: 21300000, guid: fbf0b7ea08466d24abd166b82bdff892, type: 3}
   fadeController: {fileID: 114034337346992676}
   tipsManager: {fileID: 114643961109773812}
   SpinnerGO: {fileID: 6193558996788785889}
