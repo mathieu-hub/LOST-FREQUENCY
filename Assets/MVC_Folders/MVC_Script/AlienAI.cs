@@ -58,6 +58,8 @@ public class AlienAI : MonoBehaviour
     void Patroling()
     {
         moveSpeed = 4;
+        alienAnim.SetBool("isWalk", true);
+        alienAnim.SetBool("isRun", false);
 
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * moveSpeed * Time.deltaTime, Space.World);
@@ -80,12 +82,14 @@ public class AlienAI : MonoBehaviour
             wayPointIndex++;
         }
         
-        target = Waypoints.points[wayPointIndex];
+        target = WayPath.points[wayPointIndex];
     }
 
     void ChasePlayer()
     {
         moveSpeed = 9;
+        alienAnim.SetBool("isRun", true);
+        alienAnim.SetBool("isWalk", false);
 
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * moveSpeed * Time.deltaTime, Space.World);
