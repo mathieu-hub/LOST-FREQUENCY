@@ -162,6 +162,7 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.horrorLoopSalvation.Stop(gameObject);
                 SoundManager.Instance.vhsTape.Stop(gameObject);
                 SoundManager.Instance.sciFiStinger.Post(gameObject);
+                SoundManager.Instance.ambianceDarkRoom.Post(gameObject);
                 wallDoor.SetActive(true);
                 closeWall.SetActive(false);
                 oldTVOn.SetActive(false);
@@ -184,7 +185,9 @@ public class GameManager : MonoBehaviour
                 ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie = true;
                 ModificateurDeFrequence.Instance.emmetors.Remove(groupLteEmettor[3]);
                 ModificateurDeFrequence.Instance.emmetors.Add(emetteurHosp);
-                SoundManager.Instance.Terence08.Post(gameObject);
+                SoundManager.Instance.ambianceDarkRoom.Stop(gameObject);
+                SoundManager.Instance.sciFiStinger.Post(gameObject);
+                StartCoroutine(DelayTerenceSpeak());
                 groupLte[3].SetActive(false);
                 isAct02 = false;
                 isAct03 = true;
@@ -202,6 +205,8 @@ public class GameManager : MonoBehaviour
                 ModificateurDeFrequence.Instance.emmetors.Remove(vhsMonitor);
                 ModificateurDeFrequence.Instance.emmetors.Remove(oldTVOn);
                 ModificateurDeFrequence.Instance.emmetors.Remove(emetteurHosp);
+                SoundManager.Instance.sciFiStinger.Post(gameObject);
+                SoundManager.Instance.afterJumpscare.Stop(gameObject);
                 isAct03 = false;
                 isAct04 = true;                
             }
@@ -217,6 +222,8 @@ public class GameManager : MonoBehaviour
                 isTeleport = false;
                 endObjects.SetActive(true);
                 isAct06 = false;
+                SoundManager.Instance.levelFinal.Stop(gameObject);
+                SoundManager.Instance.sciFiStinger.Post(gameObject);
                 StartCoroutine(DelayToPostSong());                
             }
         }
@@ -471,15 +478,20 @@ public class GameManager : MonoBehaviour
         BlockPlayerMovement();
         wallLights02[0].enabled = false;
         wallLights02[1].enabled = false;
+        SoundManager.Instance.lightSwitchOff.Post(gameObject);
         yield return new WaitForSeconds(1f);
         wallLights02[2].enabled = false;
         wallLights02[3].enabled = false;
+        SoundManager.Instance.lightSwitchOff.Post(gameObject);
         yield return new WaitForSeconds(1f);
         wallLights02[4].enabled = false;
         wallLights02[5].enabled = false;
+        SoundManager.Instance.lightSwitchOff.Post(gameObject);
         yield return new WaitForSeconds(1f);
         wallLights02[6].enabled = false;
         wallLights02[7].enabled = false;
+        SoundManager.Instance.lightSwitchOff.Post(gameObject);
+        SoundManager.Instance.ambianceDarkRoom02.Post(gameObject);
         jumpScare.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         RestorePlayerMovement();
@@ -557,6 +569,7 @@ public class GameManager : MonoBehaviour
             wallTransition.SetActive(false);
             AlienBehaviour.Instance.alienPoursuit = true;
             ModificateurDeFrequence.Instance.emmetors.Add(radioTransit);
+            SoundManager.Instance.jumpscarePoursuit.Post(gameObject);
         }
 
         if (radioTransit.GetComponent<EmetteurType>().asAnAnomalie == false)
@@ -583,6 +596,7 @@ public class GameManager : MonoBehaviour
         transitWallClose.SetActive(false);
         transitWallDoor.SetActive(true);
         yield return new WaitForSeconds(2f);
+        SoundManager.Instance.jumpscarePoursuit.Post(gameObject);
         SoundManager.Instance.Terence10.Post(gameObject);
         whiteCageTransit.enabled = true;
         redCageTransit.enabled = true;
@@ -624,6 +638,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator LaunchFinal()
     {
+        SoundManager.Instance.levelFinal.Post(gameObject);
         BlockPlayerMovement();
         yield return new WaitForSeconds(0.5f);
         tvFinalOff.SetActive(false);
@@ -634,11 +649,17 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(8f);
         lastAlien.SetActive(true);
         lastAlien.GetComponent<AlienAI>().alienIsComming = true;
+        SoundManager.Instance.jumpscarePoursuit.Post(gameObject);
         yield return (3f);
         tvFinalOff.SetActive(true);
         tvFinalOn.SetActive(false);
     }
 
+    IEnumerator DelayTerenceSpeak()
+    {
+        yield return new WaitForSeconds(2f);
+        SoundManager.Instance.Terence08.Post(gameObject);
+    }
     IEnumerator DelayToPostSong()
     {
         yield return new WaitForSeconds(2f);

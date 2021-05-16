@@ -12,6 +12,7 @@ public class AlienBehaviour : MonoBehaviour
     public float moveSpeed01;
     public bool isFirstJumpScared = false; 
     public Transform reachPoint;
+    public bool canPlaySound = true;
     [Space(10)]
     public GameObject alien02;
     [Range(0, 10)]
@@ -63,21 +64,37 @@ public class AlienBehaviour : MonoBehaviour
         Vector3 dir = reachPoint.position - alien01.transform.position;
         alien01.transform.Translate(dir.normalized * moveSpeed01 * Time.deltaTime, Space.World);
 
+        if (canPlaySound)
+        {
+            canPlaySound = false;
+            SoundManager.Instance.ambianceDarkRoom02.Stop(gameObject);
+            SoundManager.Instance.jumpscareCouloir.Post(gameObject);
+            SoundManager.Instance.afterJumpscare.Post(gameObject);
+        }
+
         if (Vector3.Distance(alien01.transform.position, reachPoint.position) <= 0.5)
         {
             Destroy(alien01);
             GameManager.Instance.lightChandelier.enabled = false;
             GameManager.Instance.globalLightChandelier.enabled = false;
             isFirstJumpScared = false;
+            canPlaySound = true;
         }
     }
 
     void AlienPoursuit()
     {
+
         Vector3 dir = target.position - alien02.transform.position;
         alien02.transform.Translate(dir.normalized * moveSpeed02 * Time.deltaTime, Space.World);
         alien02.transform.LookAt(target);
 
+        if (canPlaySound)
+        {
+            canPlaySound = false;
+            SoundManager.Instance.afterJumpscare.Post(gameObject);
+            SoundManager.Instance.ambianceDarkRoom02.Stop(gameObject);
+        }
 
         if (Vector3.Distance(alien02.transform.position, target.position) <= 0.2)
         {
@@ -90,7 +107,9 @@ public class AlienBehaviour : MonoBehaviour
         if (waypointIndex >= Waypoints.points.Length - 1)
         {
             alienPoursuit = false;
+            canPlaySound = true;
             Destroy(alien02);
+            SoundManager.Instance.afterJumpscare.Stop(gameObject);
             return;
         }
 
@@ -105,8 +124,12 @@ public class AlienBehaviour : MonoBehaviour
             Vector3 dir = target02.position - alien03.transform.position;
             alien03.transform.Translate(dir.normalized * moveSpeed02 * Time.deltaTime, Space.World);
             alien03.transform.LookAt(target02);
-        }       
+        }
 
+        if (canPlaySound)
+        {
+            SoundManager.Instance.afterJumpscare.Post(gameObject);
+        }
 
         if (Vector3.Distance(alien03.transform.position, target02.position) <= 0.2)
         {
@@ -119,6 +142,7 @@ public class AlienBehaviour : MonoBehaviour
         if (waypointIndex02 >= Waypoints02.points.Length - 1)
         {
             alienPoursuit02 = false;
+            SoundManager.Instance.afterJumpscare.Stop(gameObject);
             Destroy(alien03);
             return;
         }

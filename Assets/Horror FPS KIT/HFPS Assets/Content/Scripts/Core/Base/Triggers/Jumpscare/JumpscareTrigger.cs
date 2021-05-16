@@ -69,7 +69,7 @@ public class JumpscareTrigger : MonoBehaviour {
 
 			if (JumpscareSound)
 			{
-				Tools.PlayOneShot2D(transform.position, JumpscareSound, scareVolume);
+                Tools.PlayOneShot2D(transform.position, JumpscareSound, scareVolume);
 			}
 
 			if (enableEffects)

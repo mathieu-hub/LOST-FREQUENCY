@@ -30,6 +30,7 @@ public class ModificateurDeFrequence : MonoBehaviour
     [Header("ANOMALIE DETECTEUR")]
     public int anomalieSignal; // Variable à changer
     public List<GameObject> anomalieLeds = new List<GameObject>();
+    public bool canPlaySound = true;
 
     [Header("RÉPARER FRÉQUENCES")]
     public bool rebindingFrequence = false;
@@ -231,6 +232,7 @@ public class ModificateurDeFrequence : MonoBehaviour
             anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
             anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
             anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            canPlaySound = true;
         }
         else if (deviceIsOn && anomalieSignal == 2)
         {
@@ -239,6 +241,7 @@ public class ModificateurDeFrequence : MonoBehaviour
             anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
             anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
             anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            canPlaySound = true;
         }
         else if (deviceIsOn && anomalieSignal == 3)
         {
@@ -247,6 +250,7 @@ public class ModificateurDeFrequence : MonoBehaviour
             anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
             anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
             anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            canPlaySound = true;
         }
         else if (deviceIsOn && anomalieSignal == 4)
         {
@@ -255,6 +259,7 @@ public class ModificateurDeFrequence : MonoBehaviour
             anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
             anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[2];
             anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            canPlaySound = true;
         }
         else if (deviceIsOn && anomalieSignal == 5)
         {
@@ -263,6 +268,12 @@ public class ModificateurDeFrequence : MonoBehaviour
             anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[1];
             anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[2];
             anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[3];
+
+            if (canPlaySound)
+            {
+                canPlaySound = false;
+                SoundManager.Instance.anomalieMax.Post(gameObject);
+            }
         }
         else if (deviceIsOn && anomalieSignal == 0)
         {
@@ -271,6 +282,7 @@ public class ModificateurDeFrequence : MonoBehaviour
             anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
             anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
             anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            canPlaySound = true;
         }
         else
         {
@@ -279,6 +291,7 @@ public class ModificateurDeFrequence : MonoBehaviour
             anomalieLeds[2].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
             anomalieLeds[3].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
             anomalieLeds[4].GetComponent<ChangeMaterial>().actualMaterial = materials[0];
+            canPlaySound = true;
         }
     }
 
@@ -324,6 +337,8 @@ public class ModificateurDeFrequence : MonoBehaviour
             rebindBarObject.SetActive(false);
             rebindBar.valeur = 0;
             textIsRepair.SetActive(true);
+            SoundManager.Instance.radioRepair.Post(gameObject);
+            SoundManager.Instance.anomalieRemove.Post(gameObject);
             StartCoroutine(ChangeFreqState());
         }
     }

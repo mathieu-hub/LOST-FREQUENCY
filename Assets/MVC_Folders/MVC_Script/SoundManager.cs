@@ -14,6 +14,12 @@ public class SoundManager : MonoBehaviour
     public AK.Wwise.Event CloseThunder;
     public AK.Wwise.Event horrorLoopSalvation;
     public AK.Wwise.Event vhsTape;
+    public AK.Wwise.Event ambianceDarkRoom; //here
+    public AK.Wwise.Event ambianceDarkRoom02; //here
+    public AK.Wwise.Event afterJumpscare; 
+    public AK.Wwise.Event levelFinal; 
+    public AK.Wwise.Event mainMenu; 
+
 
     [Header("TERENCE DIALOGUES")]
     public AK.Wwise.Event Terence01;
@@ -44,7 +50,12 @@ public class SoundManager : MonoBehaviour
     
     [Header("SFX")]
     public AK.Wwise.Event sciFiStinger;
-
+    public AK.Wwise.Event radioRepair; 
+    public AK.Wwise.Event anomalieRemove; 
+    public AK.Wwise.Event anomalieMax; 
+    public AK.Wwise.Event lightSwitchOff; //here
+    public AK.Wwise.Event jumpscareCouloir; 
+    public AK.Wwise.Event jumpscarePoursuit; 
 
 
     void Awake()
@@ -61,11 +72,11 @@ public class SoundManager : MonoBehaviour
     {
         if (AdvancedMenuUI.Instance.isMainMenu)
         {
-            //main menu sound
+            mainMenu.Post(gameObject);
         }
         else if (AdvancedMenuUI.Instance.isMainMenu == false)
         {
-            //Nothing
+            mainMenu.Stop(gameObject);
         }
     }
 }
