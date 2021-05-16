@@ -184,6 +184,7 @@ public class GameManager : MonoBehaviour
                 ModificateurDeFrequence.Instance.emmetors[0].GetComponent<EmetteurType>().asAnAnomalie = true;
                 ModificateurDeFrequence.Instance.emmetors.Remove(groupLteEmettor[3]);
                 ModificateurDeFrequence.Instance.emmetors.Add(emetteurHosp);
+                SoundManager.Instance.Terence08.Post(gameObject);
                 groupLte[3].SetActive(false);
                 isAct02 = false;
                 isAct03 = true;
@@ -216,6 +217,7 @@ public class GameManager : MonoBehaviour
                 isTeleport = false;
                 endObjects.SetActive(true);
                 isAct06 = false;
+                StartCoroutine(DelayToPostSong());                
             }
         }
 
@@ -375,10 +377,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DelayLteAppear()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0.5f);
+        SoundManager.Instance.voicesDarkRoom[indexLte].Post(gameObject);
+        yield return new WaitForSeconds(2.5f);
         groupLte[indexLte].SetActive(true);
         ModificateurDeFrequence.Instance.emmetors.Add(groupLteEmettor[indexLte]);
-        canLaunchCoroutine = true;
+        canLaunchCoroutine = true;  
     }
 
     IEnumerator DelayLteRemove()
@@ -511,6 +515,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DisplayLight()
     {
+        SoundManager.Instance.voicesDarkRoom[indexCircleLights + 4].Post(gameObject);
         yield return new WaitForSeconds(3f);
         circleLights[indexCircleLights].SetActive(true);
         canStartingCoroutine = true;
@@ -578,6 +583,7 @@ public class GameManager : MonoBehaviour
         transitWallClose.SetActive(false);
         transitWallDoor.SetActive(true);
         yield return new WaitForSeconds(2f);
+        SoundManager.Instance.Terence10.Post(gameObject);
         whiteCageTransit.enabled = true;
         redCageTransit.enabled = true;
         RestorePlayerMovement();
@@ -606,6 +612,7 @@ public class GameManager : MonoBehaviour
                 radiosFinal[2].GetComponent<EmetteurType>().asAnAnomalie == false &&
                 radiosFinal[3].GetComponent<EmetteurType>().asAnAnomalie == false)
             {
+                SoundManager.Instance.Terence12.Post(gameObject);
                 tvFinalOff.SetActive(false);
                 tvFinalOn.SetActive(true);
                 tvFinalOn.GetComponent<EmetteurType>().canTeleport = true;
@@ -630,5 +637,11 @@ public class GameManager : MonoBehaviour
         yield return (3f);
         tvFinalOff.SetActive(true);
         tvFinalOn.SetActive(false);
+    }
+
+    IEnumerator DelayToPostSong()
+    {
+        yield return new WaitForSeconds(2f);
+        SoundManager.Instance.voicesDarkRoom[8].Post(gameObject);
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LauncherEvent : MonoBehaviour
 {
+    public bool launchDialog01;
+    public bool launchDialog02;
     public bool isPlayed = false;
     public bool isTriggerEvent;
     public bool launchAct06;
@@ -23,6 +25,16 @@ public class LauncherEvent : MonoBehaviour
             {
                 GameManager.Instance.isAct05 = false;
                 GameManager.Instance.isAct06 = true;
+            }
+
+            if (launchDialog01)
+            {
+                SoundManager.Instance.Terence09.Post(gameObject);
+            }
+
+            if (launchDialog02)
+            {
+                SoundManager.Instance.Terence11.Post(gameObject);
             }
         }
     }

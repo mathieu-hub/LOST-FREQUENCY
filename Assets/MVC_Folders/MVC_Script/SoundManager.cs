@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ThunderWire.Game.Options;
 
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
+    
 
     [Header("AMBIANCES")]
     public AK.Wwise.Event ambianceLightning;
@@ -57,6 +59,13 @@ public class SoundManager : MonoBehaviour
 
     void Update()
     {
-        
+        if (AdvancedMenuUI.Instance.isMainMenu)
+        {
+            //main menu sound
+        }
+        else if (AdvancedMenuUI.Instance.isMainMenu == false)
+        {
+            //Nothing
+        }
     }
 }

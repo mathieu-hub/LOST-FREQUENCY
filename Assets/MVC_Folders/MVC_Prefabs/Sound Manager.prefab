@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2345185370236882702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2345185370236882737}
+  - component: {fileID: 2345185370236882736}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2345185370236882737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345185370236882702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2345185370236882736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345185370236882702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96765e7742c41b04a951913802496871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ambianceLightning:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9c1d43a86b324104998eba1bd69074c9,
+      type: 2}
+  anomalieRadio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d2f6067564c21f44f85a5852d0fba5b9,
+      type: 2}
+  CloseThunder:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0966a5fe42c95244eaf561f07664a794,
+      type: 2}
+  horrorLoopSalvation:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c2bd20f57a9364742a5dcf28eb187acd,
+      type: 2}
+  vhsTape:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 724e1db9065d82d4f8eb7eb95473dd72,
+      type: 2}
+  Terence01:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4325acc9e891abb45bf59fa7fe2d4d04,
+      type: 2}
+  Terence02:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b6bcb5b387a47f74bb129107db7fbf70,
+      type: 2}
+  Terence03:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 74bcaf4a8f23d904ba4551404e3567a3,
+      type: 2}
+  Terence04:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7f7b186596957b2428e5613fc750dc9c,
+      type: 2}
+  Terence05:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7597730c402f1c440812a75b3f9cdb4c,
+      type: 2}
+  Terence06:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6d907556ec893874e8cb28348b869f26,
+      type: 2}
+  Terence07:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f6c5f67e17c844241abdd3e121c604db,
+      type: 2}
+  Terence08:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2bebd91e2044ea54ca8e35f6e0f22f51,
+      type: 2}
+  Terence09:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cc03a8e5ff67b844bb3b02d4f9484d7e,
+      type: 2}
+  Terence10:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7e879743a5f96d94ca981900a85f169f,
+      type: 2}
+  Terence11:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 89560139c179eeb4bb10e04548465b70,
+      type: 2}
+  Terence12:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7b62b5985daa87745a429ffb3a11298d,
+      type: 2}
+  Aron01:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7daa2ead09bdc5b4bbacfaa422c0a37e,
+      type: 2}
+  Aron02:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5669d798a6cc4474db6fc834302cb63b,
+      type: 2}
+  Aron03:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 88a5b14d498aa0b45bde1f1904f8a76c,
+      type: 2}
+  Aron04:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 543b011ba347ca34892c9bcb0b17659c,
+      type: 2}
+  Aron05:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7aa394fa10e54cb4ca6bf269ec0611b3,
+      type: 2}
+  Aron06:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: eea3104e2d43e424a875d342d30cd63c,
+      type: 2}
+  Aron07:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 325f41fb721d89d40b24fbdd7a818821,
+      type: 2}
+  voicesDarkRoom:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f2068280a236ea941b24ec4f41e92f34,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 262cf19e3db2ac64ebe64a61a2e2fe87,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0098d29da7a192d498bfcf1ed6c474c4,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f9c8fcedfc5c54e4aa5e0b18a840db58,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 466c16b19fbff2245915caa7965a1190,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: df560afb3c9d8ca4592dceaa331d65ad,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bbf66af0e7aaa694680eacd84830c22f,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8d814f6992ff9e94b8d1fa0761c06fb5,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a6519f294da75df40a3bcb9a162481af,
+      type: 2}
+  sciFiStinger:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8a3b3de857b415f4ab0fcdbb11c9be8d,
+      type: 2}
