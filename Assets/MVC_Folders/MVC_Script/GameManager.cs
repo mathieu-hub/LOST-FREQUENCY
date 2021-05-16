@@ -128,6 +128,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        SoundManager.Instance.mainMenu.Stop(gameObject);
+
         if (!isDied)
         {
             BlockPlayerMovement();
@@ -207,6 +209,7 @@ public class GameManager : MonoBehaviour
                 ModificateurDeFrequence.Instance.emmetors.Remove(emetteurHosp);
                 SoundManager.Instance.sciFiStinger.Post(gameObject);
                 SoundManager.Instance.afterJumpscare.Stop(gameObject);
+                SoundManager.Instance.ambianceDarkRoom02.Post(gameObject);
                 isAct03 = false;
                 isAct04 = true;                
             }

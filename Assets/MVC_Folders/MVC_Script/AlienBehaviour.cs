@@ -128,6 +128,7 @@ public class AlienBehaviour : MonoBehaviour
 
         if (canPlaySound)
         {
+            canPlaySound = false;
             SoundManager.Instance.afterJumpscare.Post(gameObject);
         }
 

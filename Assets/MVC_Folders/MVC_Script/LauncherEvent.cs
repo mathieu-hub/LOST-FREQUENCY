@@ -30,6 +30,8 @@ public class LauncherEvent : MonoBehaviour
             if (launchDialog01)
             {
                 SoundManager.Instance.Terence09.Post(gameObject);
+                SoundManager.Instance.afterJumpscare.Stop(gameObject);
+                SoundManager.Instance.ambianceDarkRoom02.Stop(gameObject);
             }
 
             if (launchDialog02)
