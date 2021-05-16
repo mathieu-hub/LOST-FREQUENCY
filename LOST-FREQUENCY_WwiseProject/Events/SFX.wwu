@@ -25,6 +25,72 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="RadioRepair" ID="{47D83D69-8A53-48F3-8235-BEFC578A9ECA}">
+					<ChildrenList>
+						<Action Name="" ID="{A0F18E85-CA96-4C76-AF37-7B0F336793C9}" ShortID="6233814">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="radio repair" ID="{F213EB8C-A4D9-4963-A17A-FE54B487DAC1}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AnomalieRemove" ID="{5447273D-A657-4B85-92DB-DD38BD76B7D5}">
+					<ChildrenList>
+						<Action Name="" ID="{4B3BF19B-5229-4371-BB62-2BFD3E760748}" ShortID="270990023">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Granted Beep" ID="{924BE114-7505-43C8-A24D-84022EBD8604}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AnomalieMax" ID="{158CED1E-CB14-426D-B30E-3EB1FA6049C8}">
+					<ChildrenList>
+						<Action Name="" ID="{FDC38973-86B9-44BD-8DDF-8D5629E94FBD}" ShortID="950716694">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Error Beep 1" ID="{0DEABB44-A459-464E-AC06-0CA9F56BA9FF}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LightSwitchOf" ID="{DE0FC7C3-4895-425C-91AA-48049F692E22}">
+					<ChildrenList>
+						<Action Name="" ID="{3A7A6991-633F-4EB7-9A31-9EB9F89EBE85}" ShortID="42890106">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lightSwitchOut" ID="{2862A45E-4F49-4084-87C6-C89816FFCC9B}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="JumpScareCouloir" ID="{D92A265D-BB99-44EF-A771-93713F94C646}">
+					<ChildrenList>
+						<Action Name="" ID="{ACCE8A2A-22B6-4622-AF5C-3A8FA7462A42}" ShortID="453295472">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jumpscare_stinger_01" ID="{2590074C-5ECB-42AD-ADBA-4FA06DD38003}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="JumpScarePoursuit" ID="{72A1FD9A-7225-4A9E-8131-CACDA5D1323F}">
+					<ChildrenList>
+						<Action Name="" ID="{7BA2E008-5D18-4672-9974-9A00123DBD17}" ShortID="902327618">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jumpscare_stinger_02" ID="{CDEE7091-A05A-4DBD-84A6-0478CB02B9B9}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

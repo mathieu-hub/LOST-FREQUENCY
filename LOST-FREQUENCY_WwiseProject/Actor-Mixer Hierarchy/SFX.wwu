@@ -215,6 +215,281 @@
 						<ActiveSource Name="scifi_stinger_01" ID="{2BFDD8A2-6C6B-4CC0-A1FA-712DBA132FBD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Error Beep 1" ID="{0DEABB44-A459-464E-AC06-0CA9F56BA9FF}" ShortID="484917096">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Error Beep 1" ID="{51E644CC-5B82-4594-BD7F-1BC74CC144DF}">
+							<Language>SFX</Language>
+							<AudioFile>Error Beep 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="92520349"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Error Beep 1" ID="{51E644CC-5B82-4594-BD7F-1BC74CC144DF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Granted Beep" ID="{924BE114-7505-43C8-A24D-84022EBD8604}" ShortID="947898656">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Granted Beep" ID="{F407ACBF-8FD6-420E-B20B-6AC9DF8D5081}">
+							<Language>SFX</Language>
+							<AudioFile>Granted Beep.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="157662926"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Granted Beep" ID="{F407ACBF-8FD6-420E-B20B-6AC9DF8D5081}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Horror Ambience - After JS" ID="{AE4B2AFD-08D3-4B2D-85FA-74551B8ED01B}" ShortID="93169837">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Horror Ambience - After JS" ID="{900E8D92-A816-43AC-8F9C-CBE6EE0CFCB0}">
+							<Language>SFX</Language>
+							<AudioFile>Horror Ambience - After JS.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="508833245"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Horror Ambience - After JS" ID="{900E8D92-A816-43AC-8F9C-CBE6EE0CFCB0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Horror Ambience - DR 01" ID="{4488DB2A-CB26-481A-9E39-923912B4D970}" ShortID="63625914">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Horror Ambience - DR 01" ID="{396B887A-7598-4121-BE81-7071E6730FDC}">
+							<Language>SFX</Language>
+							<AudioFile>Horror Ambience - DR 01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="616304022"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Horror Ambience - DR 01" ID="{396B887A-7598-4121-BE81-7071E6730FDC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Horror Ambience - DR 02" ID="{F319FC5B-36E2-4A8E-A485-FBF0FD4B7630}" ShortID="596346879">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Horror Ambience - DR 02" ID="{1C14692A-6556-48D6-BC14-8F8382EA887E}">
+							<Language>SFX</Language>
+							<AudioFile>Horror Ambience - DR 02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="107577986"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Horror Ambience - DR 02" ID="{1C14692A-6556-48D6-BC14-8F8382EA887E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Horror Ambience - levelFinal" ID="{72498121-7144-4465-8B53-F21E02B477A4}" ShortID="385949380">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Horror Ambience - levelFinal" ID="{6B84D093-0B5C-4471-A615-D4409B6D7505}">
+							<Language>SFX</Language>
+							<AudioFile>Horror Ambience - levelFinal.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="72780482"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Horror Ambience - levelFinal" ID="{6B84D093-0B5C-4471-A615-D4409B6D7505}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Horror Ambience - Main Menu" ID="{2DD58B05-DFE9-417F-A294-17CFA1330C7D}" ShortID="328416587">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Horror Ambience - Main Menu" ID="{9B329008-89FF-4D2A-BAFF-6FA256B6E4B2}">
+							<Language>SFX</Language>
+							<AudioFile>Horror Ambience - Main Menu.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="414163570"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Horror Ambience - Main Menu" ID="{9B329008-89FF-4D2A-BAFF-6FA256B6E4B2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="jumpscare_stinger_01" ID="{2590074C-5ECB-42AD-ADBA-4FA06DD38003}" ShortID="674656834">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="jumpscare_stinger_01" ID="{8961D00B-9FEA-4477-BCF1-1992CEBA315C}">
+							<Language>SFX</Language>
+							<AudioFile>jumpscare_stinger_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="291806437"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="jumpscare_stinger_01" ID="{8961D00B-9FEA-4477-BCF1-1992CEBA315C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="jumpscare_stinger_02" ID="{CDEE7091-A05A-4DBD-84A6-0478CB02B9B9}" ShortID="658218988">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="jumpscare_stinger_02" ID="{887074BD-33FC-40A1-A1A7-AD0868D81F54}">
+							<Language>SFX</Language>
+							<AudioFile>jumpscare_stinger_02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="395083819"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="jumpscare_stinger_02" ID="{887074BD-33FC-40A1-A1A7-AD0868D81F54}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="lightSwitchOut" ID="{2862A45E-4F49-4084-87C6-C89816FFCC9B}" ShortID="713279378">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="lightSwitchOut" ID="{98885A21-E1AB-4A6C-B709-714111B237A5}">
+							<Language>SFX</Language>
+							<AudioFile>lightSwitchOut.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="735528681"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="lightSwitchOut" ID="{98885A21-E1AB-4A6C-B709-714111B237A5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="radio repair" ID="{F213EB8C-A4D9-4963-A17A-FE54B487DAC1}" ShortID="757867457">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{156F194F-49F1-4A2C-80DE-2CC241C0EEDB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88385373-D06E-4012-A07A-054FF6D59B0B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="radio repair" ID="{C58E5CCA-6955-4D5F-8D38-5E8609EFFA4F}">
+							<Language>SFX</Language>
+							<AudioFile>radio repair.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="357895733"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="radio repair" ID="{C58E5CCA-6955-4D5F-8D38-5E8609EFFA4F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -58,6 +58,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AmbianceDarkRoom" ID="{50E5CD31-0416-4152-A71F-6A9635F8EAC8}">
+					<ChildrenList>
+						<Action Name="" ID="{E01CF5A3-21A9-49A8-AFBA-0E028C44B0FC}" ShortID="627081498">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Horror Ambience - DR 01" ID="{4488DB2A-CB26-481A-9E39-923912B4D970}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AmbianceDarkRoom02" ID="{C772E20B-2429-40B8-9922-7135CB02B924}">
+					<ChildrenList>
+						<Action Name="" ID="{F9BFFFD4-22F2-4658-996B-29F14B7427C1}" ShortID="752155980">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Horror Ambience - DR 02" ID="{F319FC5B-36E2-4A8E-A485-FBF0FD4B7630}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AfterJumpScare" ID="{79D21E58-F070-40D4-A739-1BC37BB8B121}">
+					<ChildrenList>
+						<Action Name="" ID="{E9422EBE-8A1E-4CB8-B598-45343705D836}" ShortID="179245404">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Horror Ambience - After JS" ID="{AE4B2AFD-08D3-4B2D-85FA-74551B8ED01B}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LevelFinal" ID="{D238E970-3CC6-4783-A249-C56415232CDF}">
+					<ChildrenList>
+						<Action Name="" ID="{AB966E6B-C4D4-4A53-B176-0AB46E7F7C20}" ShortID="117173920">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Horror Ambience - levelFinal" ID="{72498121-7144-4465-8B53-F21E02B477A4}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainMenu" ID="{69899989-BBCD-462E-9D4D-12995D67030F}">
+					<ChildrenList>
+						<Action Name="" ID="{71EC1F37-CF73-4BA5-9B0A-095C5E3B0F37}" ShortID="521857385">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Horror Ambience - Main Menu" ID="{2DD58B05-DFE9-417F-A294-17CFA1330C7D}" WorkUnitID="{39A55CA8-43E4-451F-BC3E-8C4AC3831348}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
