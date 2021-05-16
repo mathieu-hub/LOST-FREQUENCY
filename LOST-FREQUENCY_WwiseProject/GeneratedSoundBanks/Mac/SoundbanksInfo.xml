@@ -16,11 +16,19 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4018088483">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2497773760">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3760862043" Name="AfterJumpScare" ObjectPath="\Events\Ambiance\AfterJumpScare" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="508833245" Language="SFX">
+							<ShortName>Horror Ambience - After JS.wav</ShortName>
+							<Path>SFX\Horror Ambience - After JS_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3636975302" Name="Ambiance_Lightning" ObjectPath="\Events\Ambiance\Ambiance_Lightning" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="181449093" Language="SFX">
@@ -29,11 +37,43 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="4074644608" Name="AmbianceDarkRoom" ObjectPath="\Events\Ambiance\AmbianceDarkRoom" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="616304022" Language="SFX">
+							<ShortName>Horror Ambience - DR 01.wav</ShortName>
+							<Path>SFX\Horror Ambience - DR 01_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4085400610" Name="AmbianceDarkRoom02" ObjectPath="\Events\Ambiance\AmbianceDarkRoom02" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="107577986" Language="SFX">
+							<ShortName>Horror Ambience - DR 02.wav</ShortName>
+							<Path>SFX\Horror Ambience - DR 02_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="576031925" Name="AnomalieMax" ObjectPath="\Events\SFX\AnomalieMax" DurationType="OneShot" DurationMin="0.277188" DurationMax="0.277188">
+					<IncludedMemoryFiles>
+						<File Id="92520349" Language="SFX">
+							<ShortName>Error Beep 1.wav</ShortName>
+							<Path>SFX\Error Beep 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3215794742" Name="AnomalieRadio" ObjectPath="\Events\SFX\AnomalieRadio" DurationType="OneShot" DurationMin="11.292653" DurationMax="11.292653">
 					<IncludedMemoryFiles>
 						<File Id="839784501" Language="SFX">
 							<ShortName>Anomalie frequence radio.wav</ShortName>
 							<Path>SFX\Anomalie frequence radio_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1030256393" Name="AnomalieRemove" ObjectPath="\Events\SFX\AnomalieRemove" DurationType="OneShot" DurationMin="0.216236" DurationMax="0.216236">
+					<IncludedMemoryFiles>
+						<File Id="157662926" Language="SFX">
+							<ShortName>Granted Beep.wav</ShortName>
+							<Path>SFX\Granted Beep_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -174,11 +214,59 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2657428528" Name="HorrorLoopSalvation" ObjectPath="\Events\Ambiance\HorrorLoopSalvation" DurationType="Infinite"/>
+				<Event Id="3007614400" Name="JumpScareCouloir" ObjectPath="\Events\SFX\JumpScareCouloir" DurationType="OneShot" DurationMin="6.067665" DurationMax="6.067665">
+					<IncludedMemoryFiles>
+						<File Id="291806437" Language="SFX">
+							<ShortName>jumpscare_stinger_01.wav</ShortName>
+							<Path>SFX\jumpscare_stinger_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2567168862" Name="JumpScarePoursuit" ObjectPath="\Events\SFX\JumpScarePoursuit" DurationType="OneShot" DurationMin="10.145669" DurationMax="10.145669">
+					<IncludedMemoryFiles>
+						<File Id="395083819" Language="SFX">
+							<ShortName>jumpscare_stinger_02.wav</ShortName>
+							<Path>SFX\jumpscare_stinger_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2231683655" Name="LevelFinal" ObjectPath="\Events\Ambiance\LevelFinal" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="72780482" Language="SFX">
+							<ShortName>Horror Ambience - levelFinal.wav</ShortName>
+							<Path>SFX\Horror Ambience - levelFinal_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1937867480" Name="LightSwitchOf" ObjectPath="\Events\SFX\LightSwitchOf" DurationType="OneShot" DurationMin="7.298322" DurationMax="7.298322">
+					<IncludedMemoryFiles>
+						<File Id="735528681" Language="SFX">
+							<ShortName>lightSwitchOut.wav</ShortName>
+							<Path>SFX\lightSwitchOut_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3604647259" Name="MainMenu" ObjectPath="\Events\Ambiance\MainMenu" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="414163570" Language="SFX">
+							<ShortName>Horror Ambience - Main Menu.wav</ShortName>
+							<Path>SFX\Horror Ambience - Main Menu_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2025278018" Name="Radio_Record" ObjectPath="\Events\Ambiance\Radio_Record" MaxAttenuation="25.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="989582963" Language="SFX">
 							<ShortName>Radio Recording.wav</ShortName>
 							<Path>SFX\Radio Recording_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1214323757" Name="RadioRepair" ObjectPath="\Events\SFX\RadioRepair" DurationType="OneShot" DurationMin="7.489887" DurationMax="7.489887">
+					<IncludedMemoryFiles>
+						<File Id="357895733" Language="SFX">
+							<ShortName>radio repair.wav</ShortName>
+							<Path>SFX\radio repair_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
