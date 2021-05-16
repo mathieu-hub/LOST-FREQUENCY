@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 436d35b47988b0419118b1f3f85778dc
     GuidInternal: 
-    m_lastTime: -8585809410947212524
+    m_lastTime: -8585804758882100804
     List:
     - name: Main
       guid: 18e12f42c725e24493b9f4d81388d21d
@@ -252,7 +252,7 @@ MonoBehaviour:
     ParentPath: Events\Voices
     guid: 40405b84c42dd247bf21387b28166b43
     GuidInternal: 
-    m_lastTime: -8585809426659348589
+    m_lastTime: -8585804758882150397
     List:
     - name: Aron01
       guid: ff22ba3ae2227644ad537fcf3ca95e0f
@@ -370,6 +370,159 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0826dc3accad7344beddd07ef77eb544
       Path: Events\Voices\Aron07
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fillette01
+      guid: 1641ee9f6c40394280c5c1ba815565da
+      id: 773162493
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Fillette01
+        ObjectType: 3
+        guid: 1641ee9f6c40394280c5c1ba815565da
+      Path: Events\Voices\Fillette01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fillette02
+      guid: a79e0f868dae6a4380d6bb152d3552e9
+      id: 773162494
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Fillette02
+        ObjectType: 3
+        guid: a79e0f868dae6a4380d6bb152d3552e9
+      Path: Events\Voices\Fillette02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fillette03
+      guid: 0d0239f0fa34de48aea4a607255b496a
+      id: 773162495
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Fillette03
+        ObjectType: 3
+        guid: 0d0239f0fa34de48aea4a607255b496a
+      Path: Events\Voices\Fillette03
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fillette04
+      guid: 05e7ecd17d9b674786203a6b371cfd7c
+      id: 773162488
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Fillette04
+        ObjectType: 3
+        guid: 05e7ecd17d9b674786203a6b371cfd7c
+      Path: Events\Voices\Fillette04
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fillette05
+      guid: 45202a1272d0c54eba4dc80371544327
+      id: 773162489
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Fillette05
+        ObjectType: 3
+        guid: 45202a1272d0c54eba4dc80371544327
+      Path: Events\Voices\Fillette05
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fillette06
+      guid: 6906a77311c04e46ac8bc4bb5511a8d3
+      id: 773162490
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Fillette06
+        ObjectType: 3
+        guid: 6906a77311c04e46ac8bc4bb5511a8d3
+      Path: Events\Voices\Fillette06
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fillette07
+      guid: 0a75f6a9387cd54b84ec355a22a187e5
+      id: 773162491
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Fillette07
+        ObjectType: 3
+        guid: 0a75f6a9387cd54b84ec355a22a187e5
+      Path: Events\Voices\Fillette07
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fillette08
+      guid: bdc5b7ac0a1a754680c82cb239128bc2
+      id: 773162484
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Fillette08
+        ObjectType: 3
+        guid: bdc5b7ac0a1a754680c82cb239128bc2
+      Path: Events\Voices\Fillette08
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fillette09
+      guid: 58c305bb52b52d44a8b94f41a166ea69
+      id: 773162485
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Fillette09
+        ObjectType: 3
+        guid: 58c305bb52b52d44a8b94f41a166ea69
+      Path: Events\Voices\Fillette09
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -492,6 +645,91 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Terence08
+      guid: 4f591940c4b6334c9ddaf07fc11fd16c
+      id: 1852782747
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence08
+        ObjectType: 3
+        guid: 4f591940c4b6334c9ddaf07fc11fd16c
+      Path: Events\Voices\Terence08
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence09
+      guid: 0ec6140eab7f1540ad4c4e2a9bbf1aa3
+      id: 1852782746
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence09
+        ObjectType: 3
+        guid: 0ec6140eab7f1540ad4c4e2a9bbf1aa3
+      Path: Events\Voices\Terence09
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence10
+      guid: a98c3565a615e44eaa9c9188624e486a
+      id: 1836005152
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence10
+        ObjectType: 3
+        guid: a98c3565a615e44eaa9c9188624e486a
+      Path: Events\Voices\Terence10
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence11
+      guid: 04087ef2d11dea468978ad6edefb0fcd
+      id: 1836005153
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence11
+        ObjectType: 3
+        guid: 04087ef2d11dea468978ad6edefb0fcd
+      Path: Events\Voices\Terence11
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Terence12
+      guid: c20e711662d5774a95b4ee63e06be7db
+      id: 1836005154
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Voices
+        ObjectType: 12
+        guid: 40405b84c42dd247bf21387b28166b43
+      - ElementName: Terence12
+        ObjectType: 3
+        guid: c20e711662d5774a95b4ee63e06be7db
+      Path: Events\Voices\Terence12
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -549,7 +787,7 @@ MonoBehaviour:
     m_lastTime: -8585827012208286639
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000a0000000b0000000c0000000d000000
+  ExpandedWaapiItemIds: 0100000005000000060000000a0000000b0000000c0000000d00000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

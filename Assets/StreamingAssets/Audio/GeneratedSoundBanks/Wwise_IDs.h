@@ -23,6 +23,15 @@ namespace AK
         static const AkUniqueID ARON06 = 232480597U;
         static const AkUniqueID ARON07 = 232480596U;
         static const AkUniqueID CLOSETHUNDER = 2176736267U;
+        static const AkUniqueID FILLETTE01 = 773162493U;
+        static const AkUniqueID FILLETTE02 = 773162494U;
+        static const AkUniqueID FILLETTE03 = 773162495U;
+        static const AkUniqueID FILLETTE04 = 773162488U;
+        static const AkUniqueID FILLETTE05 = 773162489U;
+        static const AkUniqueID FILLETTE06 = 773162490U;
+        static const AkUniqueID FILLETTE07 = 773162491U;
+        static const AkUniqueID FILLETTE08 = 773162484U;
+        static const AkUniqueID FILLETTE09 = 773162485U;
         static const AkUniqueID HORRORLOOPSALVATION = 2657428528U;
         static const AkUniqueID RADIO_RECORD = 2025278018U;
         static const AkUniqueID SCIFISTINGER = 1130757099U;
@@ -33,6 +42,11 @@ namespace AK
         static const AkUniqueID TERENCE05 = 1852782742U;
         static const AkUniqueID TERENCE06 = 1852782741U;
         static const AkUniqueID TERENCE07 = 1852782740U;
+        static const AkUniqueID TERENCE08 = 1852782747U;
+        static const AkUniqueID TERENCE09 = 1852782746U;
+        static const AkUniqueID TERENCE10 = 1836005152U;
+        static const AkUniqueID TERENCE11 = 1836005153U;
+        static const AkUniqueID TERENCE12 = 1836005154U;
         static const AkUniqueID VHSTAPE = 3673448642U;
     } // namespace EVENTS
 

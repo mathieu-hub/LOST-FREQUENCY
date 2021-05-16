@@ -21,6 +21,12 @@ public class SoundManager : MonoBehaviour
     public AK.Wwise.Event Terence05;
     public AK.Wwise.Event Terence06;
     public AK.Wwise.Event Terence07;
+    public AK.Wwise.Event Terence08;
+    public AK.Wwise.Event Terence09;
+    public AK.Wwise.Event Terence10;
+    public AK.Wwise.Event Terence11;
+    public AK.Wwise.Event Terence12;
+
 
     [Header("ARON DIALOGUES")]
     public AK.Wwise.Event Aron01;

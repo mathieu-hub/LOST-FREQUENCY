@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4208246868">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4018088483">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -101,6 +101,78 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="773162493" Name="Fillette01" ObjectPath="\Events\Voices\Fillette01" DurationType="OneShot" DurationMin="15.232290" DurationMax="15.232290">
+					<IncludedMemoryFiles>
+						<File Id="752572017" Language="SFX">
+							<ShortName>fillette 01.wav</ShortName>
+							<Path>SFX\fillette 01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="773162494" Name="Fillette02" ObjectPath="\Events\Voices\Fillette02" DurationType="OneShot" DurationMin="4.969070" DurationMax="4.969070">
+					<IncludedMemoryFiles>
+						<File Id="784617290" Language="SFX">
+							<ShortName>fillette 02.wav</ShortName>
+							<Path>SFX\fillette 02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="773162495" Name="Fillette03" ObjectPath="\Events\Voices\Fillette03" DurationType="OneShot" DurationMin="4.133152" DurationMax="4.133152">
+					<IncludedMemoryFiles>
+						<File Id="175827787" Language="SFX">
+							<ShortName>fillette 03.wav</ShortName>
+							<Path>SFX\fillette 03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="773162488" Name="Fillette04" ObjectPath="\Events\Voices\Fillette04" DurationType="OneShot" DurationMin="9.493446" DurationMax="9.493446">
+					<IncludedMemoryFiles>
+						<File Id="893991257" Language="SFX">
+							<ShortName>fillette 04.wav</ShortName>
+							<Path>SFX\fillette 04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="773162489" Name="Fillette05" ObjectPath="\Events\Voices\Fillette05" DurationType="OneShot" DurationMin="5.705080" DurationMax="5.705080">
+					<IncludedMemoryFiles>
+						<File Id="801917725" Language="SFX">
+							<ShortName>fillette 05.wav</ShortName>
+							<Path>SFX\fillette 05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="773162490" Name="Fillette06" ObjectPath="\Events\Voices\Fillette06" DurationType="OneShot" DurationMin="3.588549" DurationMax="3.588549">
+					<IncludedMemoryFiles>
+						<File Id="524081928" Language="SFX">
+							<ShortName>fillette 06.wav</ShortName>
+							<Path>SFX\fillette 06_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="773162491" Name="Fillette07" ObjectPath="\Events\Voices\Fillette07" DurationType="OneShot" DurationMin="11.311316" DurationMax="11.311316">
+					<IncludedMemoryFiles>
+						<File Id="862865243" Language="SFX">
+							<ShortName>fillette 07.wav</ShortName>
+							<Path>SFX\fillette 07_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="773162484" Name="Fillette08" ObjectPath="\Events\Voices\Fillette08" DurationType="OneShot" DurationMin="8.198775" DurationMax="8.198775">
+					<IncludedMemoryFiles>
+						<File Id="656961657" Language="SFX">
+							<ShortName>fillette 08.wav</ShortName>
+							<Path>SFX\fillette 08_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="773162485" Name="Fillette09" ObjectPath="\Events\Voices\Fillette09" DurationType="OneShot" DurationMin="2.287166" DurationMax="2.287166">
+					<IncludedMemoryFiles>
+						<File Id="791184043" Language="SFX">
+							<ShortName>fillette 09.wav</ShortName>
+							<Path>SFX\fillette 09_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2657428528" Name="HorrorLoopSalvation" ObjectPath="\Events\Ambiance\HorrorLoopSalvation" DurationType="Infinite"/>
 				<Event Id="2025278018" Name="Radio_Record" ObjectPath="\Events\Ambiance\Radio_Record" MaxAttenuation="25.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -171,6 +243,46 @@
 						<File Id="806439413" Language="SFX">
 							<ShortName>Terence 07.wav</ShortName>
 							<Path>SFX\Terence 07_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1852782747" Name="Terence08" ObjectPath="\Events\Voices\Terence08" DurationType="OneShot" DurationMin="12.057755" DurationMax="12.057755">
+					<IncludedMemoryFiles>
+						<File Id="575207291" Language="SFX">
+							<ShortName>Terence 08.wav</ShortName>
+							<Path>SFX\Terence 08_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1852782746" Name="Terence09" ObjectPath="\Events\Voices\Terence09" DurationType="OneShot" DurationMin="10.447279" DurationMax="10.447279">
+					<IncludedMemoryFiles>
+						<File Id="606313533" Language="SFX">
+							<ShortName>Terence 09.wav</ShortName>
+							<Path>SFX\Terence 09_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1836005152" Name="Terence10" ObjectPath="\Events\Voices\Terence10" DurationType="OneShot" DurationMin="3.246712" DurationMax="3.246712">
+					<IncludedMemoryFiles>
+						<File Id="858508465" Language="SFX">
+							<ShortName>Terence 10.wav</ShortName>
+							<Path>SFX\Terence 10_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1836005153" Name="Terence11" ObjectPath="\Events\Voices\Terence11" DurationType="OneShot" DurationMin="6.875420" DurationMax="6.875420">
+					<IncludedMemoryFiles>
+						<File Id="954199941" Language="SFX">
+							<ShortName>Terence 11.wav</ShortName>
+							<Path>SFX\Terence 11_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1836005154" Name="Terence12" ObjectPath="\Events\Voices\Terence12" DurationType="OneShot" DurationMin="8.640703" DurationMax="8.640703">
+					<IncludedMemoryFiles>
+						<File Id="852700039" Language="SFX">
+							<ShortName>Terence 12.wav</ShortName>
+							<Path>SFX\Terence 12_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
