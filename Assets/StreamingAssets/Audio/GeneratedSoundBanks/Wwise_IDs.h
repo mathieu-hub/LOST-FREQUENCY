@@ -13,8 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AFTERJUMPSCARE = 3760862043U;
         static const AkUniqueID AMBIANCE_LIGHTNING = 3636975302U;
+        static const AkUniqueID AMBIANCEDARKROOM = 4074644608U;
+        static const AkUniqueID AMBIANCEDARKROOM02 = 4085400610U;
+        static const AkUniqueID ANOMALIEMAX = 576031925U;
         static const AkUniqueID ANOMALIERADIO = 3215794742U;
+        static const AkUniqueID ANOMALIEREMOVE = 1030256393U;
         static const AkUniqueID ARON01 = 232480594U;
         static const AkUniqueID ARON02 = 232480593U;
         static const AkUniqueID ARON03 = 232480592U;
@@ -33,7 +38,13 @@ namespace AK
         static const AkUniqueID FILLETTE08 = 773162484U;
         static const AkUniqueID FILLETTE09 = 773162485U;
         static const AkUniqueID HORRORLOOPSALVATION = 2657428528U;
+        static const AkUniqueID JUMPSCARECOULOIR = 3007614400U;
+        static const AkUniqueID JUMPSCAREPOURSUIT = 2567168862U;
+        static const AkUniqueID LEVELFINAL = 2231683655U;
+        static const AkUniqueID LIGHTSWITCHOF = 1937867480U;
+        static const AkUniqueID MAINMENU = 3604647259U;
         static const AkUniqueID RADIO_RECORD = 2025278018U;
+        static const AkUniqueID RADIOREPAIR = 1214323757U;
         static const AkUniqueID SCIFISTINGER = 1130757099U;
         static const AkUniqueID TERENCE01 = 1852782738U;
         static const AkUniqueID TERENCE02 = 1852782737U;

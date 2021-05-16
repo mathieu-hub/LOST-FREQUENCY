@@ -68,6 +68,31 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 724e1db9065d82d4f8eb7eb95473dd72,
       type: 2}
+  ambianceDarkRoom:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8bdcbd23647b2964b9f0c4b3ea16c31c,
+      type: 2}
+  ambianceDarkRoom02:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 01fb58a5f3dfed142a2b9964eae7ba4e,
+      type: 2}
+  afterJumpscare:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cf1fe86040bf74c45ad1e634810f6e9a,
+      type: 2}
+  levelFinal:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d6a256d44151c194f8991fe57ed40ccd,
+      type: 2}
+  mainMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 559949c6a2819d248830d9d531318749,
+      type: 2}
   Terence01:
     idInternal: 0
     valueGuidInternal: 
@@ -204,4 +229,34 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8a3b3de857b415f4ab0fcdbb11c9be8d,
+      type: 2}
+  radioRepair:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4a6c5a6c07787bd4f92c58ffd42fbd19,
+      type: 2}
+  anomalieRemove:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a5e23ae5072c8dd438f28c6f08627a96,
+      type: 2}
+  anomalieMax:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a4cb03cc33cece24a949ac34b5c88635,
+      type: 2}
+  lightSwitchOff:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4958d21b59d5ed44b993678d692ab597,
+      type: 2}
+  jumpscareCouloir:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 07e83fb5e7053ef4195b5e7f2d262750,
+      type: 2}
+  jumpscarePoursuit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6f64c15f55e0fb143bf9742e1d4df12e,
       type: 2}

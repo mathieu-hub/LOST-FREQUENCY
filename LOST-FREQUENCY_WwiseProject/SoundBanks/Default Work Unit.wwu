@@ -7,8 +7,13 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Terence09" ID="{0E14C60E-7FAB-4015-AD4C-4E2A9BBF1AA3}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="VhsTape" ID="{04B257FD-C909-4032-A7C3-6288D061D198}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AmbianceDarkRoom02" ID="{C772E20B-2429-40B8-9922-7135CB02B924}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AfterJumpScare" ID="{79D21E58-F070-40D4-A739-1BC37BB8B121}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AmbianceDarkRoom" ID="{50E5CD31-0416-4152-A71F-6A9635F8EAC8}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambiance_Lightning" ID="{C609F7B4-B75C-41F2-AE46-61E1EE9FF61A}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fillette01" ID="{9FEE4116-406C-4239-80C5-C1BA815565DA}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LightSwitchOf" ID="{DE0FC7C3-4895-425C-91AA-48049F692E22}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AnomalieMax" ID="{158CED1E-CB14-426D-B30E-3EB1FA6049C8}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Terence07" ID="{4D114385-29D5-4310-9D81-23CBC5A2BF3F}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SciFiStinger" ID="{0EF2682B-7A64-4333-8835-EC16094FBC18}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fillette02" ID="{860F9EA7-AE8D-436A-80D6-BB152D3552E9}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
@@ -17,20 +22,26 @@
 						<ObjectRef Name="Fillette09" ID="{BB05C358-B552-442D-A8B9-4F41A166EA69}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Aron07" ID="{3ADC2608-ADCC-4473-BEDD-D07EF77EB544}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Aron01" ID="{3ABA22FF-22E2-4476-AD53-7FCF3CA95E0F}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="JumpScareCouloir" ID="{D92A265D-BB99-44EF-A771-93713F94C646}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Terence06" ID="{2E427958-5C75-4501-857A-41DD712677D2}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Aron03" ID="{910E6CB8-8BCA-45D9-A833-9CD95D117DCF}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Aron06" ID="{01D723CB-30B1-4616-BFAD-F96A841A5F57}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MainMenu" ID="{69899989-BBCD-462E-9D4D-12995D67030F}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fillette06" ID="{73A70669-C011-464E-AC8B-C4BB5511A8D3}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fillette08" ID="{ACB7C5BD-1A0A-4675-80C8-2CB239128BC2}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Terence11" ID="{F27E0804-1DD1-46EA-8978-AD6EDEFB0FCD}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fillette04" ID="{D1ECE705-9B7D-4767-8620-3A6B371CFD7C}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LevelFinal" ID="{D238E970-3CC6-4783-A249-C56415232CDF}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Radio_Record" ID="{BB0BACF7-5D37-479A-9DEF-53B7C9E1CD43}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AnomalieRadio" ID="{6AA4422D-1101-47D3-87E5-A6EAB4B54730}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fillette03" ID="{F039020D-34FA-48DE-AEA4-A607255B496A}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RadioRepair" ID="{47D83D69-8A53-48F3-8235-BEFC578A9ECA}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Terence12" ID="{16710EC2-D562-4A77-95B4-EE63E06BE7DB}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Terence04" ID="{3D00AE4F-EDB7-4A7A-B957-EA7578533515}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="JumpScarePoursuit" ID="{72A1FD9A-7225-4A9E-8131-CACDA5D1323F}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Terence05" ID="{0FDA1279-548D-4AB2-94C4-A2A93AE59EFD}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Aron05" ID="{549955D8-10B7-4B6C-B334-0341D631BC04}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AnomalieRemove" ID="{5447273D-A657-4B85-92DB-DD38BD76B7D5}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fillette07" ID="{A9F6750A-7C38-4BD5-84EC-355A22A187E5}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Terence08" ID="{4019594F-B6C4-4C33-9DDA-F07FC11FD16C}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Terence02" ID="{DB10B960-E77B-4D5C-A0F1-66139939E599}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>

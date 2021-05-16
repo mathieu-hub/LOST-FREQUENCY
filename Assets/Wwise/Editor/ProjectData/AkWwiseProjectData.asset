@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 436d35b47988b0419118b1f3f85778dc
     GuidInternal: 
-    m_lastTime: -8585804758882100804
+    m_lastTime: -8585804466275803858
     List:
     - name: Main
       guid: 18e12f42c725e24493b9f4d81388d21d
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Ambiance
     guid: 118352dcc78fa34583173784fac79dcd
     GuidInternal: 
-    m_lastTime: -8585809410947262601
+    m_lastTime: -8585804466275714344
     List:
+    - name: AfterJumpScare
+      guid: 581ed27970f0d440a7391bc37bb8b121
+      id: 3760862043
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: AfterJumpScare
+        ObjectType: 3
+        guid: 581ed27970f0d440a7391bc37bb8b121
+      Path: Events\Ambiance\AfterJumpScare
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Ambiance_Lightning
       guid: b4f709c65cb7f241ae4661e1ee9ff61a
       id: 3636975302
@@ -110,6 +127,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: b4f709c65cb7f241ae4661e1ee9ff61a
       Path: Events\Ambiance\Ambiance_Lightning
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AmbianceDarkRoom
+      guid: 31cde55016045241a71f6a9635f8eac8
+      id: 4074644608
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: AmbianceDarkRoom
+        ObjectType: 3
+        guid: 31cde55016045241a71f6a9635f8eac8
+      Path: Events\Ambiance\AmbianceDarkRoom
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AmbianceDarkRoom02
+      guid: 0be272c72924b84099227135cb02b924
+      id: 4085400610
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: AmbianceDarkRoom02
+        ObjectType: 3
+        guid: 0be272c72924b84099227135cb02b924
+      Path: Events\Ambiance\AmbianceDarkRoom02
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -144,6 +195,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 53f457ab559afc4eb2fe9f663350f2d8
       Path: Events\Ambiance\HorrorLoopSalvation
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LevelFinal
+      guid: 70e938d2c63c8347a249c56415232cdf
+      id: 2231683655
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: LevelFinal
+        ObjectType: 3
+        guid: 70e938d2c63c8347a249c56415232cdf
+      Path: Events\Ambiance\LevelFinal
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MainMenu
+      guid: 89998969cdbb2e469d4d12995d67030f
+      id: 3604647259
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 118352dcc78fa34583173784fac79dcd
+      - ElementName: MainMenu
+        ObjectType: 3
+        guid: 89998969cdbb2e469d4d12995d67030f
+      Path: Events\Ambiance\MainMenu
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -205,8 +290,25 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 2ca7705882c0b64abe75fa4996fb1873
     GuidInternal: 
-    m_lastTime: -8585809410947162857
+    m_lastTime: -8585804466275764006
     List:
+    - name: AnomalieMax
+      guid: 1eed8c1514cb6d42b30e3eb1fa6049c8
+      id: 576031925
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 2ca7705882c0b64abe75fa4996fb1873
+      - ElementName: AnomalieMax
+        ObjectType: 3
+        guid: 1eed8c1514cb6d42b30e3eb1fa6049c8
+      Path: Events\SFX\AnomalieMax
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AnomalieRadio
       guid: 2d42a46a0111d34787e5a6eab4b54730
       id: 3215794742
@@ -221,6 +323,91 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2d42a46a0111d34787e5a6eab4b54730
       Path: Events\SFX\AnomalieRadio
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AnomalieRemove
+      guid: 3d27475457a6854b92dbdd38bd76b7d5
+      id: 1030256393
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 2ca7705882c0b64abe75fa4996fb1873
+      - ElementName: AnomalieRemove
+        ObjectType: 3
+        guid: 3d27475457a6854b92dbdd38bd76b7d5
+      Path: Events\SFX\AnomalieRemove
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: JumpScareCouloir
+      guid: 5d262ad999bbef44a77193713f94c646
+      id: 3007614400
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 2ca7705882c0b64abe75fa4996fb1873
+      - ElementName: JumpScareCouloir
+        ObjectType: 3
+        guid: 5d262ad999bbef44a77193713f94c646
+      Path: Events\SFX\JumpScareCouloir
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: JumpScarePoursuit
+      guid: 9afda17225729e4a8131cacda5d1323f
+      id: 2567168862
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 2ca7705882c0b64abe75fa4996fb1873
+      - ElementName: JumpScarePoursuit
+        ObjectType: 3
+        guid: 9afda17225729e4a8131cacda5d1323f
+      Path: Events\SFX\JumpScarePoursuit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LightSwitchOf
+      guid: c3c70fde95485c4291aa48049f692e22
+      id: 1937867480
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 2ca7705882c0b64abe75fa4996fb1873
+      - ElementName: LightSwitchOf
+        ObjectType: 3
+        guid: c3c70fde95485c4291aa48049f692e22
+      Path: Events\SFX\LightSwitchOf
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: RadioRepair
+      guid: 693dd847538af3488235befc578a9eca
+      id: 1214323757
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 2ca7705882c0b64abe75fa4996fb1873
+      - ElementName: RadioRepair
+        ObjectType: 3
+        guid: 693dd847538af3488235befc578a9eca
+      Path: Events\SFX\RadioRepair
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -787,7 +974,7 @@ MonoBehaviour:
     m_lastTime: -8585827012208286639
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000a0000000b0000000c0000000d00000010000000
+  ExpandedWaapiItemIds: 01000000050000000a0000000b0000000c0000000d0000001000000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
