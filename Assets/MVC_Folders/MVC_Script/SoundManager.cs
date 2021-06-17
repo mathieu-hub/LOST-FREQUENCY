@@ -55,7 +55,9 @@ public class SoundManager : MonoBehaviour
     public AK.Wwise.Event anomalieMax; 
     public AK.Wwise.Event lightSwitchOff; 
     public AK.Wwise.Event jumpscareCouloir; 
-    public AK.Wwise.Event jumpscarePoursuit; 
+    public AK.Wwise.Event jumpscarePoursuit;
+    public AK.Wwise.Event criAlien;
+
 
 
     void Awake()

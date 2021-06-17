@@ -25,6 +25,8 @@ public class LauncherEvent : MonoBehaviour
             {
                 GameManager.Instance.isAct05 = false;
                 GameManager.Instance.isAct06 = true;
+                SoundManager.Instance.ambianceDarkRoom02.Stop(gameObject);
+                SoundManager.Instance.afterJumpscare.Stop(gameObject);
             }
 
             if (launchDialog01)

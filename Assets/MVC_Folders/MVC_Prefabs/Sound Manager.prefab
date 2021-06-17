@@ -260,3 +260,8 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6f64c15f55e0fb143bf9742e1d4df12e,
       type: 2}
+  criAlien:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1bbcf70664417da419783fec4e1dbfdd,
+      type: 2}

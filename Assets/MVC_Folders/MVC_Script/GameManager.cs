@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
     public bool canLaunchCoroutine = true;
     public bool canTeleportToBibliotheque = false;
     public Transform tpBibliotheque;
+    public bool alienCanScream = true;
 
     [Header("ACT 03")]
     public GameObject emetteurHosp;
@@ -115,6 +116,7 @@ public class GameManager : MonoBehaviour
     public Transform tpEnd;
     public GameObject endObjects;
     public GameObject lastAlien;
+    public bool terenceCanSpeak = true;
 
     private void Awake()
     {
@@ -179,6 +181,12 @@ public class GameManager : MonoBehaviour
         if (canTeleportToBibliotheque)
         {
             ModificateurDeFrequence.Instance.Teleportation(tpBibliotheque); // Teleportation dans Bibliothèque.
+
+            if (alienCanScream)
+            {
+                alienCanScream = false;
+                SoundManager.Instance.criAlien.Post(gameObject);
+            }
 
             if (isTeleport)
             {
@@ -381,7 +389,7 @@ public class GameManager : MonoBehaviour
 
         if (indexLte == 3)
         {
-            canTeleportToBibliotheque = true;
+            canTeleportToBibliotheque = true;            
         }
     }
 
@@ -555,6 +563,7 @@ public class GameManager : MonoBehaviour
         circleLights[3].SetActive(true);
         yield return new WaitForSeconds(1f);
         circleLights[4].SetActive(true);
+        SoundManager.Instance.ambianceDarkRoom02.Stop(gameObject);
         yield return new WaitForSeconds(1f);
         circleLights[5].SetActive(true);
         yield return new WaitForSeconds(1f);
@@ -629,7 +638,12 @@ public class GameManager : MonoBehaviour
                 radiosFinal[2].GetComponent<EmetteurType>().asAnAnomalie == false &&
                 radiosFinal[3].GetComponent<EmetteurType>().asAnAnomalie == false)
             {
-                SoundManager.Instance.Terence12.Post(gameObject);
+                if (terenceCanSpeak)
+                {
+                    terenceCanSpeak = false;
+                    SoundManager.Instance.Terence12.Post(gameObject);
+                }
+
                 tvFinalOff.SetActive(false);
                 tvFinalOn.SetActive(true);
                 tvFinalOn.GetComponent<EmetteurType>().canTeleport = true;
@@ -642,6 +656,7 @@ public class GameManager : MonoBehaviour
     IEnumerator LaunchFinal()
     {
         SoundManager.Instance.levelFinal.Post(gameObject);
+        SoundManager.Instance.criAlien.Post(gameObject);
         BlockPlayerMovement();
         yield return new WaitForSeconds(0.5f);
         tvFinalOff.SetActive(false);
@@ -649,11 +664,10 @@ public class GameManager : MonoBehaviour
         finalIsLaunch = true;
         yield return new WaitForSeconds(0.5f);
         RestorePlayerMovement();
-        yield return new WaitForSeconds(8f);
+        yield return new WaitForSeconds(1.5f);
         lastAlien.SetActive(true);
         lastAlien.GetComponent<AlienAI>().alienIsComming = true;
         SoundManager.Instance.jumpscarePoursuit.Post(gameObject);
-        yield return (3f);
         tvFinalOff.SetActive(true);
         tvFinalOn.SetActive(false);
     }
@@ -665,7 +679,7 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator DelayToPostSong()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3.5f);
         SoundManager.Instance.voicesDarkRoom[8].Post(gameObject);
     }
 }
