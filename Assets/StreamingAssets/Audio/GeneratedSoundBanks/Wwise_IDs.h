@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID ARON06 = 232480597U;
         static const AkUniqueID ARON07 = 232480596U;
         static const AkUniqueID CLOSETHUNDER = 2176736267U;
+        static const AkUniqueID CRIALIEN = 1685780408U;
         static const AkUniqueID FILLETTE01 = 773162493U;
         static const AkUniqueID FILLETTE02 = 773162494U;
         static const AkUniqueID FILLETTE03 = 773162495U;
