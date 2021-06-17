@@ -19,6 +19,7 @@
 						<ObjectRef Name="Fillette02" ID="{860F9EA7-AE8D-436A-80D6-BB152D3552E9}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Aron02" ID="{8D3DAF84-8EE6-4376-8752-E6C0BA608C7B}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="CloseThunder" ID="{0FFE0A39-61F0-4389-BF7D-56E62B8F33D2}" WorkUnitID="{DC528311-8FC7-45A3-8317-3784FAC79DCD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="CriAlien" ID="{38111BB9-E38E-43E4-B8FB-7E777F304432}" WorkUnitID="{5870A72C-C082-4AB6-BE75-FA4996FB1873}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fillette09" ID="{BB05C358-B552-442D-A8B9-4F41A166EA69}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Aron07" ID="{3ADC2608-ADCC-4473-BEDD-D07EF77EB544}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Aron01" ID="{3ABA22FF-22E2-4476-AD53-7FCF3CA95E0F}" WorkUnitID="{845B4040-2DC4-47D2-BF21-387B28166B43}" Origin="Manual" Filter="7"/>
