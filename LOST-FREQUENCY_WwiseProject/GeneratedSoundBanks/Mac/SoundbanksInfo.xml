@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2497773760">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2751306244">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -138,6 +138,14 @@
 						<File Id="526778638" Language="SFX">
 							<ShortName>CloseThunder01.wav</ShortName>
 							<Path>SFX\CloseThunder01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1685780408" Name="CriAlien" ObjectPath="\Events\SFX\CriAlien" DurationType="OneShot" DurationMin="2.836375" DurationMax="2.836375">
+					<IncludedMemoryFiles>
+						<File Id="97637699" Language="SFX">
+							<ShortName>CriAlien.wav</ShortName>
+							<Path>SFX\CriAlien_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
