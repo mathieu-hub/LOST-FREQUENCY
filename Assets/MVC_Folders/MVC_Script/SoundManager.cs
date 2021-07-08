@@ -6,7 +6,8 @@ using ThunderWire.Game.Options;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
-    
+
+    public bool canLaunchMenuSound = true;
 
     [Header("AMBIANCES")]
     public AK.Wwise.Event ambianceLightning;
@@ -72,13 +73,17 @@ public class SoundManager : MonoBehaviour
 
     void Update()
     {
-        if (AdvancedMenuUI.Instance.isMainMenu)
+        if (canLaunchMenuSound)
         {
-            mainMenu.Post(gameObject);
-        }
-        else if (AdvancedMenuUI.Instance.isMainMenu == false)
-        {
-            mainMenu.Stop(gameObject);
-        }
+            if (AdvancedMenuUI.Instance.isMainMenu)
+            {
+                canLaunchMenuSound = false;
+                mainMenu.Post(gameObject);
+            }
+            else if (AdvancedMenuUI.Instance.isMainMenu == false)
+            {
+                mainMenu.Stop(gameObject);
+            }
+        }        
     }
 }
