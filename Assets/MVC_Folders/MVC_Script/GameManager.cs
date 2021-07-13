@@ -558,6 +558,7 @@ public class GameManager : MonoBehaviour
     IEnumerator LaunchAlien()
     {
         BlockPlayerMovement();
+        // Forcer l'orientation de la caméra ici
         AlienBehaviour.Instance.alien02.SetActive(true);
         yield return new WaitForSeconds(1f);
         circleLights[3].SetActive(true);
@@ -570,6 +571,7 @@ public class GameManager : MonoBehaviour
         circleLights[6].SetActive(true);
         isAct04 = false;
         RestorePlayerMovement();
+        // Désactiver le Look At ici 
         isAct05 = true;
     }
 
